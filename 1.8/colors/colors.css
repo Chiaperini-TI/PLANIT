@@ -1,0 +1,953 @@
+
+:root{
+
+  --cherry:       #d52929; 
+  --strawberry:   #b51111;
+  --fire:         #ff1e1e; 
+  --blood:        #a70000; 
+  --rose:         #9c1111; 
+  --apple:        #ff3a3a; 
+  --watermelon:   #ff4949; 
+  --raspberry:    #e23a3a; 
+  --pepper:       #800000; 
+  --chili:        #a01818; 
+  --royal:        #2592ff;     
+  --planit:       #72d8ea;
+  --aqua:         #25deff;      
+  --sky:          #60cfff;       
+  --blueberry:    #3850dc; 
+  --deep:         #0e459e;      
+  --ocean:        #123f7f;     
+  --lake:         #267bb0;      
+  --water:        #2592ff;     
+  --rain:         #003cab;      
+  --ice:          #61adff;      
+  --emerald:      #07d78b; 
+  --leaf:         #07d745;    
+  --tree:         #30c637;    
+  --lemon:        #5ce00a;   
+  --kiwi:         #77e02d;    
+  --grass:        #38e03d;   
+  --lime:         #5ed120;    
+  --avocado:      #0a8f2b; 
+  --forest:       #137513;  
+  --swamp:        #0f784e;
+  --grape:        #7100b8;    
+  --plum:         #873cff;
+  --açai:         #5b25d8;
+  --berry:        #9b21ff;
+  --dragon:       #3c00df;
+  --eggplant:     #400089;
+  --violet:       #5117a3;
+  --lilac:        #660095;
+  --jellyfish:    #795bb5;
+  --octopus:      #8561da;
+  --banana:       #f1e028;    
+  --melon:        #f5f065;     
+  --sun:          #ffef13;       
+  --gold:         #e4e000;      
+  --pineapple:    #ffff3b; 
+  --egg:          #ffd900;       
+  --sunset:       #ffd034;    
+  --golden:       #ddbf00;    
+  --mango:        #ebb800;     
+  --honey:        #e4c632;     
+  --tangerine:    #f19028;    
+  --tiger:        #d64400;     
+  --orange-juice: #ffa913;       
+  --fox:          #ff5111;      
+  --salmon:       #ff833b; 
+  --carrot:       #ff8011;       
+  --pumpkin:      #ff9a4d;    
+  --afternoon:    #dd9000;    
+  --tongue:       #f8a0d6;
+  --flamingo:     #f45fe8;
+  --pinky:        #ed4eff;
+  --shock-pink:   #ff33b1;
+  --orquide:      #f1548b;
+  --sakura:       #ffbdd3;
+  --pitaya:       #c82bdc;
+
+}
+
+.h-size{
+  height: var(--h-size);
+}
+
+.w-size{
+  height: var(--w-size);
+}
+
+.chiaperini                        { color: #313b6c;              }
+.hover-chiaperini:hover            { color: #313b6c;              }
+.chiaperini2                       { color: #455296;              }
+.chiaperini-amarelo                { color: #ffd600;              }
+.hover-chiaperini-amarelo:hover    { color: #ffd600;              }
+.bg-chiaperini                     { background-color: #313b6c;   }
+.bg-chiaperini-amarelo             { background-color: #ffd600;   }
+.hover-bg-chiaperini-amarelo:hover { background-color: #ffd600;   }
+.b-chiaperini                      { border-color: #313b6c;       }
+.b-chiaperini-amarelo              { border-color: #ffd600;       }
+.bg-chiaperini-dark                { background-color: #0a0f26e5; }
+.bg-chiaperini2                    { background-color: #455296;   }
+.hover-bg-chiaperini2:hover        { background-color: #455296;   }
+
+/* -------------- Cores customizadas ----------------- */
+
+.hover-color:hover    { color: var(--color);}
+.color    { color: var(--color);}
+
+.custom   { color: var(--custom)  ;}
+.custom2  { color: var(--custom2 );}
+.custom3  { color: var(--custom3 );}
+.custom4  { color: var(--custom4 );}
+.custom5  { color: var(--custom5 );}
+.custom6  { color: var(--custom6 );}
+.custom7  { color: var(--custom7 );}
+.custom8  { color: var(--custom8 );}
+.custom9  { color: var(--custom9 );}
+.custom10  { color: var(--custom10 );}
+
+.hover-custom:hover   { color: var(--custom)  ;}
+.hover-custom2:hover  { color: var(--custom2 );}
+.hover-custom3:hover  { color: var(--custom3 );}
+.hover-custom4:hover  { color: var(--custom4 );}
+.hover-custom5:hover  { color: var(--custom5 );}
+.hover-custom6:hover  { color: var(--custom6 );}
+.hover-custom7:hover  { color: var(--custom7 );}
+.hover-custom8:hover  { color: var(--custom8 );}
+.hover-custom9:hover  { color: var(--custom9 );}
+.hover-custom10:hover  { color: var(--custom10 );}
+
+.bg-custom   { background-color: var(--bg-custom)  ;}
+.bg-custom2  { background-color: var(--bg-custom2 );}
+.bg-custom3  { background-color: var(--bg-custom3 );}
+.bg-custom4  { background-color: var(--bg-custom4 );}
+.bg-custom5  { background-color: var(--bg-custom5 );}
+.bg-custom6  { background-color: var(--bg-custom6 );}
+.bg-custom7  { background-color: var(--bg-custom7 );}
+.bg-custom8  { background-color: var(--bg-custom8 );}
+.bg-custom9  { background-color: var(--bg-custom9 );}
+.bg-custom10  { background-color: var(--bg-custom10 );}
+
+.hover-bg-custom:hover   { background-color: var(--bg-custom)  ;}
+.hover-bg-custom2:hover  { background-color: var(--bg-custom2 );}
+.hover-bg-custom3:hover  { background-color: var(--bg-custom3 );}
+.hover-bg-custom4:hover  { background-color: var(--bg-custom4 );}
+.hover-bg-custom5:hover  { background-color: var(--bg-custom5 );}
+.hover-bg-custom6:hover  { background-color: var(--bg-custom6 );}
+.hover-bg-custom7:hover  { background-color: var(--bg-custom7 );}
+.hover-bg-custom8:hover  { background-color: var(--bg-custom8 );}
+.hover-bg-custom9:hover  { background-color: var(--bg-custom9 );}
+.hover-bg-custom10:hover  { background-color: var(--bg-custom10 );}
+
+/* --------------------------------------------------- */
+
+/* ------ Gradiente (degradê) ------ */
+
+.bg-g   { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom)); }
+.bg-g2  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2)); }
+.bg-g3  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3));}
+.bg-g4  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4)); }
+.bg-g5  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom)); }
+.bg-g6  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2)); }
+.bg-g7  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2), var(--bg-custom3)); }
+.bg-g8  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4)); }
+
+.bg-h-g   { background-image: linear-gradient(to top, var(--bg-custom), var(--bg-custom)); }
+.bg-h-g2  { background-image: linear-gradient(to top, var(--bg-custom), var(--bg-custom2)); }
+.bg-h-g3  { background-image: linear-gradient(to top, var(--bg-custom), var(--bg-custom2), var(--bg-custom3));}
+.bg-h-g4  { background-image: linear-gradient(to top, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4)); }
+.bg-h-g5  { background-image: linear-gradient(to top, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom)); }
+.bg-h-g6  { background-image: linear-gradient(to top, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2)); }
+.bg-h-g7  { background-image: linear-gradient(to top, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2), var(--bg-custom3)); }
+.bg-h-g8  { background-image: linear-gradient(to top, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4)); }
+
+/* -------------------------------------- Vermelho -------------------------------------- */
+
+.planit                { color: var(--planit);            }
+.hover-planit:hover    { color: var(--planit);            }
+.bg-planit             { background-color: var(--planit); }
+.hover-bg-planit:hover { background-color: var(--planit); }
+
+.nightstar                {color: rgb(11, 10, 22);           }
+.hover-nightstar:hover    {color: rgb(11, 10, 22);           }
+.bg-nightstar             {background-color: rgb(11, 10, 22);}
+.hover-bg-nightstar:hover {background-color: rgb(11, 10, 22);}
+
+.cherry     { color: var(--cherry);     }
+.strawberry { color: var(--strawberry); }
+.fire       { color: var(--fire);       }
+.blood      { color: var(--blood);      }
+.rose       { color: var(--rose);       }
+.apple      { color: var(--apple);      }
+.watermelon { color: var(--watermelon); }
+.raspberry  { color: var(--raspberry);  }
+.pepper     { color: var(--pepper);     }
+.chili      { color: var(--chili);      }
+
+.bg-cherry     { background-color: var(--cherry);     }
+.bg-strawberry { background-color: var(--strawberry); }
+.bg-fire       { background-color: var(--fire);       }
+.bg-blood      { background-color: var(--blood);      }
+.bg-rose       { background-color: var(--rose);       }
+.bg-apple      { background-color: var(--apple);      }
+.bg-watermelon { background-color: var(--watermelon); }
+.bg-raspberry  { background-color: var(--raspberry);  }
+.bg-pepper     { background-color: var(--pepper);     }
+.bg-chili      { background-color: var(--chili);      }
+
+.red    { color: rgb(255, 0, 0);     }
+.red1   { color: rgb(255, 20, 20);   }
+.red2   { color: rgb(255, 40, 40);   }
+.red3   { color: rgb(255, 60, 60);   }
+.red4   { color: rgb(255, 80, 80);   }
+.red5   { color: rgb(255, 100, 100); }
+.red6   { color: rgb(255, 120, 120)  }
+.red7   { color: rgb(255, 140, 140); }
+.red8   { color: rgb(255, 160, 160); }
+.red9   { color: rgb(255, 180, 180); }
+.red10  { color: rgb(255, 200, 200); }
+
+.bg-red    { background-color: rgb(255, 0, 0);     }
+.bg-red1   { background-color: rgb(255, 20, 20);   }
+.bg-red2   { background-color: rgb(255, 40, 40);   }
+.bg-red3   { background-color: rgb(255, 60, 60);   }
+.bg-red4   { background-color: rgb(255, 80, 80);   }
+.bg-red5   { background-color: rgb(255, 100, 100); }
+.bg-red6   { background-color: rgb(255, 120, 120)  }
+.bg-red7   { background-color: rgb(255, 140, 140); }
+.bg-red8   { background-color: rgb(255, 160, 160); }
+.bg-red9   { background-color: rgb(255, 180, 180); }
+.bg-red10  { background-color: rgb(255, 200, 200); }
+
+.hover-cherry:hover     { color: var(--cherry);     }
+.hover-strawberry:hover { color: var(--strawberry); }
+.hover-fire:hover       { color: var(--fire);       }
+.hover-blood:hover      { color: var(--blood);      }
+.hover-rose:hover       { color: var(--rose);       }
+.hover-apple:hover      { color: var(--apple);      }
+.hover-watermelon:hover { color: var(--watermelon); }
+.hover-raspberry:hover  { color: var(--raspberry);  }
+.hover-pepper:hover     { color: var(--pepper);     }
+.hover-chili:hover      { color: var(--chili);      }
+
+.hover-bg-cherry:hover     { background-color: var(--cherry);     }
+.hover-bg-strawberry:hover { background-color: var(--strawberry); }
+.hover-bg-fire:hover       { background-color: var(--fire);       }
+.hover-bg-blood:hover      { background-color: var(--blood);      }
+.hover-bg-rose:hover       { background-color: var(--rose);       }
+.hover-bg-apple:hover      { background-color: var(--apple);      }
+.hover-bg-watermelon:hover { background-color: var(--watermelon); }
+.hover-bg-raspberry:hover  { background-color: var(--raspberry);  }
+.hover-bg-pepper:hover     { background-color: var(--pepper);     }
+.hover-bg-chili:hover      { background-color: var(--chili);      }
+
+.hover-red:hover    { color: rgb(255, 0, 0);     }
+.hover-red1:hover   { color: rgb(255, 20, 20);   }
+.hover-red2:hover   { color: rgb(255, 40, 40);   }
+.hover-red3:hover   { color: rgb(255, 60, 60);   }
+.hover-red4:hover   { color: rgb(255, 80, 80);   }
+.hover-red5:hover   { color: rgb(255, 100, 100); }
+.hover-red6:hover   { color: rgb(255, 120, 120)  }
+.hover-red7:hover   { color: rgb(255, 140, 140); }
+.hover-red8:hover   { color: rgb(255, 160, 160); }
+.hover-red9:hover   { color: rgb(255, 180, 180); }
+.hover-red10:hover  { color: rgb(255, 200, 200); }
+
+.hover-bg-red:hover    { background-color: rgb(255, 0, 0);     }
+.hover-bg-red1:hover   { background-color: rgb(255, 20, 20);   }
+.hover-bg-red2:hover   { background-color: rgb(255, 40, 40);   }
+.hover-bg-red3:hover   { background-color: rgb(255, 60, 60);   }
+.hover-bg-red4:hover   { background-color: rgb(255, 80, 80);   }
+.hover-bg-red5:hover   { background-color: rgb(255, 100, 100); }
+.hover-bg-red6:hover   { background-color: rgb(255, 120, 120)  }
+.hover-bg-red7:hover   { background-color: rgb(255, 140, 140); }
+.hover-bg-red8:hover   { background-color: rgb(255, 160, 160); }
+.hover-bg-red9:hover   { background-color: rgb(255, 180, 180); }
+.hover-bg-red10:hover  { background-color: rgb(255, 200, 200); }
+
+/* -------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------- Azul ---------------------------------------- */
+.royal     { color: var(--royal);     }
+.aqua      { color: var(--aqua);      }
+.sky       { color: var(--sky);       }
+.blueberry { color: var(--blueberry); }
+.deep      { color: var(--deep);      }
+.ocean     { color: var(--ocean);     }
+.lake      { color: var(--lake);      }
+.water     { color: var(--water);     }
+.rain      { color: var(--rain);      }
+.ice       { color: var(--ice);       }
+
+.bg-royal     { background-color: var(--royal);     }
+.bg-aqua      { background-color: var(--aqua);      }
+.bg-sky       { background-color: var(--sky);       }
+.bg-blueberry { background-color: var(--blueberry); }
+.bg-deep      { background-color: var(--deep);      }
+.bg-ocean     { background-color: var(--ocean);     }
+.bg-lake      { background-color: var(--lake);      }
+.bg-water     { background-color: var(--water);     }
+.bg-rain      { background-color: var(--rain);      }
+.bg-ice       { background-color: var(--ice);       }
+
+.blue    { color: rgb(0, 119, 255);   }
+.blue1   { color: rgb(20, 141, 255);  }
+.blue2   { color: rgb(40, 151, 255);  }
+.blue3   { color: rgb(60, 167, 255);  }
+.blue4   { color: rgb(80, 170, 255);  }
+.blue5   { color: rgb(100, 172, 255); }
+.blue6   { color: rgb(120, 183, 255)  }
+.blue7   { color: rgb(140, 186, 255); }
+.blue8   { color: rgb(160, 209, 255); }
+.blue9   { color: rgb(180, 215, 255); }
+.blue10  { color: rgb(200, 230, 255); }
+
+.bg-blue    { background-color: rgb(0, 119, 255);   }
+.bg-blue1   { background-color: rgb(20, 141, 255);  }
+.bg-blue2   { background-color: rgb(40, 151, 255);  }
+.bg-blue3   { background-color: rgb(60, 167, 255);  }
+.bg-blue4   { background-color: rgb(80, 170, 255);  }
+.bg-blue5   { background-color: rgb(100, 172, 255); }
+.bg-blue6   { background-color: rgb(120, 183, 255)  }
+.bg-blue7   { background-color: rgb(140, 186, 255); }
+.bg-blue8   { background-color: rgb(160, 209, 255); }
+.bg-blue9   { background-color: rgb(180, 215, 255); }
+.bg-blue10  { background-color: rgb(200, 230, 255); }
+
+.hover-royal:hover     { color: var(--royal);     }
+.hover-aqua:hover      { color: var(--aqua);      }
+.hover-sky:hover       { color: var(--sky);       }
+.hover-blueberry:hover { color: var(--blueberry); }
+.hover-deep:hover      { color: var(--deep);      }
+.hover-ocean:hover     { color: var(--ocean);     }
+.hover-lake:hover      { color: var(--lake);      }
+.hover-water:hover     { color: var(--water);     }
+.hover-rain:hover      { color: var(--rain);      }
+.hover-ice:hover       { color: var(--ice);       }
+
+.hover-bg-royal:hover     { background-color: var(--royal);     }
+.hover-bg-aqua:hover      { background-color: var(--aqua);      }
+.hover-bg-sky:hover       { background-color: var(--sky);       }
+.hover-bg-blueberry:hover { background-color: var(--blueberry); }
+.hover-bg-deep:hover      { background-color: var(--deep);      }
+.hover-bg-ocean:hover     { background-color: var(--ocean);     }
+.hover-bg-lake:hover      { background-color: var(--lake);      }
+.hover-bg-water:hover     { background-color: var(--water);     }
+.hover-bg-rain:hover      { background-color: var(--rain);      }
+.hover-bg-ice:hover       { background-color: var(--ice);       }
+
+.hover-blue:hover    { color: rgb(0, 119, 255);   }
+.hover-blue1:hover   { color: rgb(20, 141, 255);  }
+.hover-blue2:hover   { color: rgb(40, 151, 255);  }
+.hover-blue3:hover   { color: rgb(60, 167, 255);  }
+.hover-blue4:hover   { color: rgb(80, 170, 255);  }
+.hover-blue5:hover   { color: rgb(100, 172, 255); }
+.hover-blue6:hover   { color: rgb(120, 183, 255)  }
+.hover-blue7:hover   { color: rgb(140, 186, 255); }
+.hover-blue8:hover   { color: rgb(160, 209, 255); }
+.hover-blue9:hover   { color: rgb(180, 215, 255); }
+.hover-blue10:hover  { color: rgb(200, 230, 255); }
+
+.hover-bg-blue:hover    { background-color: rgb(0, 119, 255);   }
+.hover-bg-blue1:hover   { background-color: rgb(20, 141, 255);  }
+.hover-bg-blue2:hover   { background-color: rgb(40, 151, 255);  }
+.hover-bg-blue3:hover   { background-color: rgb(60, 167, 255);  }
+.hover-bg-blue4:hover   { background-color: rgb(80, 170, 255);  }
+.hover-bg-blue5:hover   { background-color: rgb(100, 172, 255); }
+.hover-bg-blue6:hover   { background-color: rgb(120, 183, 255)  }
+.hover-bg-blue7:hover   { background-color: rgb(140, 186, 255); }
+.hover-bg-blue8:hover   { background-color: rgb(160, 209, 255); }
+.hover-bg-blue9:hover   { background-color: rgb(180, 215, 255); }
+.hover-bg-blue10:hover  { background-color: rgb(200, 230, 255); }
+
+/* -------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------- Verde ---------------------------------------- */
+.emerald { color: var(--emerald);  }
+.leaf    { color: var(--leaf);     }
+.tree    { color: var(--tree);     }
+.lemon   { color: var(--lemon);    }
+.kiwi    { color: var(--kiwi);     }
+.grass   { color: var(--grass);    }
+.lime    { color: var(--lime);     }
+.avocado { color: var(--avocado);  }
+.forest  { color: var(--forest);   }
+.swamp   { color: var(--swamp);    }
+
+.bg-emerald { background-color: var(--emerald); }
+.bg-leaf    { background-color: var(--leaf);    }
+.bg-tree    { background-color: var(--tree);    }
+.bg-lemon   { background-color: var(--lemon);   }
+.bg-kiwi    { background-color: var(--kiwi);    }
+.bg-grass   { background-color: var(--grass);   }
+.bg-lime    { background-color: var(--lime);    }
+.bg-avocado { background-color: var(--avocado); }
+.bg-forest  { background-color: var(--forest);  }
+.bg-swamp   { background-color: var(--swamp);   }
+
+.green    { color: rgb(0, 255, 0);     }
+.green1   { color: rgb(28, 255, 20);   }
+.green2   { color: rgb(40, 255, 76);   }
+.green3   { color: rgb(60, 255, 60);   }
+.green4   { color: rgb(80, 255, 95);   }
+.green5   { color: rgb(100, 255, 126); }
+.green6   { color: rgb(120, 255, 120)  }
+.green7   { color: rgb(140, 255, 150); }
+.green8   { color: rgb(160, 255, 173); }
+.green9   { color: rgb(180, 255, 193); }
+.green10  { color: rgb(200, 255, 205); }
+
+.bg-green    { background-color: rgb(0, 255, 0);     }
+.bg-green1   { background-color: rgb(28, 255, 20);   }
+.bg-green2   { background-color: rgb(40, 255, 76);   }
+.bg-green3   { background-color: rgb(60, 255, 60);   }
+.bg-green4   { background-color: rgb(80, 255, 95);   }
+.bg-green5   { background-color: rgb(100, 255, 126); }
+.bg-green6   { background-color: rgb(120, 255, 120)  }
+.bg-green7   { background-color: rgb(140, 255, 150); }
+.bg-green8   { background-color: rgb(160, 255, 173); }
+.bg-green9   { background-color: rgb(180, 255, 193); }
+.bg-green10  { background-color: rgb(200, 255, 205); }
+
+.hover-emerald:hover { color: var(--emerald);  }
+.hover-leaf:hover    { color: var(--leaf);     }
+.hover-tree:hover    { color: var(--tree);     }
+.hover-lemon:hover   { color: var(--lemon);    }
+.hover-kiwi:hover    { color: var(--kiwi);     }
+.hover-grass:hover   { color: var(--grass);    }
+.hover-lime:hover    { color: var(--lime);     }
+.hover-avocado:hover { color: var(--avocado);  }
+.hover-forest:hover  { color: var(--forest);   }
+.hover-swamp:hover   { color: var(--swamp);    }
+
+.hover-bg-emerald:hover { background-color: var(--emerald); }
+.hover-bg-leaf:hover    { background-color: var(--leaf);    }
+.hover-bg-tree:hover    { background-color: var(--tree);    }
+.hover-bg-lemon:hover   { background-color: var(--lemon);   }
+.hover-bg-kiwi:hover    { background-color: var(--kiwi);    }
+.hover-bg-grass:hover   { background-color: var(--grass);   }
+.hover-bg-lime:hover    { background-color: var(--lime);    }
+.hover-bg-avocado:hover { background-color: var(--avocado); }
+.hover-bg-forest:hover  { background-color: var(--forest);  }
+.hover-bg-swamp:hover   { background-color: var(--swamp);   }
+
+.hover-green:hover    { color: rgb(0, 255, 0);     }
+.hover-green1:hover   { color: rgb(28, 255, 20);   }
+.hover-green2:hover   { color: rgb(40, 255, 76);   }
+.hover-green3:hover   { color: rgb(60, 255, 60);   }
+.hover-green4:hover   { color: rgb(80, 255, 95);   }
+.hover-green5:hover   { color: rgb(100, 255, 126); }
+.hover-green6:hover   { color: rgb(120, 255, 120)  }
+.hover-green7:hover   { color: rgb(140, 255, 150); }
+.hover-green8:hover   { color: rgb(160, 255, 173); }
+.hover-green9:hover   { color: rgb(180, 255, 193); }
+.hover-green10:hover  { color: rgb(200, 255, 205); }
+
+.hover-bg-green:hover    { background-position: rgb(0, 255, 0);     }
+.hover-bg-green1:hover   { background-position: rgb(28, 255, 20);   }
+.hover-bg-green2:hover   { background-position: rgb(40, 255, 76);   }
+.hover-bg-green3:hover   { background-position: rgb(60, 255, 60);   }
+.hover-bg-green4:hover   { background-position: rgb(80, 255, 95);   }
+.hover-bg-green5:hover   { background-position: rgb(100, 255, 126); }
+.hover-bg-green6:hover   { background-position: rgb(120, 255, 120)  }
+.hover-bg-green7:hover   { background-position: rgb(140, 255, 150); }
+.hover-bg-green8:hover   { background-position: rgb(160, 255, 173); }
+.hover-bg-green9:hover   { background-position: rgb(180, 255, 193); }
+.hover-bg-green10:hover  { background-position: rgb(200, 255, 205); }
+
+/* -------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------- Roxo ---------------------------------------- */
+.grape     { color: var(--grape);     }
+.plum      { color: var(--plum);      }
+.açai      { color: var(--açai);      }
+.berry     { color: var(--berry);     }
+.dragon    { color: var(--dragon);    }
+.eggplant  { color: var(--eggplant);  }
+.violet    { color: var(--violet);    }
+.lilac     { color: var(--lilac);     }
+.jellyfish { color: var(--jellyfish); }
+.octopus   { color: var(--octopus);   }
+
+.bg-grape     { background-color: var(--grape);     }
+.bg-plum      { background-color: var(--plum);      }
+.bg-açai      { background-color: var(--açai);      }
+.bg-berry     { background-color: var(--berry);     }
+.bg-dragon    { background-color: var(--dragon);    }
+.bg-eggplant  { background-color: var(--eggplant);  }
+.bg-violet    { background-color: var(--violet);    }
+.bg-lilac     { background-color: var(--lilac);     }
+.bg-jellyfish { background-color: var(--jellyfish); }
+.bg-octopus   { background-color: var(--octopus);   }
+
+.purple    { color: rgb(111, 0, 255);   }
+.purple1   { color: rgb(130, 20, 255);  }
+.purple2   { color: rgb(122, 40, 255);  }
+.purple3   { color: rgb(102, 60, 255);  }
+.purple4   { color: rgb(127, 80, 255);  }
+.purple5   { color: rgb(172, 100, 255); }
+.purple6   { color: rgb(167, 120, 255)  }
+.purple7   { color: rgb(184, 140, 255); }
+.purple8   { color: rgb(196, 160, 255); }
+.purple9   { color: rgb(196, 180, 255); }
+.purple10  { color: rgb(219, 200, 255); }
+
+.bg-purple    { background-color: rgb(111, 0, 255);   }
+.bg-purple1   { background-color: rgb(130, 20, 255);  }
+.bg-purple2   { background-color: rgb(122, 40, 255);  }
+.bg-purple3   { background-color: rgb(102, 60, 255);  }
+.bg-purple4   { background-color: rgb(127, 80, 255);  }
+.bg-purple5   { background-color: rgb(172, 100, 255); }
+.bg-purple6   { background-color: rgb(167, 120, 255)  }
+.bg-purple7   { background-color: rgb(184, 140, 255); }
+.bg-purple8   { background-color: rgb(196, 160, 255); }
+.bg-purple9   { background-color: rgb(196, 180, 255); }
+.bg-purple10  { background-color: rgb(219, 200, 255); }
+
+.hover-grape:hover     { color: var(--grape);     }
+.hover-plum:hover      { color: var(--plum);      }
+.hover-açai:hover      { color: var(--açai);      }
+.hover-berry:hover     { color: var(--berry);     }
+.hover-dragon:hover    { color: var(--dragon);    }
+.hover-eggplant:hover  { color: var(--eggplant);  }
+.hover-violet:hover    { color: var(--violet);    }
+.hover-lilac:hover     { color: var(--lilac);     }
+.hover-jellyfish:hover { color: var(--jellyfish); }
+.hover-octopus:hover   { color: var(--octopus);   }
+
+.hover-bg-grape:hover     { background-color: var(--grape);     }
+.hover-bg-plum:hover      { background-color: var(--plum);      }
+.hover-bg-açai:hover      { background-color: var(--açai);      }
+.hover-bg-berry:hover     { background-color: var(--berry);     }
+.hover-bg-dragon:hover    { background-color: var(--dragon);    }
+.hover-bg-eggplant:hover  { background-color: var(--eggplant);  }
+.hover-bg-violet:hover    { background-color: var(--violet);    }
+.hover-bg-lilac:hover     { background-color: var(--lilac);     }
+.hover-bg-jellyfish:hover { background-color: var(--jellyfish); }
+.hover-bg-octopus:hover   { background-color: var(--octopus);   }
+
+.hover-purple:hover    { color: rgb(111, 0, 255);   }
+.hover-purple1:hover   { color: rgb(130, 20, 255);  }
+.hover-purple2:hover   { color: rgb(122, 40, 255);  }
+.hover-purple3:hover   { color: rgb(102, 60, 255);  }
+.hover-purple4:hover   { color: rgb(127, 80, 255);  }
+.hover-purple5:hover   { color: rgb(172, 100, 255); }
+.hover-purple6:hover   { color: rgb(167, 120, 255)  }
+.hover-purple7:hover   { color: rgb(184, 140, 255); }
+.hover-purple8:hover   { color: rgb(196, 160, 255); }
+.hover-purple9:hover   { color: rgb(196, 180, 255); }
+.hover-purple10:hover  { color: rgb(219, 200, 255); }
+
+.hover-bg-purple:hover    { background-color: rgb(111, 0, 255);   }
+.hover-bg-purple1:hover   { background-color: rgb(130, 20, 255);  }
+.hover-bg-purple2:hover   { background-color: rgb(122, 40, 255);  }
+.hover-bg-purple3:hover   { background-color: rgb(102, 60, 255);  }
+.hover-bg-purple4:hover   { background-color: rgb(127, 80, 255);  }
+.hover-bg-purple5:hover   { background-color: rgb(172, 100, 255); }
+.hover-bg-purple6:hover   { background-color: rgb(167, 120, 255)  }
+.hover-bg-purple7:hover   { background-color: rgb(184, 140, 255); }
+.hover-bg-purple8:hover   { background-color: rgb(196, 160, 255); }
+.hover-bg-purple9:hover   { background-color: rgb(196, 180, 255); }
+.hover-bg-purple10:hover  { background-color: rgb(219, 200, 255); }
+
+/* -------------------------------------------------------------------------------------- */
+
+/* --------------------------------------- Amarelo -------------------------------------- */ 
+
+.banana    { color: var(--banana);    }
+.melon     { color: var(--melon);     }
+.sun       { color: var(--sun);       }
+.gold      { color: var(--gold);      }
+.pineapple { color: var(--pineapple); }
+.egg       { color: var(--egg);       }
+.sunset    { color: var(--sunset);    }
+.golden    { color: var(--golden);    }
+.mango     { color: var(--mango);     }
+.honey     { color: var(--honey);     }
+
+.hover-banana:hover    { color: var(--banana);    }
+.hover-melon:hover     { color: var(--melon);     }
+.hover-sun:hover       { color: var(--sun);       }
+.hover-gold:hover      { color: var(--gold);      }
+.hover-pineapple:hover { color: var(--pineapple); }
+.hover-egg:hover       { color: var(--egg);       }
+.hover-sunset:hover    { color: var(--sunset);    }
+.hover-golden:hover    { color: var(--golden);    }
+.hover-mango:hover     { color: var(--mango);     }
+.hover-honey:hover     { color: var(--honey);     }
+
+.bg-banana    { background-color: var(--banana);    }
+.bg-melon     { background-color: var(--melon);     }
+.bg-sun       { background-color: var(--sun);       }
+.bg-gold      { background-color: var(--gold);      }
+.bg-pineapple { background-color: var(--pineapple); }
+.bg-egg       { background-color: var(--egg);       }
+.bg-sunset    { background-color: var(--sunset);    }
+.bg-golden    { background-color: var(--golden);    }
+.bg-mango     { background-color: var(--mango);     }
+.bg-honey     { background-color: var(--honey);     }
+
+.hover-bg-banana:hover    { background-color: var(--banana);    }
+.hover-bg-melon:hover     { background-color: var(--melon);     }
+.hover-bg-sun:hover       { background-color: var(--sun);       }
+.hover-bg-gold:hover      { background-color: var(--gold);      }
+.hover-bg-pineapple:hover { background-color: var(--pineapple); }
+.hover-bg-egg:hover       { background-color: var(--egg);       }
+.hover-bg-sunset:hover    { background-color: var(--sunset);    }
+.hover-bg-golden:hover    { background-color: var(--golden);    }
+.hover-bg-mango:hover     { background-color: var(--mango);     }
+.hover-bg-honey:hover     { background-color: var(--honey);     }
+
+.yellow    { color: rgb(255, 217, 0);   }
+.yellow1   { color: rgb(255, 231, 20);  }
+.yellow2   { color: rgb(255, 241, 40);  }
+.yellow3   { color: rgb(255, 242, 60);  }
+.yellow4   { color: rgb(255, 243, 80);  }
+.yellow5   { color: rgb(255, 232, 100); }
+.yellow6   { color: rgb(255, 235, 120)  }
+.yellow7   { color: rgb(255, 253, 140); }
+.yellow8   { color: rgb(255, 253, 160); }
+.yellow9   { color: rgb(255, 254, 180); }
+.yellow10  { color: rgb(255, 249, 200); }
+
+.hover-yellow:hover    { color: rgb(255, 217, 0);   }
+.hover-yellow1:hover   { color: rgb(255, 231, 20);  }
+.hover-yellow2:hover   { color: rgb(255, 241, 40);  }
+.hover-yellow3:hover   { color: rgb(255, 242, 60);  }
+.hover-yellow4:hover   { color: rgb(255, 243, 80);  }
+.hover-yellow5:hover   { color: rgb(255, 232, 100); }
+.hover-yellow6:hover   { color: rgb(255, 235, 120)  }
+.hover-yellow7:hover   { color: rgb(255, 253, 140); }
+.hover-yellow8:hover   { color: rgb(255, 253, 160); }
+.hover-yellow9:hover   { color: rgb(255, 254, 180); }
+.hover-yellow10:hover  { color: rgb(255, 249, 200); }
+
+.bg-yellow    { background-color: rgb(255, 217, 0);   }
+.bg-yellow1   { background-color: rgb(255, 231, 20);  }
+.bg-yellow2   { background-color: rgb(255, 241, 40);  }
+.bg-yellow3   { background-color: rgb(255, 242, 60);  }
+.bg-yellow4   { background-color: rgb(255, 243, 80);  }
+.bg-yellow5   { background-color: rgb(255, 232, 100); }
+.bg-yellow6   { background-color: rgb(255, 235, 120)  }
+.bg-yellow7   { background-color: rgb(255, 253, 140); }
+.bg-yellow8   { background-color: rgb(255, 253, 160); }
+.bg-yellow9   { background-color: rgb(255, 254, 180); }
+.bg-yellow10  { background-color: rgb(255, 249, 200); }
+
+.hover-bg-yellow:hover    { background-color: rgb(255, 217, 0);   }
+.hover-bg-yellow1:hover   { background-color: rgb(255, 231, 20);  }
+.hover-bg-yellow2:hover   { background-color: rgb(255, 241, 40);  }
+.hover-bg-yellow3:hover   { background-color: rgb(255, 242, 60);  }
+.hover-bg-yellow4:hover   { background-color: rgb(255, 243, 80);  }
+.hover-bg-yellow5:hover   { background-color: rgb(255, 232, 100); }
+.hover-bg-yellow6:hover   { background-color: rgb(255, 235, 120)  }
+.hover-bg-yellow7:hover   { background-color: rgb(255, 253, 140); }
+.hover-bg-yellow8:hover   { background-color: rgb(255, 253, 160); }
+.hover-bg-yellow9:hover   { background-color: rgb(255, 254, 180); }
+.hover-bg-yellow10:hover  { background-color: rgb(255, 249, 200); }
+
+/* -------------------------------------------------------------------------------------- */
+
+.tangerine    { color: var(--tangerine);    }
+.tiger        { color: var(--tiger);        }
+.orange-juice { color: var(--orange-juice); }
+.fox          { color: var(--fox);          }
+.salmon       { color: var(--salmon);       }
+.carrot       { color: var(--carrot);       }
+.pumpkin      { color: var(--pumpkin);      }
+.afternoon    { color: var(--afternoon);    }
+
+.bg-tangerine    { background-color: var(--tangerine);    }
+.bg-tiger        { background-color: var(--tiger);        }
+.bg-orange-juice { background-color: var(--orange-juice); }
+.bg-fox          { background-color: var(--fox);          }
+.bg-salmon       { background-color: var(--salmon);       }
+.bg-carrot       { background-color: var(--carrot);       }
+.bg-pumpkin      { background-color: var(--pumpkin);      }
+.bg-afternoon    { background-color: var(--afternoon);    }
+
+.orange    { color: rgb(255, 115, 0);   }
+.orange1   { color: rgb(255, 134, 20);  }
+.orange2   { color: rgb(255, 144, 40);  }
+.orange3   { color: rgb(255, 148, 60);  }
+.orange4   { color: rgb(255, 173, 80);  }
+.orange5   { color: rgb(255, 188, 100); }
+.orange6   { color: rgb(255, 201, 120)  }
+.orange7   { color: rgb(255, 201, 140); }
+.orange8   { color: rgb(255, 203, 160); }
+.orange9   { color: rgb(255, 223, 180); }
+.orange10  { color: rgb(255, 231, 200); }
+
+.bg-orange    { background-color: rgb(255, 115, 0);   }
+.bg-orange1   { background-color: rgb(255, 134, 20);  }
+.bg-orange2   { background-color: rgb(255, 144, 40);  }
+.bg-orange3   { background-color: rgb(255, 148, 60);  }
+.bg-orange4   { background-color: rgb(255, 173, 80);  }
+.bg-orange5   { background-color: rgb(255, 188, 100); }
+.bg-orange6   { background-color: rgb(255, 201, 120)  }
+.bg-orange7   { background-color: rgb(255, 201, 140); }
+.bg-orange8   { background-color: rgb(255, 203, 160); }
+.bg-orange9   { background-color: rgb(255, 223, 180); }
+.bg-orange10  { background-color: rgb(255, 231, 200); }
+
+.hover-orange:hover  { color: rgb(255, 115, 0);   }
+.hover-orange1:hover { color: rgb(255, 134, 20);  }
+.hover-orange2:hover { color: rgb(255, 144, 40);  }
+.hover-orange3:hover { color: rgb(255, 148, 60);  }
+.hover-orange4:hover { color: rgb(255, 173, 80);  }
+.hover-orange5:hover { color: rgb(255, 188, 100); }
+.hover-orange6:hover { color: rgb(255, 201, 120)  }
+.hover-orange7:hover { color: rgb(255, 201, 140); }
+.hover-orange8:hover { color: rgb(255, 203, 160); }
+.hover-orange9:hover { color: rgb(255, 223, 180); }
+.hover-orange10:hover{ color: rgb(255, 231, 200); }
+
+.hover-bg-orange :hover   { background-color: rgb(255, 115, 0);   }
+.hover-bg-orange1:hover   { background-color: rgb(255, 134, 20);  }
+.hover-bg-orange2:hover   { background-color: rgb(255, 144, 40);  }
+.hover-bg-orange3:hover   { background-color: rgb(255, 148, 60);  }
+.hover-bg-orange4:hover   { background-color: rgb(255, 173, 80);  }
+.hover-bg-orange5:hover   { background-color: rgb(255, 188, 100); }
+.hover-bg-orange6:hover   { background-color: rgb(255, 201, 120)  }
+.hover-bg-orange7:hover   { background-color: rgb(255, 201, 140); }
+.hover-bg-orange8:hover   { background-color: rgb(255, 203, 160); }
+.hover-bg-orange9:hover   { background-color: rgb(255, 223, 180); }
+.hover-bg-orange10:hover  { background-color: rgb(255, 231, 200); }
+
+.hover-tangerine:hover    { color: var(--tangerine);    }
+.hover-tiger:hover        { color: var(--tiger);        }
+.hover-orange-juice:hover { color: var(--orange-juice); }
+.hover-fox:hover          { color: var(--fox);          }
+.hover-salmon:hover       { color: var(--salmon);       }
+.hover-carrot:hover       { color: var(--carrot);       }
+.hover-pumpkin:hover      { color: var(--pumpkin);      }
+.hover-afternoon:hover    { color: var(--afternoon);    }
+
+.hover-bg-tangerine:hover    { background-color: var(--tangerine);    }
+.hover-bg-tiger:hover        { background-color: var(--tiger);        }
+.hover-bg-orange-juice:hover { background-color: var(--orange-juice); }
+.hover-bg-fox:hover          { background-color: var(--fox);          }
+.hover-bg-salmon:hover       { background-color: var(--salmon);       }
+.hover-bg-carrot:hover       { background-color: var(--carrot);       }
+.hover-bg-pumpkin:hover      { background-color: var(--pumpkin);      }
+.hover-bg-afternoon:hover    { background-color: var(--afternoon);    }
+
+.hover-orange:hover    { color: rgb(255, 115, 0);   }
+.hover-orange1:hover   { color: rgb(255, 134, 20);  }
+.hover-orange2:hover   { color: rgb(255, 144, 40);  }
+.hover-orange3:hover   { color: rgb(255, 148, 60);  }
+.hover-orange4:hover   { color: rgb(255, 173, 80);  }
+.hover-orange5:hover   { color: rgb(255, 188, 100); }
+.hover-orange6:hover   { color: rgb(255, 201, 120)  }
+.hover-orange7:hover   { color: rgb(255, 201, 140); }
+.hover-orange8:hover   { color: rgb(255, 203, 160); }
+.hover-orange9:hover   { color: rgb(255, 223, 180); }
+.hover-orange10:hover  { color: rgb(255, 231, 200); }
+
+/* -------------------------------------------------------------------------------------- */
+
+.tongue     { color: var(--tongue)    }    
+.flamingo   { color: var(--flamingo)  }  
+.pinky      { color: var(--pinky)     }     
+.shock-pink { color: var(--shock-pink) }
+.orquide    { color: var(--orquide)   }   
+.sakura     { color: var(--sakura)    }     
+.pitaya     { color: var(--pitaya)    }    
+
+.pink    { color: rgb(255, 0, 255);   }
+.pink1   { color: rgb(255, 20, 255);  }
+.pink2   { color: rgb(255, 40, 237);  }
+.pink3   { color: rgb(255, 60, 213);  }
+.pink4   { color: rgb(255, 80, 255);  }
+.pink5   { color: rgb(255, 100, 247); }
+.pink6   { color: rgb(251, 120, 255)  }
+.pink7   { color: rgb(255, 140, 249); }
+.pink8   { color: rgb(255, 160, 255); }
+.pink9   { color: rgb(255, 180, 245); }
+.pink10  { color: rgb(255, 200, 246); }
+
+.bg-tongue     { background-color: var(--tongue)    }    
+.bg-flamingo   { background-color: var(--flamingo)  }  
+.bg-pinky      { background-color: var(--pinky)     }     
+.bg-shock-pink { background-color: var(--shock-pink) }
+.bg-orquide    { background-color: var(--orquide)   }   
+.bg-sakura     { background-color: var(--sakura)    }      
+.bg-pitaya     { background-color: var(--pitaya)    }    
+
+.bg-pink          { background-color: rgb(255, 0, 255);             }
+.bg-pink1         { background-color: rgb(255, 20, 255);              }
+.bg-pink2         { background-color: rgb(255, 40, 237);              }
+.bg-pink3         { background-color: rgb(255, 60, 213);              }
+.bg-pink4         { background-color: rgb(255, 80, 255);              }
+.bg-pink5         { background-color: rgb(255, 100, 247);             }
+.bg-pink6         { background-color: rgb(251, 120, 255)              }
+.bg-pink7         { background-color: rgb(255, 140, 249);             }
+.bg-pink8         { background-color: rgb(255, 160, 255);             }
+.bg-pink9         { background-color: rgb(255, 180, 245);             }
+.bg-pink10        { background-color: rgb(255, 200, 246);             }
+
+.hover-tongue:hover     { color: var(--tongue)    }    
+.hover-flamingo:hover   { color: var(--flamingo)  }  
+.hover-pinky:hover      { color: var(--pinky)     }     
+.hover-shock-pink:hover { color: var(--shock-pink) }
+.hover-orquide:hover    { color: var(--orquide)   }   
+.hover-sakura:hover     { color: var(--sakura)    }    
+.hover-pitaya:hover     { color: var(--pitaya)    }
+
+.hover-pink:hover    { color: rgb(255, 0, 255);   }
+.hover-pink1:hover   { color: rgb(255, 20, 255);  }
+.hover-pink2:hover   { color: rgb(255, 40, 237);  }
+.hover-pink3:hover   { color: rgb(255, 60, 213);  }
+.hover-pink4:hover   { color: rgb(255, 80, 255);  }
+.hover-pink5:hover   { color: rgb(255, 100, 247); }
+.hover-pink6:hover   { color: rgb(251, 120, 255)  }
+.hover-pink7:hover   { color: rgb(255, 140, 249); }
+.hover-pink8:hover   { color: rgb(255, 160, 255); }
+.hover-pink9:hover   { color: rgb(255, 180, 245); }
+.hover-pink10:hover  { color: rgb(255, 200, 246); }
+
+.hover-bg-tongue:hover     { background-color: var(--tongue)    }    
+.hover-bg-flamingo:hover   { background-color: var(--flamingo)  }  
+.hover-bg-pinky:hover      { background-color: var(--pinky)     }     
+.hover-bg-shock-pink:hover { background-color: var(--shock-pink) }
+.hover-bg-orquide:hover    { background-color: var(--orquide)   }    
+.hover-bg-sakura:hover     { background-color: var(--sakura)    }    
+.hover-bg-pitaya:hover     { background-color: var(--pitaya)    }    
+
+.hover-bg-pink:hover          { background-color: rgb(255, 0, 255);             }
+.hover-bg-pink1:hover         { background-color: rgb(255, 20, 255);              }
+.hover-bg-pink2:hover         { background-color: rgb(255, 40, 237);              }
+.hover-bg-pink3:hover         { background-color: rgb(255, 60, 213);              }
+.hover-bg-pink4:hover         { background-color: rgb(255, 80, 255);              }
+.hover-bg-pink5:hover         { background-color: rgb(255, 100, 247);             }
+.hover-bg-pink6:hover         { background-color: rgb(251, 120, 255)              }
+.hover-bg-pink7:hover         { background-color: rgb(255, 140, 249);             }
+.hover-bg-pink8:hover         { background-color: rgb(255, 160, 255);             }
+.hover-bg-pink9:hover         { background-color: rgb(255, 180, 245);             }
+.hover-bg-pink10:hover        { background-color: rgb(255, 200, 246);             }
+
+/* -------------------------------------------------------------------------------------- */
+ 
+.gray    { color: rgb(40, 40, 40);    }
+.gray1   { color: rgb(60, 60, 60);    }
+.gray2   { color: rgb(80, 80, 80);    }
+.gray3   { color: rgb(100, 100, 100); }
+.gray4   { color: rgb(120, 120, 120); }
+.gray5   { color: rgb(140, 140, 140); }
+.gray6   { color: rgb(160, 160, 160); }
+.gray7   { color: rgb(180, 180, 180); }
+.gray8   { color: rgb(200, 200, 200); }
+.gray9   { color: rgb(220, 220, 220); }
+.gray10  { color: rgb(240, 240, 240); }
+
+.console      { color: #101015;            }
+.dark-gray    { color: rgb(40, 40, 40);    }
+.dark-gray1   { color: rgb(60, 60, 60);    }
+.dark-gray2   { color: rgb(80, 80, 80);    }
+.dark-gray3   { color: rgb(100, 100, 100); }
+.dark-gray4   { color: rgb(120, 120, 120); }
+.dark-gray5   { color: rgb(140, 140, 140); }
+.dark-gray6   { color: rgb(160, 160, 160); }
+.dark-gray7   { color: rgb(180, 180, 180); }
+.dark-gray8   { color: rgb(200, 200, 200); }
+.dark-gray9   { color: rgb(220, 220, 220); }
+.dark-gray10  { color: rgb(240, 240, 240); }
+
+.bg-gray          { background-color: rgb(40, 40, 40);                }
+.bg-gray1         { background-color: rgb(60, 60, 60);                }
+.bg-gray2         { background-color: rgb(80, 80, 80);                }
+.bg-gray3         { background-color: rgb(100, 100, 100);             }
+.bg-gray4         { background-color: rgb(120, 120, 120);             }
+.bg-gray5         { background-color: rgb(140, 140, 140);             }
+.bg-gray6         { background-color: rgb(160, 160, 160);             }
+.bg-gray7         { background-color: rgb(180, 180, 180);             }
+.bg-gray8         { background-color: rgb(200, 200, 200);             }
+.bg-gray9         { background-color: rgb(220, 220, 220);             }
+.bg-gray10        { background-color: rgb(240, 240, 240);             }
+
+.bg-console       { background-color: #101015;                        }
+.bg-dark-gray     { background-color: rgb(40, 40, 40);                }
+.bg-dark-gray1    { background-color: rgb(60, 60, 60);                }
+.bg-dark-gray2    { background-color: rgb(80, 80, 80);                }
+.bg-dark-gray3    { background-color: rgb(100, 100, 100);             }
+.bg-dark-gray4    { background-color: rgb(120, 120, 120);             }
+.bg-dark-gray5    { background-color: rgb(140, 140, 140);             }
+.bg-dark-gray6    { background-color: rgb(160, 160, 160);             }
+.bg-dark-gray7    { background-color: rgb(180, 180, 180);             }
+.bg-dark-gray8    { background-color: rgb(200, 200, 200);             }
+.bg-dark-gray9    { background-color: rgb(220, 220, 220);             }
+.bg-dark-gray10   { background-color: rgb(240, 240, 240);             }
+
+
+.hover-gray:hover    { color: rgb(40, 40, 40);    }
+.hover-gray1:hover   { color: rgb(60, 60, 60);    }
+.hover-gray2:hover   { color: rgb(80, 80, 80);    }
+.hover-gray3:hover   { color: rgb(100, 100, 100); }
+.hover-gray4:hover   { color: rgb(120, 120, 120); }
+.hover-gray5:hover   { color: rgb(140, 140, 140); }
+.hover-gray6:hover   { color: rgb(160, 160, 160); }
+.hover-gray7:hover   { color: rgb(180, 180, 180); }
+.hover-gray8:hover   { color: rgb(200, 200, 200); }
+.hover-gray9:hover   { color: rgb(220, 220, 220); }
+.hover-gray10:hover  { color: rgb(240, 240, 240); }
+
+.hover-console:hover      { color: #101015;            }
+.hover-dark-gray:hover    { color: rgb(40, 40, 40);    }
+.hover-dark-gray1:hover   { color: rgb(60, 60, 60);    }
+.hover-dark-gray2:hover   { color: rgb(80, 80, 80);    }
+.hover-dark-gray3:hover   { color: rgb(100, 100, 100); }
+.hover-dark-gray4:hover   { color: rgb(120, 120, 120); }
+.hover-dark-gray5:hover   { color: rgb(140, 140, 140); }
+.hover-dark-gray6:hover   { color: rgb(160, 160, 160); }
+.hover-dark-gray7:hover   { color: rgb(180, 180, 180); }
+.hover-dark-gray8:hover   { color: rgb(200, 200, 200); }
+.hover-dark-gray9:hover   { color: rgb(220, 220, 220); }
+.hover-dark-gray10:hover  { color: rgb(240, 240, 240); }
+
+.hover-bg-gray:hover          { background-color: rgb(40, 40, 40);                }
+.hover-bg-gray1:hover         { background-color: rgb(60, 60, 60);                }
+.hover-bg-gray2:hover         { background-color: rgb(80, 80, 80);                }
+.hover-bg-gray3:hover         { background-color: rgb(100, 100, 100);             }
+.hover-bg-gray4:hover         { background-color: rgb(120, 120, 120);             }
+.hover-bg-gray5:hover         { background-color: rgb(140, 140, 140);             }
+.hover-bg-gray6:hover         { background-color: rgb(160, 160, 160);             }
+.hover-bg-gray7:hover         { background-color: rgb(180, 180, 180);             }
+.hover-bg-gray8:hover         { background-color: rgb(200, 200, 200);             }
+.hover-bg-gray9:hover         { background-color: rgb(220, 220, 220);             }
+.hover-bg-gray10:hover        { background-color: rgb(240, 240, 240);             }
+
+.hover-bg-console:hover       { background-color: #101015;                        }
+.hover-bg-dark-gray:hover     { background-color: rgb(40, 40, 40);                }
+.hover-bg-dark-gray1:hover    { background-color: rgb(60, 60, 60);                }
+.hover-bg-dark-gray2:hover    { background-color: rgb(80, 80, 80);                }
+.hover-bg-dark-gray3:hover    { background-color: rgb(100, 100, 100);             }
+.hover-bg-dark-gray4:hover    { background-color: rgb(120, 120, 120);             }
+.hover-bg-dark-gray5:hover    { background-color: rgb(140, 140, 140);             }
+.hover-bg-dark-gray6:hover    { background-color: rgb(160, 160, 160);             }
+.hover-bg-dark-gray7:hover    { background-color: rgb(180, 180, 180);             }
+.hover-bg-dark-gray8:hover    { background-color: rgb(200, 200, 200);             }
+.hover-bg-dark-gray9:hover    { background-color: rgb(220, 220, 220);             }
+.hover-bg-dark-gray10:hover   { background-color: rgb(240, 240, 240);             }
+
+/* -------------------------------------------------------------------------------------- */
+
+.divider{box-shadow: inset 0 0 1.5vw rgba(78, 78, 78, 0.5);background-color: #dbdbdb;}
+.divider-custom{box-shadow: inset 0 0 1.5vw var(--custom);background-color: var(--custom2);}
+
+.white       { color: #fff;      }
+.transparent { color: #ffffff00; }
+.black       { color: #000;      }
+
+.hover-black:hover       { color: #000; }
+.hover-white:hover       { color: #fff; }
+.hover-transparent:hover { color: #ffffff00; }
+ 
+.bg-white       { background-color: #fff;      }
+.bg-transparent { background-color: #ffffff00; }
+.bg-black       { background-color: #000;      }
+
+.hover-bg-black:hover       { background-color: #000;      }
+.hover-bg-white:hover       { background-color: #fff;      }
+.hover-bg-transparent:hover { background-color: #ffffff00; }

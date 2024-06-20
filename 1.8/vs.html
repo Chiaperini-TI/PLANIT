@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="planit.css">
+</head>
+
+<style>
+  .scale-1000 { transform: scale(1000); }
+</style>
+
+<script src="JS/syder.js"></script>
+<script>
+  
+  function nightstar(){
+    replace(0, 'nightstar', 'scale-20', 'scale-1');
+    replace(5, 'btn', 'op-0', 'op-1');
+  }
+
+  loop(10,
+      () => add(0, 'cadentstar1', 'cadentstar'),
+      () => remove(0, 'cadentstar1', 'cadentstar')
+    );
+
+  loop(20,
+      () => add(0, 'cadentstar2', 'cadentstar'),
+      () => remove(0, 'cadentstar2', 'cadentstar')
+  );
+
+  loop(7,
+      () => replace(0, 'nightstar', 'scale-1', 'scale-1-01'),
+      () => replace(0, 'nightstar', 'scale-1-01', 'scale-1')
+  );
+
+  function staur(){
+    replace(0, 'transition', 'fade', 'fade-1'); 
+    replace(0, 'transition', 'scale-1', 'scale-09'); 
+    replace(1, 'transition', 'scale-09', 'scale-1000'); 
+    replace(0.9, 'transition', 'op-1', 'op-1'); 
+    replace(0.9, 'btn2', 'op-1', 'op-0'); 
+    replace(1, 'fundow', 'op-0', 'op-1'); 
+    replace(0, 'backy', 'op-0', 'op-0'); 
+    custom(0, 'nightstar', '--custom', '#fff'); 
+    custom(0, 'nightstar', '--custom2', '#00f2ff'); ; 
+    custom(0, 'nightstar', '--custom', '#fff'); 
+    custom(0, 'nightstar', '--custom2', '#00f2ff');
+    custom(0, 'nightstar', '--custom', '#fff'); 
+    custom(0, 'nightstar', '--custom2', '#00f2ff');  
+    custom(0, 'nightstar', '--custom', '#fff'); 
+    custom(0, 'nightstar', '--custom2', '#00f2ff'); 
+    custom(0, 'nightstar', '--custom', '#fff'); 
+    custom(0, 'nightstar', '--custom2', '#00f2ff');  add(0, 'btn', 'no-click'); replace(0, 'btn2', 'btn-neon', 'btn-neon-after');
+    redirect(3, 'planit.html')
+  }
+
+</script>
+    
+<body class="bg-nightstar no-scroll font1 fade" id="fundo" onload="nightstar()" style="--bg-custom: #050509; --bg-custom2:rgb(255, 255, 255);">
+
+  <main id="transition" class="fade scale-1 mg-top--2 op-1">
+
+  <main class="bg-custom absolute top-0 w-full-100 h-vh-100 z-index-5 op-0 fade-2" id="fundow" style="--bg-custom: #ffffff; --bg-custom2:rgb(255, 255, 255);"></main>
+
+  <main class="bg-black absolute top-0 w-full-100 h-vh-100 z-index-1 op-0 fade" ></main>
+
+  <div id="btn" 
+
+  onclick="staur()"
+
+  onmouseenter="
+  custom(0, 'nightstar', '--custom', '#fff'); 
+  custom(0, 'nightstar', '--custom2', '#00f2ff'); 
+  replace(0, 'fundo', 'bg-nightstar', 'bg-custom');" 
+  
+  onmouseleave="custom(0, 'nightstar', '--custom', '#fff'); 
+  custom(0, 'nightstar', '--custom2', '#fff'); 
+  replace(0, 'fundo', 'bg-custom', 'bg-nightstar');" 
+  class="auto flex ctr mg-top-2 op-0 fade-2">
+    <a href="#" id="btn2" class="absolute center-screen z-index-10 w-auto btn-neon op-1 fade pd-h-2 txt-font-1-05 pd-v-05 custom2 hover-custom3 txt-center" style="--custom: #4bd8eb; --custom2: #e6e6e6; --custom3: #ffffff;">PLANIT 1.7</a> 
+  </div>
+
+
+  <main  id="backy" class="absolute top-0 w-full-100 h-vh-100 bg-transparent op-0 z-index-11" onmouseenter="  
+  custom(0, 'nightstar', '--custom', '#00f2ff'); 
+  custom(0, 'nightstar', '--custom2', '#00f2ff');"></main>
+
+  <div class="relative w-100 h-vh-100 scale-20 op-1 fade-ease-5 z-index-1" id="nightstar" style="--custom: #fff; --custom2: #fff;">
+
+    <div class="absolute top-4 left-6 rotate-50">
+      <div id="cadentstar1"></div>
+    </div>
+
+    <div class="absolute top-20 right-15 rotate-50">
+      <div id="cadentstar2"></div>
+    </div>
+
+    <div id="star1"  class="op-1 w-04 h-04 star fade"></div>
+    <div id="star2"  class="op-1 w-05 h-05 star fade"></div>
+    <div id="star3"  class="op-1 w-01 h-01 star fade"></div>
+    <div id="star4"  class="op-1 w-04 h-04 star fade"></div>
+    <div id="star5"  class="op-1 w-07 h-07 star fade"></div>
+    <div id="star6"  class="op-1 w-08 h-08 star fade"></div>
+    <div id="star7"  class="op-1 w-05 h-05 star fade"></div>
+    <div id="star8"  class="op-1 w-01 h-01 star fade"></div>
+    <div id="star9"  class="op-1 w-01 h-01 star fade"></div>
+    <div id="star10" class="op-1 w-04 h-04 star fade"></div>
+    <div id="star11" class="op-1 w-07 h-07 star fade"></div>
+    <div id="star12" class="op-1 w-08 h-08 star fade"></div>
+    <div id="star13" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star14" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star15" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star16" class="op-1 w-07 h-07 star fade"></div>
+    <div id="star17" class="op-1 w-04 h-04 star fade"></div>
+    <div id="star18" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star19" class="op-1 w-08 h-08 star fade"></div>
+    <div id="star20" class="op-1 w-01 h-01 star fade"></div>
+    <div id="star21" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star22" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star23" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star24" class="op-1 w-07 h-07 star fade"></div>
+    <div id="star25" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star26" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star27" class="op-1 w-04 h-04 star fade"></div>
+    <div id="star28" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star29" class="op-1 w-05 h-05 star fade"></div>
+    <div id="star30" class="op-1 w-05 h-05 star fade"></div>
+
+</div>
+
+
+
+</main>
+
+</body>
+
+</html>
+</body>
+</html>

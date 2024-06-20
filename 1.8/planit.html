@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="planit.css">
+  <title>Planit Testing</title>
+</head>
+
+<body class="bg-console font1" style=" --bg-scroll:    #282828;
+--scroll:       #676767;
+--scroll-hover: #676767;">
+
+  <div class="fixed h-2-05 n-h-3 w-full-100 bg-custom ctr flex auto master-z-index top-0" style="--bg-custom: #4ac1d6;">
+  <a href="#" class="no-decoration console txt-font-1 n-txt-font-1">Planit CSS</a>
+  <a href="#"><img src="IMG/logo-gray.png" class="mg-left-05 mg-top-05 w-2 h-2"></a>
+  <svg id="open" onclick="
+  replace(0, 'menu', 'w-0', 'w-12');
+  replace(0, 'open', 'op-1', 'op-0');  
+  replace(0.7, 'close', 'op-0', 'op-1');
+  replace(0.1, 'list_one', 'mg-left--10', 'mg-left-2');
+  replace(0.2, 'list_two', 'mg-left--10', 'mg-left-2');
+  replace(0.3, 'list_three', 'mg-left--10', 'mg-left-2');
+  replace(0.4, 'list_four', 'mg-left--10', 'mg-left-2');
+  replace(0.5, 'list_five', 'mg-left--10', 'mg-left-2');
+  
+  " xmlns="http://www.w3.org/2000/svg" class="absolute left-4 n-w-1-02 n-h-1-02 w-1-05 h-1-05 pointer console hover-aqua hover-bg-console fade pd-03 n-pd-05 b-radius-100 op-1" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+  </svg>
+
+  <svg id="close" onclick="
+  replace(0, 'menu', 'w-12', 'w-0'); 
+  replace(0, 'open', 'op-0', 'op-1'); 
+  replace(0, 'close', 'op-1', 'op-0');
+  replace(0, 'list_one', 'mg-left-2', 'mg-left--10');
+  replace(0, 'list_two', 'mg-left-2', 'mg-left--10');
+  replace(0, 'list_three', 'mg-left-2', 'mg-left--10');
+  replace(0, 'list_four', 'mg-left-2', 'mg-left--10');
+  replace(0, 'list_five', 'mg-left-2', 'mg-left--10');
+
+  " xmlns="http://www.w3.org/2000/svg" class="absolute left-4 n-w-1-02 n-h-1-02 w-1-05 h-1-05 pointer console hover-aqua hover-bg-console fade pd-03 n-pd-05 b-radius-100 op-0" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+  </svg>
+
+  </div>
+
+  <div id="menu" class="w-0 h-vh-100 fixed top-0 left-0 bg-custom auto fade inline max-z-index" style="--bg-custom: #10101500;">
+  <p id="list_one" class="hover-scale txt-font-1 no-decoration mg-top-5 n-mg-top-6 auto mg-left--10 fade"><a href="#dropdown4" class="bg-console b-custom b-w-01 b-solid b-radius-100 pd-v-05 pd-h-1 custom" style="--custom: var(--aqua)"> Installation</a></p>
+  <p id="list_two" class="hover-scale txt-font-1 no-decoration mg-top-2 auto mg-left--10 fade"><a href="#documentation" class="bg-console b-custom b-w-01 b-solid b-radius-100 pd-v-05 pd-h-1 custom" style="--custom: var(--aqua)"> Documentation</a></p>
+  <p id="list_three" class="hover-scale txt-font-1 no-decoration mg-top-2 auto mg-left--10 fade"><a href="#" class="bg-console b-custom b-w-01 b-solid b-radius-100 pd-v-05 pd-h-1 custom" style="--custom: var(--aqua)"> Components </a></p>
+  <p id="list_four" class="hover-scale txt-font-1 no-decoration mg-top-2 auto mg-left--10 fade"><a href="#" class="bg-console b-custom b-w-01 b-solid b-radius-100 pd-v-05 pd-h-1 custom" style="--custom: var(--aqua)"> Examples</a></p>
+  <p id="list_five" class="hover-scale txt-font-1 no-decoration mg-top-2 auto mg-left--10 fade"><a href="#" class="bg-console b-custom b-w-01 b-solid b-radius-100 pd-v-05 pd-h-1 custom" style="--custom: var(--aqua)"> About</a></p>
+  </div>
+
+  <div class="bg-custom w-full-100 h-auto txt-center pd-top-3 pd-bottom-2" style="--bg-custom: #4ac1d6;">
+    <p class="txt-font-3">Planit CSS</p>
+    <img src="IMG/logo-gray.png" class="mg-top--3 mg-bottom-2 w-5 h-5">
+    <p class="w-45 auto mg-top--2 txt-font-1-02">O css completo para seu desenvolvimento web! <br>Conta com transições, animações e customizações em seu HTML inline!</p>
+    
+    <div id="drop" class="auto mg-top-1 bg-ani dropdown pointer w-12 h-2 pd-05 b-radius-05 z-index-10 white" style="--bg-custom: #101015; --bg-custom2: #25252f;" 
+    onclick="
+    replace2(0, 'dropdown4', 'h-0', 'h-20'); 
+    replace2(0, 'dropdown4', 'op-0', 'op-1'); 
+    out('drop', 'dropdown4', 'h-20', 'h-0'); 
+    out('drop', 'dropdown4', 'op-1', 'op-0'); 
+    out('drop', 'dropdown4', 'top-3-05', 'top-3'); 
+    replace2(0, 'dropdown4', 'top-3', 'top-3-05')">
+      <div class="b-radius-05 flex ctr txt-center w-full-100 h-full-100 z-index-10 relative">
+        <label class="txt-font-1 pointer">Versão atual</label>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-1 mg-left-05" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+      </div>
+      <div id="dropdown4" class="op-0 dropdown-item left-0 top-3 z-index-15 bg-g2 w-12 h-0 pd-h-05 b-radius-05 txt-center fade ctr auto txt-center flex" style="--bg-custom: #323232; --bg-custom2: #181818;">
+        <div class="inline">
+          <p class="white w-7 txt-font-1 link-white mg-top-1">1.6</p>
+          <p class="gray5 w-7 txt-font-1">1.5</p>
+          <p class="gray5 w-7 txt-font-1">1.4</p>
+          <p class="gray5 w-7 txt-font-1">1.3</p>
+          <p class="gray5 w-7 txt-font-1">1.2</p>
+          <p class="gray5 w-7 txt-font-1">1.1</p>
+          <p class="gray5 w-7 txt-font-1">1.0</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w-90 auto ctr txt-center h-10 mg-top-3 white">
+      <p class="txt-font-1-07">Installation</p>
+    <div class="flex auto ctr">
+      <div id="linky" class="absolute bg-aqua pd-h-1 pd-v-05 b-radius-100 black mg-top--4 txt-font-1 mg-left--18 op-0 fade z-index-0">Link copied!</div>
+    <div class="w-15 h-3 bg-gray hover-bg-dark-gray1 fade mg-1 flex ctr b-radius-05 pointer z-index-1 txt-font-1-01" onclick="copy('txtp'); replace4(0, 2, 'linky', 'op-0', 'op-09'); replace4(0, 2, 'linky', 'mg-top--4', 'mg-top--6');">Link incorporation</div>
+    <label class="pointer txt-font-1-01">or</label> 
+    <a class="w-15 h-3 bg-gray hover-bg-dark-gray1 fade mg-1 flex ctr b-radius-05 pointer white txt-font-1-01" href="DOWNLOAD/PLANIT-1.6.zip" download>Download folder</a>
+  </div>
+  </div>
+
+  <div class="bg-custom custom w-50 h-6 auto mg-top-0 b-radius-1 flex ctr auto txt-center relative pointer" onclick="copy('txtp'); replace4(0, 2, 'linky', 'op-0', 'op-09'); replace4(0, 2, 'linky', 'mg-top--4', 'mg-top--6');" style="--bg-custom: #0c0b10; --custom: #4ac1d6;"><p id="txtp" class="no-select txt-font-1">&lt;link rel="stylesheet" href="https://symphonious-empanada-a613d0.netlify.app/planit.css"&gt;</p></div>
+
+    <div class="divider-custom w-full-100 h-3 mg-top-2" style="--custom: #090909; --custom2: #0d0d13;" id="documentation"></div>
+
+  </div>
+
+  <div class="w-90 auto ctr txt-center h-auto pd-bottom-20 mg-top-3 white">
+    <p class="txt-font-1-07">Documentation</p>
+    <p class="txt-font-1-02 mg-top--1">Veja abaixo as propriedades css que o planit tem a oferecer.</p>
+
+<div class="h-1"></div>
+    <p class="txt-font-1 mg-1 aqua">Propriedades gerais</p>
+<hr class="b-custom" style="--custom: var(--aqua)">
+<div class="h-05"></div>
+
+<div class="flex auto ctr">
+
+  <div class="inline mg-05">
+    <div onclick="
+      replace2(0, 'card', 'h-0', 'h-12'); 
+      replace2(0, 'card', 'pd-v-0', 'pd-v-1'); 
+      replace2(0.2, 'card2', 'h-0', 'h-12');
+      replace2(0.2, 'card2', 'pd-v-0', 'pd-v-1');  
+      replace2(0.3, 'card3', 'h-0', 'h-12');
+      replace2(0.3, 'card3', 'pd-v-0', 'pd-v-1');  
+      replace2(0.4, 'card4', 'h-0', 'h-12');
+      replace2(0.4, 'card4', 'pd-v-0', 'pd-v-1');
+      replace2(0, 'content-card2', 'none', 'block');
+      replace2(0.1, 'content-card2', 'op-0', 'op-1');
+      replace2(0, 'content-card3', 'none', 'block');
+      replace2(0.1, 'content-card3', 'op-0', 'op-1');
+      replace2(0, 'content-card4', 'none', 'block');
+      replace2(0.1, 'content-card4', 'op-0', 'op-1');
+      " class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 pointer hover-op-08 fade txt-font-1" style="--bg-custom: #4ac1d6;">Tamanho - Width | Height</div>
+    <div id="card" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="emerald">medida</label>-<label class="pink5">valor</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="white txt-font-09"> ou</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="pink5">valor</label>
+      </p>
+      <p class="mg-top--1 white txt-font-09"> (medida padrão, vw)</p>
+    </div>
+    </div>
+  </div>
+
+  <div id="content-card2" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Prefixo</div>
+    <div id="card2" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">w</label> <label class="white">(width)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">h</label> <label class="white">(height)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="content-card3" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--leaf);">Medida</div>
+    <div id="card3" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">vh</label> <label class="white">(view height)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">full</label> <label class="white">(%)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">px</label> <label class="white">(pixels)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="content-card4" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #ba4ad6;">Valor</div>
+    <div id="card4" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="pink5 txt-font-1-02 mg-top-0">1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">2</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">3</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">100</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="flex auto ctr mg-top-1">
+
+  <div class="inline mg-05">
+    <div onclick="
+    replace2(0, 'two-card', 'h-0', 'h-12'); 
+    replace2(0, 'two-card', 'pd-v-0', 'pd-v-1'); 
+    replace2(0.2, 'two-card2', 'h-0', 'h-12');
+    replace2(0.2, 'two-card2', 'pd-v-0', 'pd-v-1');  
+    replace2(0.3, 'two-card3', 'h-0', 'h-12');
+    replace2(0.3, 'two-card3', 'pd-v-0', 'pd-v-1');  
+    replace2(0.4, 'two-card4', 'h-0', 'h-12');
+    replace2(0.4, 'two-card4', 'pd-v-0', 'pd-v-1');
+    replace2(0, 'two-content-card2', 'none', 'block');
+    replace2(0.1, 'two-content-card2', 'op-0', 'op-1');
+    replace2(0, 'two-content-card3', 'none', 'block');
+    replace2(0.1, 'two-content-card3', 'op-0', 'op-1');
+    "class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 pointer hover-op-08 fade txt-font-1" style="--bg-custom: #4ac1d6;">Texto</div>
+    <div id="two-card" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="pink5">valor</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="two-content-card2" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Prefixo</div>
+    <div id="two-card2" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">txt-font</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="two-content-card3" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #ba4ad6;">Valor</div>
+    <div id="two-card3" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="pink5 txt-font-1-02 mg-top-0">1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">2</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">3</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">20</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="flex auto ctr mg-top-1">
+
+  <div class="inline mg-05">
+    <div onclick="
+    replace2(0, 'three-card', 'h-0', 'h-20'); 
+    replace2(0, 'three-card', 'pd-v-0', 'pd-v-1'); 
+    replace2(0.2, 'three-card2', 'h-0', 'h-20');
+    replace2(0.2, 'three-card2', 'pd-v-0', 'pd-v-1');  
+    replace2(0.3, 'three-card3', 'h-0', 'h-20');
+    replace2(0.3, 'three-card3', 'pd-v-0', 'pd-v-1');  
+    replace2(0.4, 'three-card4', 'h-0', 'h-20');
+    replace2(0.4, 'three-card4', 'pd-v-0', 'pd-v-1');
+    replace2(0, 'three-content-card2', 'none', 'block');
+    replace2(0.1, 'three-content-card2', 'op-0', 'op-1');
+    replace2(0, 'three-content-card3', 'none', 'block');
+    replace2(0.1, 'three-content-card3', 'op-0', 'op-1');
+    replace2(0, 'three-content-card4', 'none', 'block');
+    replace2(0.1, 'three-content-card4', 'op-0', 'op-1');
+    " class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 pointer hover-op-08 fade txt-font-1" style="--bg-custom: #4ac1d6;">Margin | Padding</div>
+    <div id="three-card" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="emerald">medida</label>-<label class="pink5">valor</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="white txt-font-09"> ou</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="pink5">valor</label>
+      </p>
+      <p class="mg-top--1 white txt-font-09"> (medida padrão, vw)</p>
+    </div>
+    </div>
+  </div>
+
+  <div id="three-content-card2" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Prefixo</div>
+    <div id="three-card2" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">mg</label> <label class="white">(margin)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">mg-v</label> <label class="white">(margin vertical)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">mg-h</label> <label class="white">(margin horizontal)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">pd</label> <label class="white">(padding)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">pd-v</label> <label class="white">(padding vertical)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">pd-h</label> <label class="white">(padding horizontal)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="three-content-card3" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--leaf);">Medida</div>
+    <div id="three-card3" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">vh</label> <label class="white">(view height)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">full</label> <label class="white">(%)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">px</label> <label class="white">(pixels)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="three-content-card4" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #ba4ad6;">Valor</div>
+    <div id="three-card4" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="pink5 txt-font-1-02 mg-top-0">-20</p>
+        <p class="pink5 txt-font-1-02 mg-top--2">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">-2</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">-1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">0</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">2</p>
+        <p class="pink5 txt-font-1-02 mg-top--2">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">20</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="flex auto ctr mg-top-1">
+
+  <div class="inline mg-05">
+    <div onclick="
+    replace2(0, 'four-card', 'h-0', 'h-20'); 
+    replace2(0, 'four-card', 'pd-v-0', 'pd-v-1'); 
+    replace2(0.2, 'four-card2', 'h-0', 'h-20');
+    replace2(0.2, 'four-card2', 'pd-v-0', 'pd-v-1');  
+    replace2(0.3, 'four-card3', 'h-0', 'h-20');
+    replace2(0.3, 'four-card3', 'pd-v-0', 'pd-v-1');  
+    replace2(0.4, 'four-card4', 'h-0', 'h-20');
+    replace2(0.4, 'four-card4', 'pd-v-0', 'pd-v-1');
+    replace2(0, 'four-content-card2', 'none', 'block');
+    replace2(0.1, 'four-content-card2', 'op-0', 'op-1');
+    replace2(0, 'four-content-card3', 'none', 'block');
+    replace2(0.1, 'four-content-card3', 'op-0', 'op-1');
+    replace2(0, 'four-content-card4', 'none', 'block');
+    replace2(0.1, 'four-content-card4', 'op-0', 'op-1');
+    "class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 pointer hover-op-08 fade txt-font-1" style="--bg-custom: #4ac1d6;">Border</div>
+    <div id="four-card" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="emerald">medida</label>-<label class="pink5">valor</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="white txt-font-09"> ou</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="pink5">valor</label>
+      </p>
+      <p class="mg-top--1 white txt-font-09"> (medida padrão, vw)</p>
+    </div>
+    </div>
+  </div>
+
+  <div id="four-content-card2" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Prefixo</div>
+    <div id="four-card2" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">b-radius</label> <label class="white">(border-radius)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">b-radius-left</label> <label class="white">(border-radius)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">b-radius-right</label> <label class="white">(border-radius)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">b-radius-top</label> <label class="white">(border-radius)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">b-radius-bottom</label> <label class="white">(border-radius)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">b-w</label> <label class="white">(border-width)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="four-content-card3" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--leaf);">Medida</div>
+    <div id="four-card3" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">vh</label> <label class="white">(view height)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">full</label> <label class="white">(%)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">px</label> <label class="white">(pixels)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="four-content-card4" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #ba4ad6;">Valor</div>
+    <div id="four-card4" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="pink5 txt-font-1-02 mg-top-0">1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">2</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">3</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">20</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="flex auto ctr mg-top-1">
+
+  <div class="inline mg-05">
+    <div onclick="
+    replace2(0, 'five-card', 'h-0', 'h-17'); 
+    replace2(0, 'five-card', 'pd-v-0', 'pd-v-1'); 
+    replace2(0.2, 'five-card2', 'h-0', 'h-17');
+    replace2(0.2, 'five-card2', 'pd-v-0', 'pd-v-1');  
+    replace2(0.3, 'five-card3', 'h-0', 'h-17');
+    replace2(0.3, 'five-card3', 'pd-v-0', 'pd-v-1');  
+    replace2(0.4, 'five-card4', 'h-0', 'h-17');
+    replace2(0.4, 'five-card4', 'pd-v-0', 'pd-v-1');
+    replace2(0, 'five-content-card2', 'none', 'block');
+    replace2(0.1, 'five-content-card2', 'op-0', 'op-1');
+    replace2(0, 'five-content-card3', 'none', 'block');
+    replace2(0.1, 'five-content-card3', 'op-0', 'op-1');
+    replace2(0, 'five-content-card4', 'none', 'block');
+    replace2(0.1, 'five-content-card4', 'op-0', 'op-1');
+    "class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 pointer hover-op-08 fade txt-font-1" style="--bg-custom: #4ac1d6;">Left | Right | Top | Bottom</div>
+    <div id="five-card" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="emerald">medida</label>-<label class="pink5">valor</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="white txt-font-09"> ou</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="pink5">valor</label>
+      </p>
+      <p class="mg-top--1 white txt-font-09"> (medida padrão, vw)</p>
+    </div>
+    </div>
+  </div>
+
+  <div id="five-content-card2" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Prefixo</div>
+    <div id="five-card2" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">left</label> <label class="white">(left)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">right</label> <label class="white">(right)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">top</label> <label class="white">(top)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">bottom</label> <label class="white">(bottom)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="five-content-card3" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--leaf);">Medida</div>
+    <div id="five-card3" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">vh</label> <label class="white">(view height)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">full</label> <label class="white">(%)</label>
+      </p>
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="emerald">px</label> <label class="white">(pixels)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="five-content-card4" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #ba4ad6;">Valor</div>
+    <div id="five-card4" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="pink5 txt-font-1-02 mg-top-0">-10</p>
+        <p class="pink5 txt-font-1-02 mg-top--2">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">-2</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">-1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">0</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">2</p>
+        <p class="pink5 txt-font-1-02 mg-top--2">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">20</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="flex auto ctr mg-top-1">
+
+  <div class="inline mg-05">
+    <div onclick="
+    replace2(0, 'six-card', 'h-0', 'h-17'); 
+    replace2(0, 'six-card', 'pd-v-0', 'pd-v-1'); 
+    replace2(0.2, 'six-card2', 'h-0', 'h-17');
+    replace2(0.2, 'six-card2', 'pd-v-0', 'pd-v-1');  
+    replace2(0.3, 'six-card3', 'h-0', 'h-17');
+    replace2(0.3, 'six-card3', 'pd-v-0', 'pd-v-1');  
+    replace2(0.4, 'six-card4', 'h-0', 'h-17');
+    replace2(0.4, 'six-card4', 'pd-v-0', 'pd-v-1');
+    replace2(0, 'six-content-card2', 'none', 'block');
+    replace2(0.1, 'six-content-card2', 'op-0', 'op-1');
+    replace2(0, 'six-content-card3', 'none', 'block');
+    replace2(0.1, 'six-content-card3', 'op-0', 'op-1');
+    "class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 pointer hover-op-08 fade txt-font-1" style="--bg-custom: #4ac1d6;">Z-index</div>
+    <div id="six-card" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="pink5">valor</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="six-content-card2" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Prefixo</div>
+    <div id="six-card2" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">z-index</label> <label class="white">(z-index)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="six-content-card3" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #ba4ad6;">Valor</div>
+    <div id="six-card3" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="pink5 txt-font-1-02 mg-top-0">-10</p>
+        <p class="pink5 txt-font-1-02 mg-top--2">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">-2</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">-1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">0</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">2</p>
+        <p class="pink5 txt-font-1-02 mg-top--2">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">20</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="flex auto ctr mg-top-1">
+
+  <div class="inline mg-05">
+    <div onclick="
+    replace2(0, 'seven-card', 'h-0', 'h-12'); 
+    replace2(0, 'seven-card', 'pd-v-0', 'pd-v-1'); 
+    replace2(0.2, 'seven-card2', 'h-0', 'h-12');
+    replace2(0.2, 'seven-card2', 'pd-v-0', 'pd-v-1');  
+    replace2(0.3, 'seven-card3', 'h-0', 'h-12');
+    replace2(0.3, 'seven-card3', 'pd-v-0', 'pd-v-1');  
+    replace2(0.4, 'seven-card4', 'h-0', 'h-12');
+    replace2(0.4, 'seven-card4', 'pd-v-0', 'pd-v-1');
+    replace2(0, 'seven-content-card2', 'none', 'block');
+    replace2(0.1, 'seven-content-card2', 'op-0', 'op-1');
+    replace2(0, 'seven-content-card3', 'none', 'block');
+    replace2(0.1, 'seven-content-card3', 'op-0', 'op-1');
+    "class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 pointer hover-op-08 fade txt-font-1" style="--bg-custom: #4ac1d6;">Scale</div>
+    <div id="seven-card" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="pink5">valor</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="seven-content-card2" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Prefixo</div>
+    <div id="seven-card2" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">z-index</label> <label class="white">(z-index)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="seven-content-card3" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #ba4ad6;">Valor</div>
+    <div id="seven-card3" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="pink5 txt-font-1-02 mg-top--1">0</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">1</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">2</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">3</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="flex auto ctr mg-top-1">
+
+  <div class="inline mg-05">
+    <div onclick="
+    replace2(0, 'eight-card', 'h-0', 'h-15'); 
+    replace2(0, 'eight-card', 'pd-v-0', 'pd-v-1'); 
+    replace2(0.2, 'eight-card2', 'h-0', 'h-15');
+    replace2(0.2, 'eight-card2', 'pd-v-0', 'pd-v-1');  
+    replace2(0.3, 'eight-card3', 'h-0', 'h-15');
+    replace2(0.3, 'eight-card3', 'pd-v-0', 'pd-v-1');  
+    replace2(0.4, 'eight-card4', 'h-0', 'h-15');
+    replace2(0.4, 'eight-card4', 'pd-v-0', 'pd-v-1');
+    replace2(0, 'eight-content-card2', 'none', 'block');
+    replace2(0.1, 'eight-content-card2', 'op-0', 'op-1');
+    replace2(0, 'eight-content-card3', 'none', 'block');
+    replace2(0.1, 'eight-content-card3', 'op-0', 'op-1');
+    "class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 pointer hover-op-08 fade txt-font-1" style="--bg-custom: #4ac1d6;">Rotate</div>
+    <div id="eight-card" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">prefixo</label>-<label class="pink5">valor</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="eight-content-card2" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Prefixo</div>
+    <div id="eight-card2" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+      <p class="txt-font-1-02 mg-top-0">
+        <label class="sun">rotate</label> <label class="white">(rotate)</label>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <div id="eight-content-card3" class="inline mg-05 op-0 none fade">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #ba4ad6;">Valor</div>
+    <div id="eight-card3" class="bg-custom2 w-20 pd-v-0 pd-h-1 b-radius-05 h-0 overflow-hidden flex ctr fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="pink5 txt-font-1-02 mg-top--1">0</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">5</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">10</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">15</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">...</p>
+        <p class="pink5 txt-font-1-02 mg-top--1">90</p>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="h-5"></div>
+
+<p class="txt-font-1 mg-1 leaf">responsividade</p>
+<hr class="b-custom" style="--custom: var(--leaf)">
+<div class="flex auto ctr mg-top-1">
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--leaf);">Mobile (até 425px)</div>
+    <div  class="bg-custom2 w-20 pd-1 b-radius-05 h-7 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: var(--leaf);">Basta adicionar <label class="orange5">m-</label> antes de qualquer classe. <label class="orange9">ex: <br> (m-bg-red)</label></label></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--leaf);">Tablet (até 768px)</div>
+    <div  class="bg-custom2 w-20 pd-1 b-radius-05 h-7 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: var(--leaf);">Basta adicionar <label class="orange5">t-</label> antes de qualquer classe. <label class="orange9">ex: <br> (t-overflow-hidden)</label></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--leaf);">Notebook (até 1440px)</div>
+    <div  class="bg-custom2 w-20 pd-1 b-radius-05 h-7 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: var(--leaf);">Basta adicionar <label class="orange5">n-</label> antes de qualquer classe. <label class="orange9">ex: <br> (n-w-50)</label></label></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="h-5"></div>
+
+<p class="txt-font-1 mg-1 sun">Propriedades específicas</p>
+<hr class="b-custom" style="--custom: var(--sun)">
+
+<div class="flex auto ctr mg-top-1" onclick="line1()">
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Display</div>
+    <div id="predefined" class="bg-custom2 w-20 pd-1 b-radius-05 h-15 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+         <label class="sun">flex</label> <label class="white">(display: flex;)</label>
+         <br><label class="sun">inline</label> <label class="white">(display: inline;)</label>
+         <br><label class="sun">block</label> <label class="white">(display: block;)</label>
+         <br><label class="sun">none</label> <label class="white">(display: none;)</label>
+        </p>
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Cursor</div>
+    <div id="predefined2" class="bg-custom2 w-20 pd-1 b-radius-05 h-15 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+          <label class="sun">pointer</label> <label class="white">(cursor: pointer;)</label>
+          <br><label class="sun">no-select</label> <label class="white">(user-select: none;)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Float</div>
+    <div id="predefined3" class="bg-custom2 w-20 pd-1 b-radius-05 h-15 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+          <label class="sun">f-left</label> <label class="white">(float: left;)</label>
+          <br><label class="sun">f-right</label> <label class="white">(float: right;)</label>
+          <br><label class="sun">f-none</label> <label class="white">(float: none;)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Scroll</div>
+    <div id="predefined4" class="bg-custom2 w-20 pd-1 b-radius-05 h-15 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+         <label class="sun">scroll</label> <label class="white">(overflow: scroll;)</label>
+         <br><label class="sun">scroll-x</label> <label class="white">(overflow-x: scroll;)</label>
+         <br><label class="sun">scroll-y</label> <label class="white">(overflow-y: scroll;)</label>
+         <br><label class="sun">overflow-hidden</label> <label class="white">(overflow: hidden;)</label>
+        </p>
+    </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="flex auto ctr mg-top-1" onclick="line2()">
+
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Position</div>
+    <div id="predefined5" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">fixed   </label> <label class="white">(position:    fixed;)</label><br>
+              <label class="sun">sticky  </label> <label class="white">(position:   sticky;)</label><br>
+              <label class="sun">static  </label> <label class="white">(position:   static;)</label><br>
+              <label class="sun">absolute</label> <label class="white">(position: absolute;)</label><br>
+              <label class="sun">relative</label> <label class="white">(position: relative;)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Align</div>
+    <div id="predefined6" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">ctr          </label> <label class="white">(alinhar ao centro)</label>
+          <br><label class="sun">auto         </label> <label class="white">(margin: auto;)</label>
+          <br><label class="sun">center-screen</label> <label class="white">(alinha ao centro)</label>
+          <br><label class="sun">righter      </label> <label class="white">(alinhar a direita)</label>
+          <br><label class="sun">lefter       </label> <label class="white">(alinhar a esquerda)</label>
+          <br><label class="sun">v-center-row </label> <label class="white">(alinhar verticalemente)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Scroll</div>
+    <div id="predefined7" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+         <label class="sun">scroll</label> <label class="white">(overflow: scroll;)</label>
+         <br><label class="sun">scroll-x</label> <label class="white">(overflow-x: scroll;)</label>
+         <br><label class="sun">scroll-y</label> <label class="white">(overflow-y: scroll;)</label>
+         <br><label class="sun">overflow-hidden</label> <label class="white">(overflow: hidden;)</label>
+        </p>
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Position</div>
+    <div id="predefined8" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">fixed   </label> <label class="white">(position:    fixed;)</label><br>
+              <label class="sun">sticky  </label> <label class="white">(position:   sticky;)</label><br>
+              <label class="sun">static  </label> <label class="white">(position:   static;)</label><br>
+              <label class="sun">absolute</label> <label class="white">(position: absolute;)</label><br>
+              <label class="sun">relative</label> <label class="white">(position: relative;)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+<div class="flex auto ctr mg-top-1" onclick="line3()">
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Auto</div>
+    <div id="predefined9" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">mg-auto          </label> <label class="white">(margin: auto)</label>
+          <br><label class="sun">mg-h-auto          </label> <label class="white">(margin horizontal auto)</label>
+          <br><label class="sun">mg-v-auto          </label> <label class="white">(margin vertical auto)</label>
+          <br><label class="sun">pd-auto         </label> <label class="white">(padding: auto)</label>
+          <br><label class="sun">h-auto</label> <label class="white">(height: auto)</label>
+          <br><label class="sun">w-auto      </label> <label class="white">(width: auto)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+  
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Text-Decoration</div>
+    <div id="predefined10" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">no-link-line </label> <label class="white">(sem underline)</label>
+          <br><label class="sun">no-decoration</label> <label class="white">(nenhuma decoração)</label>
+          <br><label class="sun">bold         </label> <label class="white">(negrito)</label>
+          <br><label class="sun">txt-upper    </label> <label class="white">(capslock)</label>
+          <br><label class="sun">txt-lower    </label> <label class="white">(capslower)</label>
+          <br><label class="sun">underline    </label> <label class="white">(underline)</label>
+          <br><label class="sun">link-line    </label> <label class="white">(underline)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Text-align</div>
+    <div id="predefined11" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">txt-ctr       </label> <label class="white">(centralizar texto)</label>
+          <br><label class="sun">txt-center    </label> <label class="white">(centralizar texto)</label>
+          <br><label class="sun">txt-left      </label> <label class="white">(centralizar a esquerda)</label>
+          <br><label class="sun">txt-right     </label> <label class="white">(centralizar a direita)</label>
+          <br><label class="sun">txt-end       </label> <label class="white">(centralizar a direita)</label>
+          <br><label class="sun">one-row       </label> <label class="white">(sem quebra de linha)</label>
+          <br><label class="sun">no-list-style </label> <label class="white">(sem estilo de li, ul)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Opacity</div>
+    <div id="predefined12" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">solid-op </label> <label class="white">(opacity: 1;)</label>
+          <br><label class="sun">op-0</label> <label class="white">(sem opacidade)</label>
+          <br><label class="sun">op-01         </label> <label class="white">(opacity: 0.1;)</label>
+          <br><label class="sun">op-02    </label> <label class="white">(opacity: 0.2;)</label>
+          <br><label class="sun">...    </label>
+          <br><label class="sun">op-09    </label> <label class="white">(opacity: 0.9;)</label>
+          <br><label class="sun">op-1    </label> <label class="white">(opacity: 1;)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+<div class="flex auto ctr mg-top-1" onclick="line4()">
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Transições</div>
+    <div id="predefined13" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">Fade          </label> <label class="white">(0.5s)</label>
+          <br><label class="sun">Transition         </label> <label class="white">(0.5s ease in out)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+  
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Grid</div>
+    <div id="predefined14" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">grid </label> <label class="white">(display: grid;)</label>
+          <br><label class="sun">grid-space</label> <label class="white">(espaçamento entre grids)</label>
+          <br><label class="sun">grid-column-0         </label> <label class="white">(quantidade de colunas)</label>
+          <br><label class="sun">...         </label>
+          <br><label class="sun">grid-column-10         </label> <label class="white">(quantidade de colunas)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Outline</div>
+    <div id="predefined15" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">no-outline   </label> <label class="white">(sem outline)</label>
+          <br><label class="sun">outline-black</label> <label class="white">(outline preto)</label>
+          <br><label class="sun">outline-white</label> <label class="white">(outline branco)</label>
+          <br><label class="orange-juice">outline-custom</label> <label class="aqua">(outline custom)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">More z-index</div>
+    <div id="predefined16" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">max-z-index   </label> <label class="white">(z-index: 101;)</label>
+          <br><label class="sun">master-z-index </label> <label class="white">(z-index: 102;)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<div class="flex auto ctr mg-top-1" onclick="line5()">
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Link</div>
+    <div id="predefined17" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">link          </label> <label class="white">(animate underline)</label>
+          <br><label class="sun">linked          </label> <label class="white">(fixed underline)</label>
+          <br><label class="sun">link-white         </label> <label class="white">(animate underline)</label>
+          <br><label class="sun">linked-white         </label> <label class="white">(fixed underline)</label>
+          <br><label class="sun">link-gray         </label> <label class="white">(animate underline)</label>
+          <br><label class="orange-juice">link-custom         </label> <label class="aqua">(animate custom)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+  
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Border-Style</div>
+    <div id="predefined18" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">b-solid  </label> <label class="white">(solid border)</label>
+          <br><label class="sun">b-none   </label> <label class="white">(no border)</label>
+          <br><label class="sun">b-dotted </label> <label class="white">(dotted)</label>
+          <br><label class="sun">b-dashed </label> <label class="white">(dashed)</label>
+          <br><label class="sun">b-double </label> <label class="white">(double)</label>
+          <br><label class="sun">b-groove </label> <label class="white">(groove)</label>
+          <br><label class="sun">b-3d     </label> <label class="white">(3d)</label>
+          <br><label class="sun">b-ridge  </label> <label class="white">(ridge)</label>
+         </p>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">More Border-Style</div>
+    <div id="predefined19" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+          <label class="sun">b-inset  </label> <label class="white">(inset)</label>
+      <br><label class="sun">b-outset </label> <label class="white">(outset)</label>
+      <br><label class="sun">b-in     </label> <label class="white">(in)</label>
+      <br><label class="sun">b-out    </label> <label class="white">(out)</label>
+      <br><label class="sun">no-border</label> <label class="white">(no border)</label>
+      <br><label class="sun">b-black  </label> <label class="white">(border black)</label>
+      <br><label class="sun">b-white  </label> <label class="white">(border white)</label>
+      <br><label class="orange-juice">b-custom </label> <label class="aqua">(border custom)</label>
+      
+     </p>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--golden);">Table</div>
+    <div id="predefined20" class="bg-custom2 w-20 pd-1 b-radius-05 h-20 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+        <p class="txt-font-1-02 mg-top-0">
+              <label class="sun">table</label> <label class="white">(propriedades table)</label>
+          <br><label class="sun">th</label> <label class="white">(propriedades th)</label>
+          <br><label class="sun">td</label> <label class="white">(propriedades td)</label>
+          <br><label class="sun">ul</label> <label class="white">(propriedades ul)</label>
+          <br><label class="sun">li</label> <label class="white">(propriedades li)</label>
+         </p> 
+    </div>
+    </div>
+  </div>
+
+
+
+</div>
+ 
+
+
+
+
+
+
+
+<div class="h-5"></div>
+
+<p class="txt-font-1 mg-1 custom" style="--custom: #c491ff;">Cores e customizações</p>
+<hr class="b-custom" style="--custom: var(--octopus)">
+
+<div class="flex auto ctr mg-top-1">
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--octopus);">Basic Colors</div>
+    <div  class="bg-custom2 w-20 pd-1 b-radius-05 h-7 flex ctr" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">black</label> <div class="w-1-05 h-1-05 bg-black b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">white</label> <div class="w-1-05 h-1-05 bg-white b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">transparent</label> <div class="w-1-05 h-1-05 bg-transparent b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<div class="flex auto ctr mg-top-1" onclick="lined1()">
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--octopus);">Background colors</div>
+    <div id="color" class="bg-custom2 w-20 pd-h-1 pd-v-0 b-radius-05 h-0 flex ctr overflow-hidden fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">bg-<label class="orange-juice">(color name)</label></label></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="white" >ou</label></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">bg-<label class="orange-juice">custom</label></label></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--octopus);">Hover colors</div>
+    <div id="color2" class="bg-custom2 w-20 pd-h-1 pd-v-0 b-radius-05 h-0 flex ctr overflow-hidden fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">hover-<label class="orange-juice">(color <label class="aqua">ou</label> bg-color)</label></label></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="white" >ou</label></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">hover-<label class="orange-juice">(custom <label class="aqua">ou</label> bg-custom)</label></label></div>
+        </div>
+
+    </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<div class="flex auto ctr mg-top-1" onclick="lined2()">
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--octopus);">Custom colors</div>
+    <div id="color3" class="bg-custom2 w-20 pd-h-1 pd-v-0 b-radius-05 h-0 flex ctr overflow-hidden fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">custom</label><div class="w-1-05 h-1-05 bg-white b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">custom2</label><div class="w-1-05 h-1-05 bg-black b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">custom3</label><div class="w-1-05 h-1-05 bg-red b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">custom4</label><div class="w-1-05 h-1-05 bg-aqua b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-bottom-08 mg-top-2 flex ctr auto flex">
+          <div class="flex bg-octopus pd-1"> <label class="custom" style="--custom: #000000;">IN HTML TAG: <br> style="--custom: #fff; <br> --custom2: #000; <br> --custom3: #ff0000; <br> --custom4: var(--aqua);"</label></div>
+        </div>
+
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--octopus);">Custom background colors</div>
+    <div id="color4" class="bg-custom2 w-20 pd-h-1 pd-v-0 b-radius-05 h-0 flex ctr overflow-hidden fade" style="--bg-custom2: #0c0b10;">
+      <div class="inline">
+ 
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">bg-custom</label><div class="w-1-05 h-1-05 bg-white b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">bg-custom2</label><div class="w-1-05 h-1-05 bg-black b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">bg-custom3</label><div class="w-1-05 h-1-05 bg-red b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+        <div class="txt-font-1-02 mg-bottom-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">bg-custom4</label><div class="w-1-05 h-1-05 bg-aqua b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-bottom-08 mg-top-2 flex ctr auto flex">
+          <div class="flex bg-octopus pd-1"> <label class="custom" style="--custom: #000000;">IN HTML TAG: <br> style="--bg-custom: #fff; <br> --bg-custom2: #000; <br> --bg-custom3: #ff0000; <br> --bg-custom4: var(--aqua);"</label></div>
+        </div>
+
+    </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<div class="flex auto ctr mg-top-1" onclick="lined3()">
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--pitaya);">Pink</div>
+    <div id="" class="bg-custom2 w-20 b-radius-05 h-10 flex ctr scroll-y pd-bottom-2 pd-h-1" style="--bg-custom2: #0c0b10;">
+      <div class="inline mg-top-20 pd-top-2">
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink</label> <div class="w-1-05 h-1-05 bg-pink b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink1</label> <div class="w-1-05 h-1-05 bg-pink1 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink2</label> <div class="w-1-05 h-1-05 bg-pink2 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink3</label> <div class="w-1-05 h-1-05 bg-pink3 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink4</label> <div class="w-1-05 h-1-05 bg-pink4 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink5</label> <div class="w-1-05 h-1-05 bg-pink5 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink6</label> <div class="w-1-05 h-1-05 bg-pink6 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink7</label> <div class="w-1-05 h-1-05 bg-pink7 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink8</label> <div class="w-1-05 h-1-05 bg-pink8 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink9</label> <div class="w-1-05 h-1-05 bg-pink9 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">pink10</label> <div class="w-1-05 h-1-05 bg-pink10 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #a7a7a7;">Gray</div>
+    <div id="" class="bg-custom2 w-20 b-radius-05 h-10 flex ctr scroll-y pd-bottom-2 pd-h-1" style="--bg-custom2: #0c0b10;">
+      <div class="inline mg-top-15">
+
+        <div class="txt-font-1-02 mg-top-10 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">console</label> <div class="w-1-05 h-1-05 bg-console b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray</label> <div class="w-1-05 h-1-05 bg-gray b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray1</label> <div class="w-1-05 h-1-05 bg-gray1 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray2</label> <div class="w-1-05 h-1-05 bg-gray2 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray3</label> <div class="w-1-05 h-1-05 bg-gray3 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray4</label> <div class="w-1-05 h-1-05 bg-gray4 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray5</label> <div class="w-1-05 h-1-05 bg-gray5 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray6</label> <div class="w-1-05 h-1-05 bg-gray6 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray7</label> <div class="w-1-05 h-1-05 bg-gray7 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray8</label> <div class="w-1-05 h-1-05 bg-gray8 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray9</label> <div class="w-1-05 h-1-05 bg-gray9 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">gray10</label> <div class="w-1-05 h-1-05 bg-gray10 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--fire);">Red</div>
+    <div id="" class="bg-custom2 w-20 b-radius-05 h-10 flex ctr scroll-y pd-bottom-2 pd-h-1" style="--bg-custom2: #0c0b10;">
+      <div class="inline mg-top-20 pd-top-2">
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red</label> <div class="w-1-05 h-1-05 bg-red b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red1</label> <div class="w-1-05 h-1-05 bg-red1 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red2</label> <div class="w-1-05 h-1-05 bg-red2 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red3</label> <div class="w-1-05 h-1-05 bg-red3 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red4</label> <div class="w-1-05 h-1-05 bg-red4 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red5</label> <div class="w-1-05 h-1-05 bg-red5 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red6</label> <div class="w-1-05 h-1-05 bg-red6 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red7</label> <div class="w-1-05 h-1-05 bg-red7 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red8</label> <div class="w-1-05 h-1-05 bg-red8 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red9</label> <div class="w-1-05 h-1-05 bg-red9 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">red10</label> <div class="w-1-05 h-1-05 bg-red10 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+    
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--leaf);">Green</div>
+    <div id="" class="bg-custom2 w-20 b-radius-05 h-10 flex ctr scroll-y pd-bottom-2 pd-h-1" style="--bg-custom2: #0c0b10;">
+      <div class="inline mg-top-20 pd-top-2">
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green</label> <div class="w-1-05 h-1-05 bg-green b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green1</label> <div class="w-1-05 h-1-05 bg-green1 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green2</label> <div class="w-1-05 h-1-05 bg-green2 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green3</label> <div class="w-1-05 h-1-05 bg-green3 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green4</label> <div class="w-1-05 h-1-05 bg-green4 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green5</label> <div class="w-1-05 h-1-05 bg-green5 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green6</label> <div class="w-1-05 h-1-05 bg-green6 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green7</label> <div class="w-1-05 h-1-05 bg-green7 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green8</label> <div class="w-1-05 h-1-05 bg-green8 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green9</label> <div class="w-1-05 h-1-05 bg-green9 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">green10</label> <div class="w-1-05 h-1-05 bg-green10 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+    
+    </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="flex auto ctr mg-top-1" onclick="lined1()">
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--royal);">Blue</div>
+    <div id="" class="bg-custom2 w-20 b-radius-05 h-10 flex ctr scroll-y pd-bottom-2 pd-h-1" style="--bg-custom2: #0c0b10;">
+      <div class="inline mg-top-20 pd-top-2">
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue</label> <div class="w-1-05 h-1-05 bg-blue b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue1</label> <div class="w-1-05 h-1-05 bg-blue1 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue2</label> <div class="w-1-05 h-1-05 bg-blue2 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue3</label> <div class="w-1-05 h-1-05 bg-blue3 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue4</label> <div class="w-1-05 h-1-05 bg-blue4 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue5</label> <div class="w-1-05 h-1-05 bg-blue5 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue6</label> <div class="w-1-05 h-1-05 bg-blue6 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue7</label> <div class="w-1-05 h-1-05 bg-blue7 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue8</label> <div class="w-1-05 h-1-05 bg-blue8 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue9</label> <div class="w-1-05 h-1-05 bg-blue9 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">blue10</label> <div class="w-1-05 h-1-05 bg-blue10 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #ff8f1e;">orange</div>
+    <div id="" class="bg-custom2 w-20 b-radius-05 h-10 flex ctr scroll-y pd-bottom-2 pd-h-1" style="--bg-custom2: #0c0b10;">
+      <div class="inline mg-top-20 pd-top-2">
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange</label> <div class="w-1-05 h-1-05 bg-orange b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange1</label> <div class="w-1-05 h-1-05 bg-orange1 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange2</label> <div class="w-1-05 h-1-05 bg-orange2 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange3</label> <div class="w-1-05 h-1-05 bg-orange3 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange4</label> <div class="w-1-05 h-1-05 bg-orange4 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange5</label> <div class="w-1-05 h-1-05 bg-orange5 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange6</label> <div class="w-1-05 h-1-05 bg-orange6 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange7</label> <div class="w-1-05 h-1-05 bg-orange7 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange8</label> <div class="w-1-05 h-1-05 bg-orange8 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange9</label> <div class="w-1-05 h-1-05 bg-orange9 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">orange10</label> <div class="w-1-05 h-1-05 bg-orange10 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+        
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: #bc1eff;">Purple</div>
+    <div id="" class="bg-custom2 w-20 b-radius-05 h-10 flex ctr scroll-y pd-bottom-2 pd-h-1" style="--bg-custom2: #0c0b10;">
+      <div class="inline mg-top-20 pd-top-2">
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple</label> <div class="w-1-05 h-1-05 bg-purple b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple1</label> <div class="w-1-05 h-1-05 bg-purple1 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple2</label> <div class="w-1-05 h-1-05 bg-purple2 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple3</label> <div class="w-1-05 h-1-05 bg-purple3 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple4</label> <div class="w-1-05 h-1-05 bg-purple4 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple5</label> <div class="w-1-05 h-1-05 bg-purple5 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple6</label> <div class="w-1-05 h-1-05 bg-purple6 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple7</label> <div class="w-1-05 h-1-05 bg-purple7 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple8</label> <div class="w-1-05 h-1-05 bg-purple8 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple9</label> <div class="w-1-05 h-1-05 bg-purple9 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">purple10</label> <div class="w-1-05 h-1-05 bg-purple10 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+    
+    </div>
+    </div>
+  </div>
+
+  <div class="inline mg-05">
+    <div class="w-20 bg-custom h-2 pd-1 ctr txt-center flex black b-radius-05 mg-bottom-05 txt-font-1" style="--bg-custom: var(--sun);">Yellow</div>
+    <div id="" class="bg-custom2 w-20 b-radius-05 h-10 flex ctr scroll-y pd-bottom-2 pd-h-1" style="--bg-custom2: #0c0b10;">
+      <div class="inline mg-top-20 pd-top-2">
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow</label> <div class="w-1-05 h-1-05 bg-yellow b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow1</label> <div class="w-1-05 h-1-05 bg-yellow1 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow2</label> <div class="w-1-05 h-1-05 bg-yellow2 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow3</label> <div class="w-1-05 h-1-05 bg-yellow3 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow4</label> <div class="w-1-05 h-1-05 bg-yellow4 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow5</label> <div class="w-1-05 h-1-05 bg-yellow5 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow6</label> <div class="w-1-05 h-1-05 bg-yellow6 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow7</label> <div class="w-1-05 h-1-05 bg-yellow7 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow8</label> <div class="w-1-05 h-1-05 bg-yellow8 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow9</label> <div class="w-1-05 h-1-05 bg-yellow9 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+        <div class="txt-font-1-02 mg-08 flex ctr auto flex">
+          <div class="flex"> <label class="custom" style="--custom: #c491ff;">yellow10</label> <div class="w-1-05 h-1-05 bg-yellow10 b-white b-w-01 b-solid b-radius-100 mg-left-05 ctr auto"></div></div>
+        </div>
+
+    
+    </div>
+    </div>
+  </div>
+
+
+</div>
+ 
+
+
+
+<div class="flex auto ctr mg-top-1 txt-font-1-02" onclick="lined4()">
+
+ 
+  <div class="w-full-100 h-auto bg-ani2 auto txt-center b-radius-05 pd-h-1 pd-bottom-1" style="--bg-custom: #a329bc; --bg-custom2: #1f7068;">
+
+    <p>Colors and Variables</p>
+  
+  <div class="h-20 w-full-100 auto ctr txt-center flex bg-console b-radius-05 pd-v-1">
+    
+<div class="mg-1 h-20 w-full-20 ctr auto flex">
+  <div class="inline">
+  <div class="flex ctr auto">cherry <div class="bg-cherry w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">strawberry <div class="bg-strawberry w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">fire <div class="bg-fire w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">blood <div class="bg-blood w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">rose <div class="bg-rose w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">apple <div class="bg-apple w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">watermelon <div class="bg-watermelon w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">raspberry <div class="bg-raspberry w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">pepper <div class="bg-pepper w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">chili <div class="bg-chili w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  </div>
+</div>
+
+<div class="mg-1 h-20 w-full-20 ctr auto flex">
+  <div class="inline">
+  <div class="flex ctr auto">tangerine <div class="bg-tangerine w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">tiger <div class="bg-tiger w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">orange-juice <div class="bg-orange-juice w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">fox <div class="bg-fox w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">salmon <div class="bg-salmon w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">carrot <div class="bg-carrot w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">pumpkin <div class="bg-pumpkin w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">afternoon <div class="bg-afternoon w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  </div>
+</div>
+
+<div class="mg-1 h-20 w-full-20 ctr auto flex">
+  <div class="inline">
+  <div class="flex ctr auto">banana <div class="bg-banana w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">melon <div class="bg-melon w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">sun <div class="bg-sun w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">gold <div class="bg-gold w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">pineapple <div class="bg-pineapple w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">egg <div class="bg-egg w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">sunset <div class="bg-sunset w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">golden <div class="bg-golden w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">mango <div class="bg-mango w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">honey <div class="bg-honey w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  </div>
+</div>
+
+<div class="mg-1 h-20 w-full-20 ctr auto flex">
+  <div class="inline">
+  <div class="flex ctr auto">emerald <div class="bg-emerald w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">leaf <div class="bg-leaf w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">tree <div class="bg-tree w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">lemon <div class="bg-lemon w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">kiwi <div class="bg-kiwi w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">grass <div class="bg-grass w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">lime <div class="bg-lime w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">avocado <div class="bg-avocado w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">forest <div class="bg-forest w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">swamp <div class="bg-swamp w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  </div>
+</div>
+
+<div class="mg-1 h-20 w-full-20 ctr auto flex">
+  <div class="inline">
+  <div class="flex ctr auto">royal <div class="bg-royal w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">aqua <div class="bg-aqua w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">sky <div class="bg-sky w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">blueberry <div class="bg-blueberry w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">deep <div class="bg-deep w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">ocean <div class="bg-ocean w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">lake <div class="bg-lake w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">water <div class="bg-water w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">rain <div class="bg-rain w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">ice <div class="bg-ice w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  </div>
+</div>
+
+<div class="mg-1 h-20 w-full-20 ctr auto flex">
+  <div class="inline">
+  <div class="flex ctr auto">grape <div class="bg-grape w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">plum <div class="bg-plum w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">açai <div class="bg-açai w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">berry <div class="bg-berry w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">dragon <div class="bg-dragon w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">eggplant <div class="bg-eggplant w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">violet <div class="bg-violet w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">lilac <div class="bg-lilac w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">jellyfish <div class="bg-jellyfish w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">octopus <div class="bg-octopus w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  </div>
+</div>
+
+
+<div class="mg-1 h-20 w-full-20 ctr auto flex">
+  <div class="inline">
+  <div class="flex ctr auto">tongue <div class="bg-tongue w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">flamingo <div class="bg-flamingo w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">pinky-juice <div claspinky="bg-orange-juice w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">shock-pink <div class="bg-shock-pink w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">orquide <div class="bg-orquide w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">sakura <div class="bg-sakura w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  <div class="flex ctr auto">pitaya <div class="bg-pitaya w-1-05 h-1-05 b-radius-100 mg-left-05"></div></div>
+  </div>
+</div>
+
+  </div>
+
+  </div>
+
+
+</div>
+ 
+<div class="mg-top-3 txt-font-1-02">Os nomes dessas cores são declaradas como variáveis, ou seja, funcionam tanto como classes normais, como classes para customização. <br> Exemplo:</div>
+
+<div class="flex">
+<div class="w-30 h-5 bg-custom auto ctr b-radius-05 txt-center mg-top-2 ctr auto flex mg-right-05" style="--bg-custom: #000;">class="bg-violet" <div class="bg-violet w-2 h-2 b-radius-100 mg-left-05"></div></div>
+<div class="w-30 h-5 bg-custom auto ctr b-radius-05 txt-center mg-top-2 ctr auto flex mg-left-05" style="--bg-custom: #000;">class="bg-violet" style="--violet: #b2ff37;"<div class="bg-violet w-2 h-2 b-radius-100 mg-left-05" style="--violet: #b2ff37;"></div></div>
+</div>
+
+
+
+
+
+
+
+  </div>
+  
+  <script src="JS/syder.js"></script>
+  <script>
+
+    function line1(){
+    replace2(0,  'predefined', 'h-15', 'h-0')
+    replace2(0.1, 'predefined2', 'h-15', 'h-0')
+    replace2(0.2, 'predefined3', 'h-15', 'h-0')
+    replace2(0.3, 'predefined4', 'h-15', 'h-0')
+
+    replace2(0, 'predefined',   'pd-v-0', 'pd-v-1')
+    replace2(0.1, 'predefined2',  'pd-v-0', 'pd-v-1')
+    replace2(0.2, 'predefined3',  'pd-v-0', 'pd-v-1')
+    replace2(0.3, 'predefined4',  'pd-v-0', 'pd-v-1')
+    }
+
+    function lined1(){
+    replace2(0,   'color', 'h-10', 'h-0')
+    replace2(0, 'color2', 'h-10', 'h-0')
+
+    replace2(0,   'color',   'pd-v-0', 'pd-v-1')
+    replace2(0, 'color2',  'pd-v-0', 'pd-v-1')
+    }
+
+    function line2(){
+    replace2(0,  'predefined5', 'h-20', 'h-0')
+    replace2(0.1,'predefined6', 'h-20', 'h-0')
+    replace2(0.2,'predefined7', 'h-20', 'h-0')
+    replace2(0.3,'predefined8', 'h-20', 'h-0')
+
+    replace2(0,  'predefine5',   'pd-v-0', 'pd-v-1')
+    replace2(0.1,'predefined6',  'pd-v-0', 'pd-v-1')
+    replace2(0.2,'predefined7',  'pd-v-0', 'pd-v-1')
+    replace2(0.3,'predefined8',  'pd-v-0', 'pd-v-1')
+    }
+
+    function lined2(){
+    replace2(0, 'color3', 'h-25', 'h-0')
+    replace2(0, 'color4', 'h-25', 'h-0')
+
+    replace2(0, 'color3',   'pd-v-0', 'pd-v-1')
+    replace2(0, 'color4',  'pd-v-0', 'pd-v-1')
+    }
+
+    function line3(){
+    replace2(0,  'predefined9', 'h-20', 'h-0')
+    replace2(0.1,'predefined10', 'h-20', 'h-0')
+    replace2(0.2,'predefined11', 'h-20', 'h-0')
+    replace2(0.3,'predefined12', 'h-20', 'h-0')
+
+    replace2(0,  'predefine9',   'pd-v-0', 'pd-v-1')
+    replace2(0.1,'predefined10', 'pd-v-0', 'pd-v-1')
+    replace2(0.2,'predefined11', 'pd-v-0', 'pd-v-1')
+    replace2(0.3,'predefined12', 'pd-v-0', 'pd-v-1')
+    }
+
+    function line4(){
+    replace2(0,  'predefined13', 'h-20', 'h-0')
+    replace2(0.1,'predefined14', 'h-20', 'h-0')
+    replace2(0.2,'predefined15', 'h-20', 'h-0')
+    replace2(0.3,'predefined16', 'h-20', 'h-0')
+
+    replace2(0,  'predefine13',   'pd-v-0', 'pd-v-1')
+    replace2(0.1,'predefined14',  'pd-v-0', 'pd-v-1')
+    replace2(0.2,'predefined15',  'pd-v-0', 'pd-v-1')
+    replace2(0.3,'predefined16',  'pd-v-0', 'pd-v-1')
+    }
+
+    function line5(){
+    replace2(0,  'predefined17', 'h-20', 'h-0')
+    replace2(0.1,'predefined18', 'h-20', 'h-0')
+    replace2(0.2,'predefined19', 'h-20', 'h-0')
+    replace2(0.3,'predefined20', 'h-20', 'h-0')
+
+    replace2(0,  'predefine17',   'pd-v-0', 'pd-v-1')
+    replace2(0.1,'predefined18',  'pd-v-0', 'pd-v-1')
+    replace2(0.2,'predefined19',  'pd-v-0', 'pd-v-1')
+    replace2(0.3,'predefined20',  'pd-v-0', 'pd-v-1')
+    }
+
+    line1();
+    line2();
+    line3();
+    line4();
+    line5();
+
+    add(0, 'predefined',   'overflow-hidden')
+    add(0, 'predefined2',  'overflow-hidden')
+    add(0, 'predefined3',  'overflow-hidden')
+    add(0, 'predefined4',  'overflow-hidden')
+    add(0, 'predefined5',  'overflow-hidden')
+    add(0, 'predefined6',  'overflow-hidden')
+    add(0, 'predefined7',  'overflow-hidden')
+    add(0, 'predefined8',  'overflow-hidden')
+    add(0, 'predefined9',  'overflow-hidden')
+    add(0, 'predefined10', 'overflow-hidden')
+    add(0, 'predefined11', 'overflow-hidden')
+    add(0, 'predefined12', 'overflow-hidden')
+    add(0, 'predefined13', 'overflow-hidden')
+    add(0, 'predefined14', 'overflow-hidden')
+    add(0, 'predefined15', 'overflow-hidden')
+    add(0, 'predefined16', 'overflow-hidden')
+    add(0, 'predefined17', 'overflow-hidden')
+    add(0, 'predefined18', 'overflow-hidden')
+    add(0, 'predefined19', 'overflow-hidden')
+    add(0, 'predefined20', 'overflow-hidden')
+
+    add(0, 'predefined',   'fade')
+    add(0, 'predefined2',  'fade')
+    add(0, 'predefined3',  'fade')
+    add(0, 'predefined4',  'fade')
+    add(0, 'predefined5',  'fade')
+    add(0, 'predefined6',  'fade')
+    add(0, 'predefined7',  'fade')
+    add(0, 'predefined8',  'fade')
+    add(0, 'predefined9',  'fade')
+    add(0, 'predefined10', 'fade')
+    add(0, 'predefined11', 'fade')
+    add(0, 'predefined12', 'fade')
+    add(0, 'predefined13', 'fade')
+    add(0, 'predefined14', 'fade')
+    add(0, 'predefined15', 'fade')
+    add(0, 'predefined16', 'fade')
+    add(0, 'predefined17', 'fade')
+    add(0, 'predefined18', 'fade')
+    add(0, 'predefined19', 'fade')
+    add(0, 'predefined20', 'fade')
+
+    add(0, 'predefined',   'pd-h-1')
+    add(0, 'predefined2',  'pd-h-1')
+    add(0, 'predefined3',  'pd-h-1')
+    add(0, 'predefined4',  'pd-h-1')
+    add(0, 'predefined5',  'pd-h-1')
+    add(0, 'predefined6',  'pd-h-1')
+    add(0, 'predefined7',  'pd-h-1')
+    add(0, 'predefined8',  'pd-h-1')
+    add(0, 'predefined9',  'pd-h-1')
+    add(0, 'predefined10', 'pd-h-1')
+    add(0, 'predefined11', 'pd-h-1')
+    add(0, 'predefined12', 'pd-h-1')
+    add(0, 'predefined13', 'pd-h-1')
+    add(0, 'predefined14', 'pd-h-1')
+    add(0, 'predefined15', 'pd-h-1')
+    add(0, 'predefined16', 'pd-h-1')
+    add(0, 'predefined17', 'pd-h-1')
+    add(0, 'predefined18', 'pd-h-1')
+    add(0, 'predefined19', 'pd-h-1')
+    add(0, 'predefined20', 'pd-h-1')
+
+    remove(0, 'predefined',   'pd-1')
+    remove(0, 'predefined2',  'pd-1')
+    remove(0, 'predefined3',  'pd-1')
+    remove(0, 'predefined4',  'pd-1')
+    remove(0, 'predefined5',  'pd-1')
+    remove(0, 'predefined6',  'pd-1')
+    remove(0, 'predefined7',  'pd-1')
+    remove(0, 'predefined8',  'pd-1')
+    remove(0, 'predefined9',  'pd-1')
+    remove(0, 'predefined10', 'pd-1')
+    remove(0, 'predefined11', 'pd-1')
+    remove(0, 'predefined12', 'pd-1')
+    remove(0, 'predefined13', 'pd-1')
+    remove(0, 'predefined14', 'pd-1')
+    remove(0, 'predefined15', 'pd-1')
+    remove(0, 'predefined16', 'pd-1')
+    remove(0, 'predefined17', 'pd-1')
+    remove(0, 'predefined18', 'pd-1')
+    remove(0, 'predefined19', 'pd-1')
+    remove(0, 'predefined20', 'pd-1')
+  </script>
+</body> 
+</html>
+ 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="planit.css">
+  <title>Planit Testing</title>
+</head>
+
+<script src="JS/syder.js"></script>
+
+<!-- <body class="bg-console font1 mg-top-10 flex ctr txt-center auto"> -->
+  <body class="font1">
+
+  <!--<div id="dropx" class="bg-blue dropdown pointer w-12 h-2 pd-05 b-radius-05 z-index-10 mg-05" onclick="replace2(0, 'dropdownx', 'h-0', 'h-12'); replace_out('dropx', 'dropdownx', 'h-12', 'h-0');">
+     <div class="bg-blue b-radius-05 flex ctr txt-center w-full-100 h-full-100 z-index-10 relative">
+      <label class="black txt-font-1 z-index-10">DROPDOWN LINEAR</label>
+      <svg xmlns="http://www.w3.org/2000/svg" class="z-index-10 w-1 mg-left-05" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg>
+    </div>
+    <div id="dropdownx" class="dropdown-item left-0 top-1 bg-blue w-12 h-0 pd-h-05 pd-top-05 b-radius-05 txt-center fade ctr auto txt-center flex">
+      <div class="inline">
+        <p class="white txt-font-1 link-white mg-top-1-06">Item 1</p>
+        <p class="white txt-font-1 link-white">Item 2</p>
+        <p class="white txt-font-1 link-white">Item 3</p>
+        <p class="white txt-font-1 link-white">Item 4</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="drop2" class="bg-aqua dropdown pointer w-12 h-2 pd-05 b-radius-05 z-index-10 mg-05" onclick="
+  replace2(0, 'dropdown2', 'h-0', 'h-12');
+  replace_out('drop2', 'dropdown2', 'h-12', 'h-0');">
+    <div class="b-radius-05 flex ctr txt-center w-full-100 h-full-100 z-index-10 relative">
+      <label class="black txt-font-1">DROPDOWN COVER</label>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-1 mg-left-05" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg>
+    </div>
+    <div id="dropdown2" class="dropdown-item left-0 top-0 z-index-15 bg-blueberry w-12 h-0 pd-h-05 b-radius-05 txt-center fade ctr auto txt-center flex">
+      <div class="inline">
+        <p class="white txt-font-1 link-white mg-top-1-06">Item 1</p>
+        <p class="white txt-font-1 link-white">Item 2</p>
+        <p class="white txt-font-1 link-white">Item 3</p>
+        <p class="white txt-font-1 link-white">Item 4</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="dropo" class="bg-ani dropdown pointer w-12 h-2 pd-05 b-radius-05 z-index-10 mg-05" style="--bg-custom: var(--sunset); --bg-custom2: var(--watermelon)" 
+  onclick="
+  replace2(0, 'dropdowno', 'h-0', 'h-12'); 
+  replace2(0.5, 'dropdowno', 'top-0', 'top-3-05');
+  replace_out('dropo', 'dropdowno', 'h-12', 'h-0'); 
+  replace_out('dropo', 'dropdowno', 'top-3-05', 'top-0');">
+    <div class="b-radius-05 flex ctr txt-center w-full-100 h-full-100 z-index-10 relative">
+      <label class="black txt-font-1">DROPDOWN AFTER</label>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-1 mg-left-05" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg>
+    </div>
+    <div id="dropdowno" class="dropdown-item left-0 top-0 z-index-15 bg-ani w-12 h-0 pd-h-05 b-radius-05 txt-center fade ctr auto txt-center flex" style="--bg-custom: #1a1a1a; --bg-custom2: #343434;">
+      <div class="inline">
+        <p class="white txt-font-1 link-white mg-top-1-06">Item 1</p>
+        <p class="white txt-font-1 link-white">Item 2</p>
+        <p class="white txt-font-1 link-white">Item 3</p>
+        <p class="white txt-font-1 link-white">Item 4</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="dropz" class="bg-ani dropdown pointer w-12 h-2 pd-05 b-radius-05 z-index-10 mg-05" style="--bg-custom: var(--emerald); --bg-custom2: var(--kiwi)" 
+  onclick="
+  replace2(0, 'dropdownz', 'h-0', 'h-12'); 
+  replace2(0, 'dropdownz', 'op-0', 'op-1'); 
+  replace2(0, 'dropdownz', 'top-3', 'top-3-05'); 
+  replace_out('dropz', 'dropdownz', 'h-12', 'h-0'); 
+  replace_out('dropz', 'dropdownz', 'op-1', 'op-0'); 
+  replace_out('dropz', 'dropdownz', 'top-3-05', 'top-3');  ">
+    <div class="b-radius-05 flex ctr txt-center w-full-100 h-full-100 z-index-10 relative">
+      <label class="black txt-font-1">DROPDOWN FADE</label>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-1 mg-left-05" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg>
+    </div>
+    <div id="dropdownz" class="op-0 dropdown-item left-0 top-3 z-index-15 bg-g2 w-12 h-0 pd-h-05 b-radius-05 txt-center fade ctr auto txt-center flex" style="--bg-custom: #323232; --bg-custom2: #181818;">
+      <div class="inline">
+        <p class="white txt-font-1 link-white mg-top-1-06">Item 1</p>
+        <p class="white txt-font-1 link-white">Item 2</p>
+        <p class="white txt-font-1 link-white">Item 3</p>
+        <p class="white txt-font-1 link-white">Item 4</p>
+      </div>
+    </div>
+  </div> -->
+
+
+
+<div style="--h-size: 2.5vw; --custom: var(--ocean)" id="dropdown1" class="relative top-5 left-5 w-12 h-size bg-white b-custom b-solid b-radius-1 b-w-02 overflow-hidden fade"
+onclick="replace2(0, 'dropdown1', 'h-size', 'h-20'); replace2(0, 'dropdown1', 'overflow-hidden', 'scroll-y'); 
+replace_out('dropdown1', 'dropdown1', 'h-20', 'h-size'); replace_out('dropdown1', 'dropdown1', 'scroll-y', 'overflow-hidden');">
+  <div class="ctr flex auto txt-center h-size w-full-100 txt-font-08"> ITEM SELECTED
+    <svg xmlns="http://www.w3.org/2000/svg" class="z-index-10 w-05 mg-left-05" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+    </svg>
+  </div>
+  <a href="#" class="ctr flex auto txt-center h-size w-full-100 custom">   ITEM 1</a>
+  <a href="#" class="ctr flex auto txt-center h-size w-full-100 custom">   ITEM 2</a>
+  <a href="#" class="ctr flex auto txt-center h-size w-full-100 custom">  ITEM 3</a>
+</div>
+
+
+</body>
+</html>
+ 

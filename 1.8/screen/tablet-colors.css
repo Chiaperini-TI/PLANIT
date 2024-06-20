@@ -1,0 +1,947 @@
+@media (min-width: 425px) and (max-width: 768px){
+  .t-chiaperini                 { color: #313b6c;              }
+  .t-chiaperini2                { color: #455296;              }
+  .t-chiaperini-amarelo         { color: #ffd600;              }
+  .t-bg-chiaperini              { background-color: #313b6c;   }
+  .t-bg-chiaperini-amarelo      { background-color: #ffd600;   }
+  .t-b-chiaperini               { border-color: #313b6c;       }
+  .t-b-chiaperini-amarelo       { border-color: #ffd600;       }
+  .t-bg-chiaperini-dark         { background-color: #0a0f26e5; }
+  .t-bg-chiaperini2             { background-color: #455296;   }
+  .t-bg-chiaperini2-hover:hover { background-color: #455296;   }
+  .t-hover-color:hover    { color: var(--color);}
+  .t-color    { color: var(--color);}
+  .t-custom   { color: var(--custom)  ;}
+  .t-custom2  { color: var(--custom2 );}
+  .t-custom3  { color: var(--custom3 );}
+  .t-custom4  { color: var(--custom4 );}
+  .t-hover-custom:hover   { color: var(--custom)  ;}
+  .t-hover-custom2:hover  { color: var(--custom2 );}
+  .t-hover-custom3:hover  { color: var(--custom3 );}
+  .t-hover-custom4:hover  { color: var(--custom4 );}
+  .t-bg-custom   { background-color: var(--bg-custom)  ;}
+  .t-bg-custom2  { background-color: var(--bg-custom2 );}
+  .t-bg-custom3  { background-color: var(--bg-custom3 );}
+  .t-bg-custom4  { background-color: var(--bg-custom4 );}
+  .t-hover-bg-custom:hover   { background-color: var(--bg-custom)  ;}
+  .t-hover-bg-custom2:hover  { background-color: var(--bg-custom2 );}
+  .t-hover-bg-custom3:hover  { background-color: var(--bg-custom3 );}
+  .t-hover-bg-custom4:hover  { background-color: var(--bg-custom4 );}
+  .t-bg-g   { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom)); }
+  .t-bg-g2  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2)); }
+  .t-bg-g3  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3));}
+  .t-bg-g4  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4)); }
+  .t-bg-g5  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom)); }
+  .t-bg-g6  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2)); }
+  .t-bg-g7  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2), var(--bg-custom3)); }
+  .t-bg-g8  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4)); }
+  .t-cherry     { color: var(--cherry);     }
+  .t-strawberry { color: var(--strawberry); }
+  .t-fire       { color: var(--fire);       }
+  .t-blood      { color: var(--blood);      }
+  .t-rose       { color: var(--rose);       }
+  .t-apple      { color: var(--apple);      }
+  .t-watermelon { color: var(--watermelon); }
+  .t-raspberry  { color: var(--raspberry);  }
+  .t-pepper     { color: var(--pepper);     }
+  .t-chili      { color: var(--chili);      }
+  .t-bg-cherry     { background-color: var(--cherry);     }
+  .t-bg-strawberry { background-color: var(--strawberry); }
+  .t-bg-fire       { background-color: var(--fire);       }
+  .t-bg-blood      { background-color: var(--blood);      }
+  .t-bg-rose       { background-color: var(--rose);       }
+  .t-bg-apple      { background-color: var(--apple);      }
+  .t-bg-watermelon { background-color: var(--watermelon); }
+  .t-bg-raspberry  { background-color: var(--raspberry);  }
+  .t-bg-pepper     { background-color: var(--pepper);     }
+  .t-bg-chili      { background-color: var(--chili);      }
+  .t-red    { color: rgb(255, 0, 0);     }
+  .t-red1   { color: rgb(255, 20, 20);   }
+  .t-red2   { color: rgb(255, 40, 40);   }
+  .t-red3   { color: rgb(255, 60, 60);   }
+  .t-red4   { color: rgb(255, 80, 80);   }
+  .t-red5   { color: rgb(255, 100, 100); }
+  .t-red6   { color: rgb(255, 120, 120)  }
+  .t-red7   { color: rgb(255, 140, 140); }
+  .t-red8   { color: rgb(255, 160, 160); }
+  .t-red9   { color: rgb(255, 180, 180); }
+  .t-red10  { color: rgb(255, 200, 200); }
+  .t-bg-red    { background-color: rgb(255, 0, 0);     }
+  .t-bg-red1   { background-color: rgb(255, 20, 20);   }
+  .t-bg-red2   { background-color: rgb(255, 40, 40);   }
+  .t-bg-red3   { background-color: rgb(255, 60, 60);   }
+  .t-bg-red4   { background-color: rgb(255, 80, 80);   }
+  .t-bg-red5   { background-color: rgb(255, 100, 100); }
+  .t-bg-red6   { background-color: rgb(255, 120, 120)  }
+  .t-bg-red7   { background-color: rgb(255, 140, 140); }
+  .t-bg-red8   { background-color: rgb(255, 160, 160); }
+  .t-bg-red9   { background-color: rgb(255, 180, 180); }
+  .t-bg-red10  { background-color: rgb(255, 200, 200); }
+  .t-dark-red    { color: rgb(209, 0, 0);   }
+  .t-dark-red1   { color: rgb(192, 0, 0);   }
+  .t-dark-red2   { color: rgb(174, 0, 0);   }
+  .t-dark-red3   { color: rgb(159, 4, 4);   }
+  .t-dark-red4   { color: rgb(142, 0, 0);   }
+  .t-dark-red5   { color: rgb(119, 1, 1);   }
+  .t-dark-red6   { color: rgb(94, 2, 2);    }
+  .t-dark-red7   { color: rgb(82, 4, 4);    }
+  .t-dark-red8   { color: rgb(63, 5, 5);    }
+  .t-dark-red9   { color: rgb(50, 4, 4);    }
+  .t-dark-red10  { color: rgb(26, 0, 0);    }
+  .t-bg-dark-red    { background-color: rgb(209, 0, 0); }
+  .t-bg-dark-red1   { background-color: rgb(192, 0, 0); }
+  .t-bg-dark-red2   { background-color: rgb(174, 0, 0); }
+  .t-bg-dark-red3   { background-color: rgb(159, 4, 4); }
+  .t-bg-dark-red4   { background-color: rgb(142, 0, 0); }
+  .t-bg-dark-red5   { background-color: rgb(119, 1, 1); }
+  .t-bg-dark-red6   { background-color: rgb(94, 2, 2);  }
+  .t-bg-dark-red7   { background-color: rgb(82, 4, 4);  }
+  .t-bg-dark-red8   { background-color: rgb(63, 5, 5);  }
+  .t-bg-dark-red9   { background-color: rgb(50, 4, 4);  }
+  .t-bg-dark-red10  { background-color: rgb(26, 0, 0);  }
+  .t-hover-cherry:hover     { color: var(--cherry);     }
+  .t-hover-strawberry:hover { color: var(--strawberry); }
+  .t-hover-fire:hover       { color: var(--fire);       }
+  .t-hover-blood:hover      { color: var(--blood);      }
+  .t-hover-rose:hover       { color: var(--rose);       }
+  .t-hover-apple:hover      { color: var(--apple);      }
+  .t-hover-watermelon:hover { color: var(--watermelon); }
+  .t-hover-raspberry:hover  { color: var(--raspberry);  }
+  .t-hover-pepper:hover     { color: var(--pepper);     }
+  .t-hover-chili:hover      { color: var(--chili);      }
+  .t-hover-bg-cherry:hover     { background-color: var(--cherry);     }
+  .t-hover-bg-strawberry:hover { background-color: var(--strawberry); }
+  .t-hover-bg-fire:hover       { background-color: var(--fire);       }
+  .t-hover-bg-blood:hover      { background-color: var(--blood);      }
+  .t-hover-bg-rose:hover       { background-color: var(--rose);       }
+  .t-hover-bg-apple:hover      { background-color: var(--apple);      }
+  .t-hover-bg-watermelon:hover { background-color: var(--watermelon); }
+  .t-hover-bg-raspberry:hover  { background-color: var(--raspberry);  }
+  .t-hover-bg-pepper:hover     { background-color: var(--pepper);     }
+  .t-hover-bg-chili:hover      { background-color: var(--chili);      }
+  .t-hover-red:hover    { color: rgb(255, 0, 0);     }
+  .t-hover-red1:hover   { color: rgb(255, 20, 20);   }
+  .t-hover-red2:hover   { color: rgb(255, 40, 40);   }
+  .t-hover-red3:hover   { color: rgb(255, 60, 60);   }
+  .t-hover-red4:hover   { color: rgb(255, 80, 80);   }
+  .t-hover-red5:hover   { color: rgb(255, 100, 100); }
+  .t-hover-red6:hover   { color: rgb(255, 120, 120)  }
+  .t-hover-red7:hover   { color: rgb(255, 140, 140); }
+  .t-hover-red8:hover   { color: rgb(255, 160, 160); }
+  .t-hover-red9:hover   { color: rgb(255, 180, 180); }
+  .t-hover-red10:hover  { color: rgb(255, 200, 200); }
+  .t-hover-bg-red:hover    { background-color: rgb(255, 0, 0);     }
+  .t-hover-bg-red1:hover   { background-color: rgb(255, 20, 20);   }
+  .t-hover-bg-red2:hover   { background-color: rgb(255, 40, 40);   }
+  .t-hover-bg-red3:hover   { background-color: rgb(255, 60, 60);   }
+  .t-hover-bg-red4:hover   { background-color: rgb(255, 80, 80);   }
+  .t-hover-bg-red5:hover   { background-color: rgb(255, 100, 100); }
+  .t-hover-bg-red6:hover   { background-color: rgb(255, 120, 120)  }
+  .t-hover-bg-red7:hover   { background-color: rgb(255, 140, 140); }
+  .t-hover-bg-red8:hover   { background-color: rgb(255, 160, 160); }
+  .t-hover-bg-red9:hover   { background-color: rgb(255, 180, 180); }
+  .t-hover-bg-red10:hover  { background-color: rgb(255, 200, 200); }
+  .t-hover-dark-red:hover    { color: rgb(209, 0, 0);   }
+  .t-hover-dark-red1:hover   { color: rgb(192, 0, 0);   }
+  .t-hover-dark-red2:hover   { color: rgb(174, 0, 0);   }
+  .t-hover-dark-red3:hover   { color: rgb(159, 4, 4);   }
+  .t-hover-dark-red4:hover   { color: rgb(142, 0, 0);   }
+  .t-hover-dark-red5:hover   { color: rgb(119, 1, 1);   }
+  .t-hover-dark-red6:hover   { color: rgb(94, 2, 2);    }
+  .t-hover-dark-red7:hover   { color: rgb(82, 4, 4);    }
+  .t-hover-dark-red8:hover   { color: rgb(63, 5, 5);    }
+  .t-hover-dark-red9:hover   { color: rgb(50, 4, 4);    }
+  .t-hover-dark-red10:hover  { color: rgb(26, 0, 0);    }
+  .t-hover-bg-dark-red:hover    { background-color: rgb(209, 0, 0); }
+  .t-hover-bg-dark-red1:hover   { background-color: rgb(192, 0, 0); }
+  .t-hover-bg-dark-red2:hover   { background-color: rgb(174, 0, 0); }
+  .t-hover-bg-dark-red3:hover   { background-color: rgb(159, 4, 4); }
+  .t-hover-bg-dark-red4:hover   { background-color: rgb(142, 0, 0); }
+  .t-hover-bg-dark-red5:hover   { background-color: rgb(119, 1, 1); }
+  .t-hover-bg-dark-red6:hover   { background-color: rgb(94, 2, 2);  }
+  .t-hover-bg-dark-red7:hover   { background-color: rgb(82, 4, 4);  }
+  .t-hover-bg-dark-red8:hover   { background-color: rgb(63, 5, 5);  }
+  .t-hover-bg-dark-red9:hover   { background-color: rgb(50, 4, 4);  }
+  .t-hover-bg-dark-red10:hover  { background-color: rgb(26, 0, 0);  }
+  .t-royal     { color: var(--royal);     }
+  .t-aqua      { color: var(--aqua);      }
+  .t-sky       { color: var(--sky);       }
+  .t-blueberry { color: var(--blueberry); }
+  .t-deep      { color: var(--deep);      }
+  .t-ocean     { color: var(--ocean);     }
+  .t-lake      { color: var(--lake);      }
+  .t-water     { color: var(--water);     }
+  .t-rain      { color: var(--rain);      }
+  .t-ice       { color: var(--ice);       }
+  .t-bg-royal     { background-color: var(--royal);     }
+  .t-bg-aqua      { background-color: var(--aqua);      }
+  .t-bg-sky       { background-color: var(--sky);       }
+  .t-bg-blueberry { background-color: var(--blueberry); }
+  .t-bg-deep      { background-color: var(--deep);      }
+  .t-bg-ocean     { background-color: var(--ocean);     }
+  .t-bg-lake      { background-color: var(--lake);      }
+  .t-bg-water     { background-color: var(--water);     }
+  .t-bg-rain      { background-color: var(--rain);      }
+  .t-bg-ice       { background-color: var(--ice);       }
+  .t-blue    { color: rgb(0, 119, 255);   }
+  .t-blue1   { color: rgb(20, 141, 255);  }
+  .t-blue2   { color: rgb(40, 151, 255);  }
+  .t-blue3   { color: rgb(60, 167, 255);  }
+  .t-blue4   { color: rgb(80, 170, 255);  }
+  .t-blue5   { color: rgb(100, 172, 255); }
+  .t-blue6   { color: rgb(120, 183, 255)  }
+  .t-blue7   { color: rgb(140, 186, 255); }
+  .t-blue8   { color: rgb(160, 209, 255); }
+  .t-blue9   { color: rgb(180, 215, 255); }
+  .t-blue10  { color: rgb(200, 230, 255); }
+  .t-bg-blue    { background-color: rgb(0, 119, 255);   }
+  .t-bg-blue1   { background-color: rgb(20, 141, 255);  }
+  .t-bg-blue2   { background-color: rgb(40, 151, 255);  }
+  .t-bg-blue3   { background-color: rgb(60, 167, 255);  }
+  .t-bg-blue4   { background-color: rgb(80, 170, 255);  }
+  .t-bg-blue5   { background-color: rgb(100, 172, 255); }
+  .t-bg-blue6   { background-color: rgb(120, 183, 255)  }
+  .t-bg-blue7   { background-color: rgb(140, 186, 255); }
+  .t-bg-blue8   { background-color: rgb(160, 209, 255); }
+  .t-bg-blue9   { background-color: rgb(180, 215, 255); }
+  .t-bg-blue10  { background-color: rgb(200, 230, 255); }
+  .t-dark-blue   { color: rgb(5, 43, 100); }
+  .t-dark-blue1  { color: rgb(5, 39, 90);  }
+  .t-dark-blue2  { color: rgb(5, 40, 85);  }
+  .t-dark-blue3  { color: rgb(5, 40, 80);  }
+  .t-dark-blue4  { color: rgb(5, 33, 70);  }
+  .t-dark-blue5  { color: rgb(5, 29, 65);  }
+  .t-dark-blue6  { color: rgb(5, 29, 60);  }
+  .t-dark-blue7  { color: rgb(5, 24, 50);  }
+  .t-dark-blue8  { color: rgb(5, 26, 45);  }
+  .t-dark-blue9  { color: rgb(5, 21, 40);  }
+  .t-dark-blue10 { color: rgb(5, 18, 30);  }
+  .t-bg-dark-blue   { background-color: rgb(5, 43, 100); }
+  .t-bg-dark-blue1  { background-color: rgb(5, 39, 90);  }
+  .t-bg-dark-blue2  { background-color: rgb(5, 40, 85);  }
+  .t-bg-dark-blue3  { background-color: rgb(5, 40, 80);  }
+  .t-bg-dark-blue4  { background-color: rgb(5, 33, 70);  }
+  .t-bg-dark-blue5  { background-color: rgb(5, 29, 65);  }
+  .t-bg-dark-blue6  { background-color: rgb(5, 29, 60);  }
+  .t-bg-dark-blue7  { background-color: rgb(5, 24, 50);  }
+  .t-bg-dark-blue8  { background-color: rgb(5, 26, 45);  }
+  .t-bg-dark-blue9  { background-color: rgb(5, 21, 40);  }
+  .t-bg-dark-blue10 { background-color: rgb(5, 18, 30);  }
+  .t-hover-royal:hover     { color: var(--royal);     }
+  .t-hover-aqua:hover      { color: var(--aqua);      }
+  .t-hover-sky:hover       { color: var(--sky);       }
+  .t-hover-blueberry:hover { color: var(--blueberry); }
+  .t-hover-deep:hover      { color: var(--deep);      }
+  .t-hover-ocean:hover     { color: var(--ocean);     }
+  .t-hover-lake:hover      { color: var(--lake);      }
+  .t-hover-water:hover     { color: var(--water);     }
+  .t-hover-rain:hover      { color: var(--rain);      }
+  .t-hover-ice:hover       { color: var(--ice);       }
+  .t-hover-bg-royal:hover     { background-color: var(--royal);     }
+  .t-hover-bg-aqua:hover      { background-color: var(--aqua);      }
+  .t-hover-bg-sky:hover       { background-color: var(--sky);       }
+  .t-hover-bg-blueberry:hover { background-color: var(--blueberry); }
+  .t-hover-bg-deep:hover      { background-color: var(--deep);      }
+  .t-hover-bg-ocean:hover     { background-color: var(--ocean);     }
+  .t-hover-bg-lake:hover      { background-color: var(--lake);      }
+  .t-hover-bg-water:hover     { background-color: var(--water);     }
+  .t-hover-bg-rain:hover      { background-color: var(--rain);      }
+  .t-hover-bg-ice:hover       { background-color: var(--ice);       }
+  .t-hover-blue:hover    { color: rgb(0, 119, 255);   }
+  .t-hover-blue1:hover   { color: rgb(20, 141, 255);  }
+  .t-hover-blue2:hover   { color: rgb(40, 151, 255);  }
+  .t-hover-blue3:hover   { color: rgb(60, 167, 255);  }
+  .t-hover-blue4:hover   { color: rgb(80, 170, 255);  }
+  .t-hover-blue5:hover   { color: rgb(100, 172, 255); }
+  .t-hover-blue6:hover   { color: rgb(120, 183, 255)  }
+  .t-hover-blue7:hover   { color: rgb(140, 186, 255); }
+  .t-hover-blue8:hover   { color: rgb(160, 209, 255); }
+  .t-hover-blue9:hover   { color: rgb(180, 215, 255); }
+  .t-hover-blue10:hover  { color: rgb(200, 230, 255); }
+  .t-hover-bg-blue:hover    { background-color: rgb(0, 119, 255);   }
+  .t-hover-bg-blue1:hover   { background-color: rgb(20, 141, 255);  }
+  .t-hover-bg-blue2:hover   { background-color: rgb(40, 151, 255);  }
+  .t-hover-bg-blue3:hover   { background-color: rgb(60, 167, 255);  }
+  .t-hover-bg-blue4:hover   { background-color: rgb(80, 170, 255);  }
+  .t-hover-bg-blue5:hover   { background-color: rgb(100, 172, 255); }
+  .t-hover-bg-blue6:hover   { background-color: rgb(120, 183, 255)  }
+  .t-hover-bg-blue7:hover   { background-color: rgb(140, 186, 255); }
+  .t-hover-bg-blue8:hover   { background-color: rgb(160, 209, 255); }
+  .t-hover-bg-blue9:hover   { background-color: rgb(180, 215, 255); }
+  .t-hover-bg-blue10:hover  { background-color: rgb(200, 230, 255); }
+  .t-hover-dark-blue:hover   { color: rgb(5, 43, 100); }
+  .t-hover-dark-blue1:hover  { color: rgb(5, 39, 90);  }
+  .t-hover-dark-blue2:hover  { color: rgb(5, 40, 85);  }
+  .t-hover-dark-blue3:hover  { color: rgb(5, 40, 80);  }
+  .t-hover-dark-blue4:hover  { color: rgb(5, 33, 70);  }
+  .t-hover-dark-blue5:hover  { color: rgb(5, 29, 65);  }
+  .t-hover-dark-blue6:hover  { color: rgb(5, 29, 60);  }
+  .t-hover-dark-blue7:hover  { color: rgb(5, 24, 50);  }
+  .t-hover-dark-blue8:hover  { color: rgb(5, 26, 45);  }
+  .t-hover-dark-blue9:hover  { color: rgb(5, 21, 40);  }
+  .t-hover-dark-blue10:hover { color: rgb(5, 18, 30);  }
+  .t-hover-bg-dark-blue:hover   { background-color: rgb(5, 43, 100); }
+  .t-hover-bg-dark-blue1:hover  { background-color: rgb(5, 39, 90);  }
+  .t-hover-bg-dark-blue2:hover  { background-color: rgb(5, 40, 85);  }
+  .t-hover-bg-dark-blue3:hover  { background-color: rgb(5, 40, 80);  }
+  .t-hover-bg-dark-blue4:hover  { background-color: rgb(5, 33, 70);  }
+  .t-hover-bg-dark-blue5:hover  { background-color: rgb(5, 29, 65);  }
+  .t-hover-bg-dark-blue6:hover  { background-color: rgb(5, 29, 60);  }
+  .t-hover-bg-dark-blue7:hover  { background-color: rgb(5, 24, 50);  }
+  .t-hover-bg-dark-blue8:hover  { background-color: rgb(5, 26, 45);  }
+  .t-hover-bg-dark-blue9:hover  { background-color: rgb(5, 21, 40);  }
+  .t-hover-bg-dark-blue10:hover { background-color: rgb(5, 18, 30);  }
+  .t-emerald { color: var(--emerald);  }
+  .t-leaf    { color: var(--leaf);     }
+  .t-tree    { color: var(--tree);     }
+  .t-lemon   { color: var(--lemon);    }
+  .t-kiwi    { color: var(--kiwi);     }
+  .t-grass   { color: var(--grass);    }
+  .t-lime    { color: var(--lime);     }
+  .t-avocado { color: var(--avocado);  }
+  .t-forest  { color: var(--forest);   }
+  .t-swamp   { color: var(--swamp);    }
+  .t-bg-emerald { background-color: var(--emerald); }
+  .t-bg-leaf    { background-color: var(--leaf);    }
+  .t-bg-tree    { background-color: var(--tree);    }
+  .t-bg-lemon   { background-color: var(--lemon);   }
+  .t-bg-kiwi    { background-color: var(--kiwi);    }
+  .t-bg-grass   { background-color: var(--grass);   }
+  .t-bg-lime    { background-color: var(--lime);    }
+  .t-bg-avocado { background-color: var(--avocado); }
+  .t-bg-forest  { background-color: var(--forest);  }
+  .t-bg-swamp   { background-color: var(--swamp);   }
+  .t-green    { color: rgb(0, 255, 0);     }
+  .t-green1   { color: rgb(28, 255, 20);   }
+  .t-green2   { color: rgb(40, 255, 76);   }
+  .t-green3   { color: rgb(60, 255, 60);   }
+  .t-green4   { color: rgb(80, 255, 95);   }
+  .t-green5   { color: rgb(100, 255, 126); }
+  .t-green6   { color: rgb(120, 255, 120)  }
+  .t-green7   { color: rgb(140, 255, 150); }
+  .t-green8   { color: rgb(160, 255, 173); }
+  .t-green9   { color: rgb(180, 255, 193); }
+  .t-green10  { color: rgb(200, 255, 205); }
+  .t-dark-green   { color: rgb(5, 100, 18); }
+  .t-dark-green1  { color: rgb(5, 90, 19);  }
+  .t-dark-green2  { color: rgb(5, 85, 5);   }
+  .t-dark-green3  { color: rgb(5, 80, 11);  }
+  .t-dark-green4  { color: rgb(5, 70, 8);   }
+  .t-dark-green5  { color: rgb(5, 65, 5);   }
+  .t-dark-green6  { color: rgb(5, 60, 12);  }
+  .t-dark-green7  { color: rgb(5, 50, 9);   }
+  .t-dark-green8  { color: rgb(5, 45, 12);  }
+  .t-dark-green9  { color: rgb(5, 40, 13);  }
+  .t-dark-green10 { color: rgb(5, 30, 13);  }
+  .t-bg-green    { background-color: rgb(0, 255, 0);     }
+  .t-bg-green1   { background-color: rgb(28, 255, 20);   }
+  .t-bg-green2   { background-color: rgb(40, 255, 76);   }
+  .t-bg-green3   { background-color: rgb(60, 255, 60);   }
+  .t-bg-green4   { background-color: rgb(80, 255, 95);   }
+  .t-bg-green5   { background-color: rgb(100, 255, 126); }
+  .t-bg-green6   { background-color: rgb(120, 255, 120)  }
+  .t-bg-green7   { background-color: rgb(140, 255, 150); }
+  .t-bg-green8   { background-color: rgb(160, 255, 173); }
+  .t-bg-green9   { background-color: rgb(180, 255, 193); }
+  .t-bg-green10  { background-color: rgb(200, 255, 205); }
+  .t-bg-dark-green   { background-color: rgb(5, 100, 18); }
+  .t-bg-dark-green1  { background-color: rgb(5, 90, 19);  }
+  .t-bg-dark-green2  { background-color: rgb(5, 85, 5);   }
+  .t-bg-dark-green3  { background-color: rgb(5, 80, 11);  }
+  .t-bg-dark-green4  { background-color: rgb(5, 70, 8);   }
+  .t-bg-dark-green5  { background-color: rgb(5, 65, 5);   }
+  .t-bg-dark-green6  { background-color: rgb(5, 60, 12);  }
+  .t-bg-dark-green7  { background-color: rgb(5, 50, 9);   }
+  .t-bg-dark-green8  { background-color: rgb(5, 45, 12);  }
+  .t-bg-dark-green9  { background-color: rgb(5, 40, 13);  }
+  .t-bg-dark-green10 { background-color: rgb(5, 30, 13);  }
+  .t-hover-emerald:hover { color: var(--emerald);  }
+  .t-hover-leaf:hover    { color: var(--leaf);     }
+  .t-hover-tree:hover    { color: var(--tree);     }
+  .t-hover-lemon:hover   { color: var(--lemon);    }
+  .t-hover-kiwi:hover    { color: var(--kiwi);     }
+  .t-hover-grass:hover   { color: var(--grass);    }
+  .t-hover-lime:hover    { color: var(--lime);     }
+  .t-hover-avocado:hover { color: var(--avocado);  }
+  .t-hover-forest:hover  { color: var(--forest);   }
+  .t-hover-swamp:hover   { color: var(--swamp);    }
+  .t-hover-bg-emerald:hover { background-color: var(--emerald); }
+  .t-hover-bg-leaf:hover    { background-color: var(--leaf);    }
+  .t-hover-bg-tree:hover    { background-color: var(--tree);    }
+  .t-hover-bg-lemon:hover   { background-color: var(--lemon);   }
+  .t-hover-bg-kiwi:hover    { background-color: var(--kiwi);    }
+  .t-hover-bg-grass:hover   { background-color: var(--grass);   }
+  .t-hover-bg-lime:hover    { background-color: var(--lime);    }
+  .t-hover-bg-avocado:hover { background-color: var(--avocado); }
+  .t-hover-bg-forest:hover  { background-color: var(--forest);  }
+  .t-hover-bg-swamp:hover   { background-color: var(--swamp);   }
+  .t-hover-green:hover    { color: rgb(0, 255, 0);     }
+  .t-hover-green1:hover   { color: rgb(28, 255, 20);   }
+  .t-hover-green2:hover   { color: rgb(40, 255, 76);   }
+  .t-hover-green3:hover   { color: rgb(60, 255, 60);   }
+  .t-hover-green4:hover   { color: rgb(80, 255, 95);   }
+  .t-hover-green5:hover   { color: rgb(100, 255, 126); }
+  .t-hover-green6:hover   { color: rgb(120, 255, 120)  }
+  .t-hover-green7:hover   { color: rgb(140, 255, 150); }
+  .t-hover-green8:hover   { color: rgb(160, 255, 173); }
+  .t-hover-green9:hover   { color: rgb(180, 255, 193); }
+  .t-hover-green10:hover  { color: rgb(200, 255, 205); }
+  .t-hover-dark-green:hover   { color: rgb(5, 100, 18); }
+  .t-hover-dark-green1:hover  { color: rgb(5, 90, 19);  }
+  .t-hover-dark-green2:hover  { color: rgb(5, 85, 5);   }
+  .t-hover-dark-green3:hover  { color: rgb(5, 80, 11);  }
+  .t-hover-dark-green4:hover  { color: rgb(5, 70, 8);   }
+  .t-hover-dark-green5:hover  { color: rgb(5, 65, 5);   }
+  .t-hover-dark-green6:hover  { color: rgb(5, 60, 12);  }
+  .t-hover-dark-green7:hover  { color: rgb(5, 50, 9);   }
+  .t-hover-dark-green8:hover  { color: rgb(5, 45, 12);  }
+  .t-hover-dark-green9:hover  { color: rgb(5, 40, 13);  }
+  .t-hover-dark-green10:hover { color: rgb(5, 30, 13);  }
+  .t-hover-bg-green:hover    { background-color: rgb(0, 255, 0);     }
+  .t-hover-bg-green1:hover   { background-color: rgb(28, 255, 20);   }
+  .t-hover-bg-green2:hover   { background-color: rgb(40, 255, 76);   }
+  .t-hover-bg-green3:hover   { background-color: rgb(60, 255, 60);   }
+  .t-hover-bg-green4:hover   { background-color: rgb(80, 255, 95);   }
+  .t-hover-bg-green5:hover   { background-color: rgb(100, 255, 126); }
+  .t-hover-bg-green6:hover   { background-color: rgb(120, 255, 120)  }
+  .t-hover-bg-green7:hover   { background-color: rgb(140, 255, 150); }
+  .t-hover-bg-green8:hover   { background-color: rgb(160, 255, 173); }
+  .t-hover-bg-green9:hover   { background-color: rgb(180, 255, 193); }
+  .t-hover-bg-green10:hover  { background-color: rgb(200, 255, 205); }
+  .t-hover-bg-dark-green:hover   { background-color: rgb(5, 100, 18); }
+  .t-hover-bg-dark-green1:hover  { background-color: rgb(5, 90, 19);  }
+  .t-hover-bg-dark-green2:hover  { background-color: rgb(5, 85, 5);   }
+  .t-hover-bg-dark-green3:hover  { background-color: rgb(5, 80, 11);  }
+  .t-hover-bg-dark-green4:hover  { background-color: rgb(5, 70, 8);   }
+  .t-hover-bg-dark-green5:hover  { background-color: rgb(5, 65, 5);   }
+  .t-hover-bg-dark-green6:hover  { background-color: rgb(5, 60, 12);  }
+  .t-hover-bg-dark-green7:hover  { background-color: rgb(5, 50, 9);   }
+  .t-hover-bg-dark-green8:hover  { background-color: rgb(5, 45, 12);  }
+  .t-hover-bg-dark-green9:hover  { background-color: rgb(5, 40, 13);  }
+  .t-hover-bg-dark-green10:hover { background-color: rgb(5, 30, 13);  }
+  .t-grape     { color: var(--grape);     }
+  .t-plum      { color: var(--plum);      }
+  .t-açai      { color: var(--açai);      }
+  .t-berry     { color: var(--berry);     }
+  .t-dragon    { color: var(--dragon);    }
+  .t-eggplant  { color: var(--eggplant);  }
+  .t-violet    { color: var(--violet);    }
+  .t-lilac     { color: var(--lilac);     }
+  .t-jellyfish { color: var(--jellyfish); }
+  .t-octopus   { color: var(--octopus);   }
+  .t-bg-grape     { background-color: var(--grape);     }
+  .t-bg-plum      { background-color: var(--plum);      }
+  .t-bg-açai      { background-color: var(--açai);      }
+  .t-bg-berry     { background-color: var(--berry);     }
+  .t-bg-dragon    { background-color: var(--dragon);    }
+  .t-bg-eggplant  { background-color: var(--eggplant);  }
+  .t-bg-violet    { background-color: var(--violet);    }
+  .t-bg-lilac     { background-color: var(--lilac);     }
+  .t-bg-jellyfish { background-color: var(--jellyfish); }
+  .t-bg-octopus   { background-color: var(--octopus);   }
+  .t-purple    { color: rgb(111, 0, 255);   }
+  .t-purple1   { color: rgb(130, 20, 255);  }
+  .t-purple2   { color: rgb(122, 40, 255);  }
+  .t-purple3   { color: rgb(102, 60, 255);  }
+  .t-purple4   { color: rgb(127, 80, 255);  }
+  .t-purple5   { color: rgb(172, 100, 255); }
+  .t-purple6   { color: rgb(167, 120, 255)  }
+  .t-purple7   { color: rgb(184, 140, 255); }
+  .t-purple8   { color: rgb(196, 160, 255); }
+  .t-purple9   { color: rgb(196, 180, 255); }
+  .t-purple10  { color: rgb(219, 200, 255); }
+  .t-dark-purple   { color: rgb(30, 5, 100); }
+  .t-dark-purple1  { color: rgb(35, 5, 90);  }
+  .t-dark-purple2  { color: rgb(22, 5, 85);  }
+  .t-dark-purple3  { color: rgb(31, 5, 80);  }
+  .t-dark-purple4  { color: rgb(19, 5, 70);  }
+  .t-dark-purple5  { color: rgb(16, 5, 65);  }
+  .t-dark-purple6  { color: rgb(13, 5, 60);  }
+  .t-dark-purple7  { color: rgb(17, 5, 50);  }
+  .t-dark-purple8  { color: rgb(16, 5, 45);  }
+  .t-dark-purple9  { color: rgb(13, 5, 40);  }
+  .t-dark-purple10 { color: rgb(10, 5, 30);  }
+  .t-bg-purple    { background-color: rgb(111, 0, 255);   }
+  .t-bg-purple1   { background-color: rgb(130, 20, 255);  }
+  .t-bg-purple2   { background-color: rgb(122, 40, 255);  }
+  .t-bg-purple3   { background-color: rgb(102, 60, 255);  }
+  .t-bg-purple4   { background-color: rgb(127, 80, 255);  }
+  .t-bg-purple5   { background-color: rgb(172, 100, 255); }
+  .t-bg-purple6   { background-color: rgb(167, 120, 255)  }
+  .t-bg-purple7   { background-color: rgb(184, 140, 255); }
+  .t-bg-purple8   { background-color: rgb(196, 160, 255); }
+  .t-bg-purple9   { background-color: rgb(196, 180, 255); }
+  .t-bg-purple10  { background-color: rgb(219, 200, 255); }
+  .t-bg-dark-purple   { background-color: rgb(30, 5, 100); }
+  .t-bg-dark-purple1  { background-color: rgb(35, 5, 90);  }
+  .t-bg-dark-purple2  { background-color: rgb(22, 5, 85);  }
+  .t-bg-dark-purple3  { background-color: rgb(31, 5, 80);  }
+  .t-bg-dark-purple4  { background-color: rgb(19, 5, 70);  }
+  .t-bg-dark-purple5  { background-color: rgb(16, 5, 65);  }
+  .t-bg-dark-purple6  { background-color: rgb(13, 5, 60);  }
+  .t-bg-dark-purple7  { background-color: rgb(17, 5, 50);  }
+  .t-bg-dark-purple8  { background-color: rgb(16, 5, 45);  }
+  .t-bg-dark-purple9  { background-color: rgb(13, 5, 40);  }
+  .t-bg-dark-purple10 { background-color: rgb(10, 5, 30);  }
+  .t-hover-grape:hover     { color: var(--grape);     }
+  .t-hover-plum:hover      { color: var(--plum);      }
+  .t-hover-açai:hover      { color: var(--açai);      }
+  .t-hover-berry:hover     { color: var(--berry);     }
+  .t-hover-dragon:hover    { color: var(--dragon);    }
+  .t-hover-eggplant:hover  { color: var(--eggplant);  }
+  .t-hover-violet:hover    { color: var(--violet);    }
+  .t-hover-lilac:hover     { color: var(--lilac);     }
+  .t-hover-jellyfish:hover { color: var(--jellyfish); }
+  .t-hover-octopus:hover   { color: var(--octopus);   }
+  .t-hover-bg-grape:hover     { background-color: var(--grape);     }
+  .t-hover-bg-plum:hover      { background-color: var(--plum);      }
+  .t-hover-bg-açai:hover      { background-color: var(--açai);      }
+  .t-hover-bg-berry:hover     { background-color: var(--berry);     }
+  .t-hover-bg-dragon:hover    { background-color: var(--dragon);    }
+  .t-hover-bg-eggplant:hover  { background-color: var(--eggplant);  }
+  .t-hover-bg-violet:hover    { background-color: var(--violet);    }
+  .t-hover-bg-lilac:hover     { background-color: var(--lilac);     }
+  .t-hover-bg-jellyfish:hover { background-color: var(--jellyfish); }
+  .t-hover-bg-octopus:hover   { background-color: var(--octopus);   }
+  .t-hover-purple:hover    { color: rgb(111, 0, 255);   }
+  .t-hover-purple1:hover   { color: rgb(130, 20, 255);  }
+  .t-hover-purple2:hover   { color: rgb(122, 40, 255);  }
+  .t-hover-purple3:hover   { color: rgb(102, 60, 255);  }
+  .t-hover-purple4:hover   { color: rgb(127, 80, 255);  }
+  .t-hover-purple5:hover   { color: rgb(172, 100, 255); }
+  .t-hover-purple6:hover   { color: rgb(167, 120, 255)  }
+  .t-hover-purple7:hover   { color: rgb(184, 140, 255); }
+  .t-hover-purple8:hover   { color: rgb(196, 160, 255); }
+  .t-hover-purple9:hover   { color: rgb(196, 180, 255); }
+  .t-hover-purple10:hover  { color: rgb(219, 200, 255); }
+  .t-hover-dark-purple:hover   { color: rgb(30, 5, 100); }
+  .t-hover-dark-purple1:hover  { color: rgb(35, 5, 90);  }
+  .t-hover-dark-purple2:hover  { color: rgb(22, 5, 85);  }
+  .t-hover-dark-purple3:hover  { color: rgb(31, 5, 80);  }
+  .t-hover-dark-purple4:hover  { color: rgb(19, 5, 70);  }
+  .t-hover-dark-purple5:hover  { color: rgb(16, 5, 65);  }
+  .t-hover-dark-purple6:hover  { color: rgb(13, 5, 60);  }
+  .t-hover-dark-purple7:hover  { color: rgb(17, 5, 50);  }
+  .t-hover-dark-purple8:hover  { color: rgb(16, 5, 45);  }
+  .t-hover-dark-purple9:hover  { color: rgb(13, 5, 40);  }
+  .t-hover-dark-purple10:hover { color: rgb(10, 5, 30);  }
+  .t-hover-bg-purple:hover    { background-color: rgb(111, 0, 255);   }
+  .t-hover-bg-purple1:hover   { background-color: rgb(130, 20, 255);  }
+  .t-hover-bg-purple2:hover   { background-color: rgb(122, 40, 255);  }
+  .t-hover-bg-purple3:hover   { background-color: rgb(102, 60, 255);  }
+  .t-hover-bg-purple4:hover   { background-color: rgb(127, 80, 255);  }
+  .t-hover-bg-purple5:hover   { background-color: rgb(172, 100, 255); }
+  .t-hover-bg-purple6:hover   { background-color: rgb(167, 120, 255)  }
+  .t-hover-bg-purple7:hover   { background-color: rgb(184, 140, 255); }
+  .t-hover-bg-purple8:hover   { background-color: rgb(196, 160, 255); }
+  .t-hover-bg-purple9:hover   { background-color: rgb(196, 180, 255); }
+  .t-hover-bg-purple10:hover  { background-color: rgb(219, 200, 255); }
+  .t-hover-bg-dark-purple:hover   { background-color: rgb(30, 5, 100); }
+  .t-hover-bg-dark-purple1:hover  { background-color: rgb(35, 5, 90);  }
+  .t-hover-bg-dark-purple2:hover  { background-color: rgb(22, 5, 85);  }
+  .t-hover-bg-dark-purple3:hover  { background-color: rgb(31, 5, 80);  }
+  .t-hover-bg-dark-purple4:hover  { background-color: rgb(19, 5, 70);  }
+  .t-hover-bg-dark-purple5:hover  { background-color: rgb(16, 5, 65);  }
+  .t-hover-bg-dark-purple6:hover  { background-color: rgb(13, 5, 60);  }
+  .t-hover-bg-dark-purple7:hover  { background-color: rgb(17, 5, 50);  }
+  .t-hover-bg-dark-purple8:hover  { background-color: rgb(16, 5, 45);  }
+  .t-hover-bg-dark-purple9:hover  { background-color: rgb(13, 5, 40);  }
+  .t-hover-bg-dark-purple10:hover { background-color: rgb(10, 5, 30);  }
+  .t-banana    { color: var(--banana);    }
+  .t-melon     { color: var(--melon);     }
+  .t-sun       { color: var(--sun);       }
+  .t-gold      { color: var(--gold);      }
+  .t-pineapple { color: var(--pineapple); }
+  .t-egg       { color: var(--egg);       }
+  .t-sunset    { color: var(--sunset);    }
+  .t-golden    { color: var(--golden);    }
+  .t-mango     { color: var(--mango);     }
+  .t-honey     { color: var(--honey);     }
+  .t-hover-banana:hover    { color: var(--banana);    }
+  .t-hover-melon:hover     { color: var(--melon);     }
+  .t-hover-sun:hover       { color: var(--sun);       }
+  .t-hover-gold:hover      { color: var(--gold);      }
+  .t-hover-pineapple:hover { color: var(--pineapple); }
+  .t-hover-egg:hover       { color: var(--egg);       }
+  .t-hover-sunset:hover    { color: var(--sunset);    }
+  .t-hover-golden:hover    { color: var(--golden);    }
+  .t-hover-mango:hover     { color: var(--mango);     }
+  .t-hover-honey:hover     { color: var(--honey);     }
+  .t-bg-banana    { background-color: var(--banana);    }
+  .t-bg-melon     { background-color: var(--melon);     }
+  .t-bg-sun       { background-color: var(--sun);       }
+  .t-bg-gold      { background-color: var(--gold);      }
+  .t-bg-pineapple { background-color: var(--pineapple); }
+  .t-bg-egg       { background-color: var(--egg);       }
+  .t-bg-sunset    { background-color: var(--sunset);    }
+  .t-bg-golden    { background-color: var(--golden);    }
+  .t-bg-mango     { background-color: var(--mango);     }
+  .t-bg-honey     { background-color: var(--honey);     }
+  .t-hover-bg-banana:hover    { background-color: var(--banana);    }
+  .t-hover-bg-melon:hover     { background-color: var(--melon);     }
+  .t-hover-bg-sun:hover       { background-color: var(--sun);       }
+  .t-hover-bg-gold:hover      { background-color: var(--gold);      }
+  .t-hover-bg-pineapple:hover { background-color: var(--pineapple); }
+  .t-hover-bg-egg:hover       { background-color: var(--egg);       }
+  .t-hover-bg-sunset:hover    { background-color: var(--sunset);    }
+  .t-hover-bg-golden:hover    { background-color: var(--golden);    }
+  .t-hover-bg-mango:hover     { background-color: var(--mango);     }
+  .t-hover-bg-honey:hover     { background-color: var(--honey);     }
+  .t-yellow    { color: rgb(255, 217, 0);   }
+  .t-yellow1   { color: rgb(255, 231, 20);  }
+  .t-yellow2   { color: rgb(255, 241, 40);  }
+  .t-yellow3   { color: rgb(255, 242, 60);  }
+  .t-yellow4   { color: rgb(255, 243, 80);  }
+  .t-yellow5   { color: rgb(255, 232, 100); }
+  .t-yellow6   { color: rgb(255, 235, 120)  }
+  .t-yellow7   { color: rgb(255, 253, 140); }
+  .t-yellow8   { color: rgb(255, 253, 160); }
+  .t-yellow9   { color: rgb(255, 254, 180); }
+  .t-yellow10  { color: rgb(255, 249, 200); }
+  .t-hover-yellow:hover    { color: rgb(255, 217, 0);   }
+  .t-hover-yellow1:hover   { color: rgb(255, 231, 20);  }
+  .t-hover-yellow2:hover   { color: rgb(255, 241, 40);  }
+  .t-hover-yellow3:hover   { color: rgb(255, 242, 60);  }
+  .t-hover-yellow4:hover   { color: rgb(255, 243, 80);  }
+  .t-hover-yellow5:hover   { color: rgb(255, 232, 100); }
+  .t-hover-yellow6:hover   { color: rgb(255, 235, 120)  }
+  .t-hover-yellow7:hover   { color: rgb(255, 253, 140); }
+  .t-hover-yellow8:hover   { color: rgb(255, 253, 160); }
+  .t-hover-yellow9:hover   { color: rgb(255, 254, 180); }
+  .t-hover-yellow10:hover  { color: rgb(255, 249, 200); }
+  .t-dark-yellow   { color: rgb(100, 90, 5); }
+  .t-dark-yellow1  { color: rgb(90, 82, 5);  }
+  .t-dark-yellow2  { color: rgb(85, 73, 5);  }
+  .t-dark-yellow3  { color: rgb(80, 75, 5);  }
+  .t-dark-yellow4  { color: rgb(70, 60, 5);  }
+  .t-dark-yellow5  { color: rgb(65, 61, 5);  }
+  .t-dark-yellow6  { color: rgb(60, 47, 5);  }
+  .t-dark-yellow7  { color: rgb(50, 45, 5);  }
+  .t-dark-yellow8  { color: rgb(45, 42, 5);  }
+  .t-dark-yellow9  { color: rgb(40, 35, 5);  }
+  .t-dark-yellow10 { color: rgb(30, 26, 5);  }
+  .t-hover-dark-yellow:hover   { color: rgb(100, 90, 5); }
+  .t-hover-dark-yellow1:hover  { color: rgb(90, 82, 5);  }
+  .t-hover-dark-yellow2:hover  { color: rgb(85, 73, 5);  }
+  .t-hover-dark-yellow3:hover  { color: rgb(80, 75, 5);  }
+  .t-hover-dark-yellow4:hover  { color: rgb(70, 60, 5);  }
+  .t-hover-dark-yellow5:hover  { color: rgb(65, 61, 5);  }
+  .t-hover-dark-yellow6:hover  { color: rgb(60, 47, 5);  }
+  .t-hover-dark-yellow7:hover  { color: rgb(50, 45, 5);  }
+  .t-hover-dark-yellow8:hover  { color: rgb(45, 42, 5);  }
+  .t-hover-dark-yellow9:hover  { color: rgb(40, 35, 5);  }
+  .t-hover-dark-yellow10:hover { color: rgb(30, 26, 5);  }
+  .t-bg-yellow    { background-color: rgb(255, 217, 0);   }
+  .t-bg-yellow1   { background-color: rgb(255, 231, 20);  }
+  .t-bg-yellow2   { background-color: rgb(255, 241, 40);  }
+  .t-bg-yellow3   { background-color: rgb(255, 242, 60);  }
+  .t-bg-yellow4   { background-color: rgb(255, 243, 80);  }
+  .t-bg-yellow5   { background-color: rgb(255, 232, 100); }
+  .t-bg-yellow6   { background-color: rgb(255, 235, 120)  }
+  .t-bg-yellow7   { background-color: rgb(255, 253, 140); }
+  .t-bg-yellow8   { background-color: rgb(255, 253, 160); }
+  .t-bg-yellow9   { background-color: rgb(255, 254, 180); }
+  .t-bg-yellow10  { background-color: rgb(255, 249, 200); }
+  .t-hover-bg-yellow:hover    { background-color: rgb(255, 217, 0);   }
+  .t-hover-bg-yellow1:hover   { background-color: rgb(255, 231, 20);  }
+  .t-hover-bg-yellow2:hover   { background-color: rgb(255, 241, 40);  }
+  .t-hover-bg-yellow3:hover   { background-color: rgb(255, 242, 60);  }
+  .t-hover-bg-yellow4:hover   { background-color: rgb(255, 243, 80);  }
+  .t-hover-bg-yellow5:hover   { background-color: rgb(255, 232, 100); }
+  .t-hover-bg-yellow6:hover   { background-color: rgb(255, 235, 120)  }
+  .t-hover-bg-yellow7:hover   { background-color: rgb(255, 253, 140); }
+  .t-hover-bg-yellow8:hover   { background-color: rgb(255, 253, 160); }
+  .t-hover-bg-yellow9:hover   { background-color: rgb(255, 254, 180); }
+  .t-hover-bg-yellow10:hover  { background-color: rgb(255, 249, 200); }
+  .t-bg-dark-yellow   { background-color: rgb(100, 90, 5); }
+  .t-bg-dark-yellow1  { background-color: rgb(90, 82, 5);  }
+  .t-bg-dark-yellow2  { background-color: rgb(85, 73, 5);  }
+  .t-bg-dark-yellow3  { background-color: rgb(80, 75, 5);  }
+  .t-bg-dark-yellow4  { background-color: rgb(70, 60, 5);  }
+  .t-bg-dark-yellow5  { background-color: rgb(65, 61, 5);  }
+  .t-bg-dark-yellow6  { background-color: rgb(60, 47, 5);  }
+  .t-bg-dark-yellow7  { background-color: rgb(50, 45, 5);  }
+  .t-bg-dark-yellow8  { background-color: rgb(45, 42, 5);  }
+  .t-bg-dark-yellow9  { background-color: rgb(40, 35, 5);  }
+  .t-bg-dark-yellow10 { background-color: rgb(30, 26, 5);  }
+  .t-hover-bg-dark-yellow:hover   { background-color: rgb(100, 90, 5); }
+  .t-hover-bg-dark-yellow1:hover  { background-color: rgb(90, 82, 5);  }
+  .t-hover-bg-dark-yellow2:hover  { background-color: rgb(85, 73, 5);  }
+  .t-hover-bg-dark-yellow3:hover  { background-color: rgb(80, 75, 5);  }
+  .t-hover-bg-dark-yellow4:hover  { background-color: rgb(70, 60, 5);  }
+  .t-hover-bg-dark-yellow5:hover  { background-color: rgb(65, 61, 5);  }
+  .t-hover-bg-dark-yellow6:hover  { background-color: rgb(60, 47, 5);  }
+  .t-hover-bg-dark-yellow7:hover  { background-color: rgb(50, 45, 5);  }
+  .t-hover-bg-dark-yellow8:hover  { background-color: rgb(45, 42, 5);  }
+  .t-hover-bg-dark-yellow9:hover  { background-color: rgb(40, 35, 5);  }
+  .t-hover-bg-dark-yellow10:hover { background-color: rgb(30, 26, 5);  }
+  .t-tangerine    { color: var(--tangerine);    }
+  .t-tiger        { color: var(--tiger);        }
+  .t-orange-juice { color: var(--orange-juice); }
+  .t-fox          { color: var(--fox);          }
+  .t-salmon       { color: var(--salmon);       }
+  .t-carrot       { color: var(--carrot);       }
+  .t-pumpkin      { color: var(--pumpkin);      }
+  .t-afternoon    { color: var(--afternoon);    }
+  .t-bg-tangerine    { background-color: var(--tangerine);    }
+  .t-bg-tiger        { background-color: var(--tiger);        }
+  .t-bg-orange-juice { background-color: var(--orange-juice); }
+  .t-bg-fox          { background-color: var(--fox);          }
+  .t-bg-salmon       { background-color: var(--salmon);       }
+  .t-bg-carrot       { background-color: var(--carrot);       }
+  .t-bg-pumpkin      { background-color: var(--pumpkin);      }
+  .t-bg-afternoon    { background-color: var(--afternoon);    }
+  .t-orange    { color: rgb(255, 115, 0);   }
+  .t-orange1   { color: rgb(255, 134, 20);  }
+  .t-orange2   { color: rgb(255, 144, 40);  }
+  .t-orange3   { color: rgb(255, 148, 60);  }
+  .t-orange4   { color: rgb(255, 173, 80);  }
+  .t-orange5   { color: rgb(255, 188, 100); }
+  .t-orange6   { color: rgb(255, 201, 120)  }
+  .t-orange7   { color: rgb(255, 201, 140); }
+  .t-orange8   { color: rgb(255, 203, 160); }
+  .t-orange9   { color: rgb(255, 223, 180); }
+  .t-orange10  { color: rgb(255, 231, 200); }
+  .t-dark-orange   { color: rgb(100, 51, 5); }
+  .t-dark-orange1  { color: rgb(90, 46, 5);  }
+  .t-dark-orange2  { color: rgb(85, 44, 5);  }
+  .t-dark-orange3  { color: rgb(80, 41, 5);  }
+  .t-dark-orange4  { color: rgb(70, 36, 5);  }
+  .t-dark-orange5  { color: rgb(65, 34, 5);  }
+  .t-dark-orange6  { color: rgb(60, 22, 5);  }
+  .t-dark-orange7  { color: rgb(50, 23, 5);  }
+  .t-dark-orange8  { color: rgb(45, 20, 5);  }
+  .t-dark-orange9  { color: rgb(40, 15, 5);  }
+  .t-dark-orange10 { color: rgb(30, 15, 5);  }
+  .t-hover-tangerine:hover    { color: var(--tangerine);    }
+  .t-hover-tiger:hover        { color: var(--tiger);        }
+  .t-hover-orange-juice:hover { color: var(--orange-juice); }
+  .t-hover-fox:hover          { color: var(--fox);          }
+  .t-hover-salmon:hover       { color: var(--salmon);       }
+  .t-hover-carrot:hover       { color: var(--carrot);       }
+  .t-hover-pumpkin:hover      { color: var(--pumpkin);      }
+  .t-hover-afternoon:hover    { color: var(--afternoon);    }
+  .t-hover-bg-tangerine:hover    { background-color: var(--tangerine);    }
+  .t-hover-bg-tiger:hover        { background-color: var(--tiger);        }
+  .t-hover-bg-orange-juice:hover { background-color: var(--orange-juice); }
+  .t-hover-bg-fox:hover          { background-color: var(--fox);          }
+  .t-hover-bg-salmon:hover       { background-color: var(--salmon);       }
+  .t-hover-bg-carrot:hover       { background-color: var(--carrot);       }
+  .t-hover-bg-pumpkin:hover      { background-color: var(--pumpkin);      }
+  .t-hover-bg-afternoon:hover    { background-color: var(--afternoon);    }
+  .t-hover-orange:hover    { color: rgb(255, 115, 0);   }
+  .t-hover-orange1:hover   { color: rgb(255, 134, 20);  }
+  .t-hover-orange2:hover   { color: rgb(255, 144, 40);  }
+  .t-hover-orange3:hover   { color: rgb(255, 148, 60);  }
+  .t-hover-orange4:hover   { color: rgb(255, 173, 80);  }
+  .t-hover-orange5:hover   { color: rgb(255, 188, 100); }
+  .t-hover-orange6:hover   { color: rgb(255, 201, 120)  }
+  .t-hover-orange7:hover   { color: rgb(255, 201, 140); }
+  .t-hover-orange8:hover   { color: rgb(255, 203, 160); }
+  .t-hover-orange9:hover   { color: rgb(255, 223, 180); }
+  .t-hover-orange10:hover  { color: rgb(255, 231, 200); }
+  .t-hover-dark-orange:hover   { color: rgb(100, 51, 5); }
+  .t-hover-dark-orange1:hover  { color: rgb(90, 46, 5);  }
+  .t-hover-dark-orange2:hover  { color: rgb(85, 44, 5);  }
+  .t-hover-dark-orange3:hover  { color: rgb(80, 41, 5);  }
+  .t-hover-dark-orange4:hover  { color: rgb(70, 36, 5);  }
+  .t-hover-dark-orange5:hover  { color: rgb(65, 34, 5);  }
+  .t-hover-dark-orange6:hover  { color: rgb(60, 22, 5);  }
+  .t-hover-dark-orange7:hover  { color: rgb(50, 23, 5);  }
+  .t-hover-dark-orange8:hover  { color: rgb(45, 20, 5);  }
+  .t-hover-dark-orange9:hover  { color: rgb(40, 15, 5);  }
+  .t-hover-dark-orange10:hover { color: rgb(30, 15, 5);  }
+  .t-pink    { color: rgb(255, 0, 255);   }
+  .t-pink1   { color: rgb(255, 20, 255);  }
+  .t-pink2   { color: rgb(255, 40, 237);  }
+  .t-pink3   { color: rgb(255, 60, 213);  }
+  .t-pink4   { color: rgb(255, 80, 255);  }
+  .t-pink5   { color: rgb(255, 100, 247); }
+  .t-pink6   { color: rgb(251, 120, 255)  }
+  .t-pink7   { color: rgb(255, 140, 249); }
+  .t-pink8   { color: rgb(255, 160, 255); }
+  .t-pink9   { color: rgb(255, 180, 245); }
+  .t-pink10  { color: rgb(255, 200, 246); }
+  .t-dark-pink   { color: rgb(100, 5, 100); }
+  .t-dark-pink1  { color: rgb(90, 5, 79);   }
+  .t-dark-pink2  { color: rgb(82, 5, 85);   }
+  .t-dark-pink3  { color: rgb(80, 5, 68);   }
+  .t-dark-pink4  { color: rgb(70, 5, 67);   }
+  .t-dark-pink5  { color: rgb(65, 5, 57);   }
+  .t-dark-pink6  { color: rgb(60, 5, 55);   }
+  .t-dark-pink7  { color: rgb(50, 5, 46);   }
+  .t-dark-pink8  { color: rgb(45, 5, 40);   }
+  .t-dark-pink9  { color: rgb(40, 5, 40);   }
+  .t-dark-pink10 { color: rgb(30, 5, 28);   }
+  .t-bg-pink          { background-color: rgb(255, 0, 255);             }
+  .t-bg-pink1         { background-color: rgb(255, 20, 255);              }
+  .t-bg-pink2         { background-color: rgb(255, 40, 237);              }
+  .t-bg-pink3         { background-color: rgb(255, 60, 213);              }
+  .t-bg-pink4         { background-color: rgb(255, 80, 255);              }
+  .t-bg-pink5         { background-color: rgb(255, 100, 247);             }
+  .t-bg-pink6         { background-color: rgb(251, 120, 255)              }
+  .t-bg-pink7         { background-color: rgb(255, 140, 249);             }
+  .t-bg-pink8         { background-color: rgb(255, 160, 255);             }
+  .t-bg-pink9         { background-color: rgb(255, 180, 245);             }
+  .t-bg-pink10        { background-color: rgb(255, 200, 246);             }
+  .t-bg-dark-pink     { background-color: rgb(100, 5, 100);               }
+  .t-bg-dark-pink1    { background-color: rgb(90, 5, 79);                 }
+  .t-bg-dark-pink2    { background-color: rgb(82, 5, 85);                 }
+  .t-bg-dark-pink3    { background-color: rgb(80, 5, 68);                 }
+  .t-bg-dark-pink4    { background-color: rgb(70, 5, 67);                 }
+  .t-bg-dark-pink5    { background-color: rgb(65, 5, 57);                 }
+  .t-bg-dark-pink6    { background-color: rgb(60, 5, 55);                 }
+  .t-bg-dark-pink7    { background-color: rgb(50, 5, 46);                 }
+  .t-bg-dark-pink8    { background-color: rgb(45, 5, 40);                 }
+  .t-bg-dark-pink9    { background-color: rgb(40, 5, 40);                 }
+  .t-bg-dark-pink10   { background-color: rgb(30, 5, 28);                 }
+  .t-hover-pink:hover    { color: rgb(255, 0, 255);   }
+  .t-hover-pink1:hover   { color: rgb(255, 20, 255);  }
+  .t-hover-pink2:hover   { color: rgb(255, 40, 237);  }
+  .t-hover-pink3:hover   { color: rgb(255, 60, 213);  }
+  .t-hover-pink4:hover   { color: rgb(255, 80, 255);  }
+  .t-hover-pink5:hover   { color: rgb(255, 100, 247); }
+  .t-hover-pink6:hover   { color: rgb(251, 120, 255)  }
+  .t-hover-pink7:hover   { color: rgb(255, 140, 249); }
+  .t-hover-pink8:hover   { color: rgb(255, 160, 255); }
+  .t-hover-pink9:hover   { color: rgb(255, 180, 245); }
+  .t-hover-pink10:hover  { color: rgb(255, 200, 246); }
+  .t-hover-dark-pink:hover   { color: rgb(100, 5, 100); }
+  .t-hover-dark-pink1:hover  { color: rgb(90, 5, 79);   }
+  .t-hover-dark-pink2:hover  { color: rgb(82, 5, 85);   }
+  .t-hover-dark-pink3:hover  { color: rgb(80, 5, 68);   }
+  .t-hover-dark-pink4:hover  { color: rgb(70, 5, 67);   }
+  .t-hover-dark-pink5:hover  { color: rgb(65, 5, 57);   }
+  .t-hover-dark-pink6:hover  { color: rgb(60, 5, 55);   }
+  .t-hover-dark-pink7:hover  { color: rgb(50, 5, 46);   }
+  .t-hover-dark-pink8:hover  { color: rgb(45, 5, 40);   }
+  .t-hover-dark-pink9:hover  { color: rgb(40, 5, 40);   }
+  .t-hover-dark-pink10:hover { color: rgb(30, 5, 28);   }
+  .t-hover-bg-pink:hover          { background-color: rgb(255, 0, 255);             }
+  .t-hover-bg-pink1:hover         { background-color: rgb(255, 20, 255);              }
+  .t-hover-bg-pink2:hover         { background-color: rgb(255, 40, 237);              }
+  .t-hover-bg-pink3:hover         { background-color: rgb(255, 60, 213);              }
+  .t-hover-bg-pink4:hover         { background-color: rgb(255, 80, 255);              }
+  .t-hover-bg-pink5:hover         { background-color: rgb(255, 100, 247);             }
+  .t-hover-bg-pink6:hover         { background-color: rgb(251, 120, 255)              }
+  .t-hover-bg-pink7:hover         { background-color: rgb(255, 140, 249);             }
+  .t-hover-bg-pink8:hover         { background-color: rgb(255, 160, 255);             }
+  .t-hover-bg-pink9:hover         { background-color: rgb(255, 180, 245);             }
+  .t-hover-bg-pink10:hover        { background-color: rgb(255, 200, 246);             }
+  .t-hover-bg-dark-pink:hover     { background-color: rgb(100, 5, 100);               }
+  .t-hover-bg-dark-pink1:hover    { background-color: rgb(90, 5, 79);                 }
+  .t-hover-bg-dark-pink2:hover    { background-color: rgb(82, 5, 85);                 }
+  .t-hover-bg-dark-pink3:hover    { background-color: rgb(80, 5, 68);                 }
+  .t-hover-bg-dark-pink4:hover    { background-color: rgb(70, 5, 67);                 }
+  .t-hover-bg-dark-pink5:hover    { background-color: rgb(65, 5, 57);                 }
+  .t-hover-bg-dark-pink6:hover    { background-color: rgb(60, 5, 55);                 }
+  .t-hover-bg-dark-pink7:hover    { background-color: rgb(50, 5, 46);                 }
+  .t-hover-bg-dark-pink8:hover    { background-color: rgb(45, 5, 40);                 }
+  .t-hover-bg-dark-pink9:hover    { background-color: rgb(40, 5, 40);                 }
+  .t-hover-bg-dark-pink10:hover   { background-color: rgb(30, 5, 28);                 }
+  .t-gray    { color: rgb(40, 40, 40);    }
+  .t-gray1   { color: rgb(60, 60, 60);    }
+  .t-gray2   { color: rgb(80, 80, 80);    }
+  .t-gray3   { color: rgb(100, 100, 100); }
+  .t-gray4   { color: rgb(120, 120, 120); }
+  .t-gray5   { color: rgb(140, 140, 140); }
+  .t-gray6   { color: rgb(160, 160, 160); }
+  .t-gray7   { color: rgb(180, 180, 180); }
+  .t-gray8   { color: rgb(200, 200, 200); }
+  .t-gray9   { color: rgb(220, 220, 220); }
+  .t-gray10  { color: rgb(240, 240, 240); }
+  .t-console      { color: #101015;            }
+  .t-dark-gray    { color: rgb(40, 40, 40);    }
+  .t-dark-gray1   { color: rgb(60, 60, 60);    }
+  .t-dark-gray2   { color: rgb(80, 80, 80);    }
+  .t-dark-gray3   { color: rgb(100, 100, 100); }
+  .t-dark-gray4   { color: rgb(120, 120, 120); }
+  .t-dark-gray5   { color: rgb(140, 140, 140); }
+  .t-dark-gray6   { color: rgb(160, 160, 160); }
+  .t-dark-gray7   { color: rgb(180, 180, 180); }
+  .t-dark-gray8   { color: rgb(200, 200, 200); }
+  .t-dark-gray9   { color: rgb(220, 220, 220); }
+  .t-dark-gray10  { color: rgb(240, 240, 240); }
+  .t-bg-gray          { background-color: rgb(40, 40, 40);                }
+  .t-bg-gray1         { background-color: rgb(60, 60, 60);                }
+  .t-bg-gray2         { background-color: rgb(80, 80, 80);                }
+  .t-bg-gray3         { background-color: rgb(100, 100, 100);             }
+  .t-bg-gray4         { background-color: rgb(120, 120, 120);             }
+  .t-bg-gray5         { background-color: rgb(140, 140, 140);             }
+  .t-bg-gray6         { background-color: rgb(160, 160, 160);             }
+  .t-bg-gray7         { background-color: rgb(180, 180, 180);             }
+  .t-bg-gray8         { background-color: rgb(200, 200, 200);             }
+  .t-bg-gray9         { background-color: rgb(220, 220, 220);             }
+  .t-bg-gray10        { background-color: rgb(240, 240, 240);             }
+  .t-bg-console       { background-color: #101015;                        }
+  .t-bg-dark-gray     { background-color: rgb(40, 40, 40);                }
+  .t-bg-dark-gray1    { background-color: rgb(60, 60, 60);                }
+  .t-bg-dark-gray2    { background-color: rgb(80, 80, 80);                }
+  .t-bg-dark-gray3    { background-color: rgb(100, 100, 100);             }
+  .t-bg-dark-gray4    { background-color: rgb(120, 120, 120);             }
+  .t-bg-dark-gray5    { background-color: rgb(140, 140, 140);             }
+  .t-bg-dark-gray6    { background-color: rgb(160, 160, 160);             }
+  .t-bg-dark-gray7    { background-color: rgb(180, 180, 180);             }
+  .t-bg-dark-gray8    { background-color: rgb(200, 200, 200);             }
+  .t-bg-dark-gray9    { background-color: rgb(220, 220, 220);             }
+  .t-bg-dark-gray10   { background-color: rgb(240, 240, 240);             }
+  .t-hover-gray:hover    { color: rgb(40, 40, 40);    }
+  .t-hover-gray1:hover   { color: rgb(60, 60, 60);    }
+  .t-hover-gray2:hover   { color: rgb(80, 80, 80);    }
+  .t-hover-gray3:hover   { color: rgb(100, 100, 100); }
+  .t-hover-gray4:hover   { color: rgb(120, 120, 120); }
+  .t-hover-gray5:hover   { color: rgb(140, 140, 140); }
+  .t-hover-gray6:hover   { color: rgb(160, 160, 160); }
+  .t-hover-gray7:hover   { color: rgb(180, 180, 180); }
+  .t-hover-gray8:hover   { color: rgb(200, 200, 200); }
+  .t-hover-gray9:hover   { color: rgb(220, 220, 220); }
+  .t-hover-gray10:hover  { color: rgb(240, 240, 240); }
+  .t-hover-console:hover      { color: #101015;            }
+  .t-hover-dark-gray:hover    { color: rgb(40, 40, 40);    }
+  .t-hover-dark-gray1:hover   { color: rgb(60, 60, 60);    }
+  .t-hover-dark-gray2:hover   { color: rgb(80, 80, 80);    }
+  .t-hover-dark-gray3:hover   { color: rgb(100, 100, 100); }
+  .t-hover-dark-gray4:hover   { color: rgb(120, 120, 120); }
+  .t-hover-dark-gray5:hover   { color: rgb(140, 140, 140); }
+  .t-hover-dark-gray6:hover   { color: rgb(160, 160, 160); }
+  .t-hover-dark-gray7:hover   { color: rgb(180, 180, 180); }
+  .t-hover-dark-gray8:hover   { color: rgb(200, 200, 200); }
+  .t-hover-dark-gray9:hover   { color: rgb(220, 220, 220); }
+  .t-hover-dark-gray10:hover  { color: rgb(240, 240, 240); }
+  .t-hover-bg-gray:hover          { background-color: rgb(40, 40, 40);                }
+  .t-hover-bg-gray1:hover         { background-color: rgb(60, 60, 60);                }
+  .t-hover-bg-gray2:hover         { background-color: rgb(80, 80, 80);                }
+  .t-hover-bg-gray3:hover         { background-color: rgb(100, 100, 100);             }
+  .t-hover-bg-gray4:hover         { background-color: rgb(120, 120, 120);             }
+  .t-hover-bg-gray5:hover         { background-color: rgb(140, 140, 140);             }
+  .t-hover-bg-gray6:hover         { background-color: rgb(160, 160, 160);             }
+  .t-hover-bg-gray7:hover         { background-color: rgb(180, 180, 180);             }
+  .t-hover-bg-gray8:hover         { background-color: rgb(200, 200, 200);             }
+  .t-hover-bg-gray9:hover         { background-color: rgb(220, 220, 220);             }
+  .t-hover-bg-gray10:hover        { background-color: rgb(240, 240, 240);             }
+  .t-hover-bg-console:hover       { background-color: #101015;                        }
+  .t-hover-bg-dark-gray:hover     { background-color: rgb(40, 40, 40);                }
+  .t-hover-bg-dark-gray1:hover    { background-color: rgb(60, 60, 60);                }
+  .t-hover-bg-dark-gray2:hover    { background-color: rgb(80, 80, 80);                }
+  .t-hover-bg-dark-gray3:hover    { background-color: rgb(100, 100, 100);             }
+  .t-hover-bg-dark-gray4:hover    { background-color: rgb(120, 120, 120);             }
+  .t-hover-bg-dark-gray5:hover    { background-color: rgb(140, 140, 140);             }
+  .t-hover-bg-dark-gray6:hover    { background-color: rgb(160, 160, 160);             }
+  .t-hover-bg-dark-gray7:hover    { background-color: rgb(180, 180, 180);             }
+  .t-hover-bg-dark-gray8:hover    { background-color: rgb(200, 200, 200);             }
+  .t-hover-bg-dark-gray9:hover    { background-color: rgb(220, 220, 220);             }
+  .t-hover-bg-dark-gray10:hover   { background-color: rgb(240, 240, 240);             }
+  .t-divider{box-shadow: inset 0 0 1.5vw rgba(78, 78, 78, 0.5);background-color: #dbdbdb;}
+  .t-white       { color: #fff;      }
+  .t-transparent { color: #ffffff00; }
+  .t-black       { color: #000;      }
+  .t-hover-black:hover       { color: #000; }
+  .t-hover-white:hover       { color: #fff; }
+  .t-hover-transparent:hover { color: #ffffff00; }
+  .t-bg-white       { background-color: #fff;      }
+  .t-bg-transparent { background-color: #ffffff00; }
+  .t-bg-black       { background-color: #000;      }
+  .t-hover-bg-black:hover       { background-color: #000;      }
+  .t-hover-bg-white:hover       { background-color: #fff;      }
+  .t-hover-bg-transparent:hover { background-color: #ffffff00; }
+}

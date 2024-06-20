@@ -1,0 +1,16 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css');
+@import 'animation/animated.css';
+@import 'colors/colors.css';
+@import 'components/components.css';
+@import 'default/defined.css';
+@import 'default/full.css';
+@import 'default/px.css';
+@import 'default/vh.css';
+@import 'default/vw.css';
+@import 'fonts/fonts.css';
+@import 'screen/notebook.css';
+@import 'screen/tablet.css';
+@import 'screen/mobile.css';
+@import 'screen/notebook-colors.css';
+@import 'screen/tablet-colors.css';
+@import 'screen/mobile-colors.css';
