@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../planit.css">
+    <link rel="icon" type="image/x-icon" href="https://planit-css.netlify.app/2.0/img/planit.png">
+    <script src="../js/script.js"></script>
+</head>
+
+<style>:root{--h-custom:0%;--h-custom2:var(--h-custom);}</style>
+
+<body class="bg-custom font1 h-vh-100 flex ctr auto text-center" style="--bg-custom: #0a0a0e;">
+
+  <nav class="h-3-05 t-h-9 w-full flex fixed top-0 m-h-5 m-inline z-index-11 bg-g3" style="--bg-custom: #0d1116; --bg-custom2: #1e2633; --bg-custom3: #0d1116;">
+    <div class="mg-left-2 w-3-05 t-w-full h-full absolute left-0 m-top-9 m-left--7 center-v-screen z-index-11">
+      <img src="https://planit-css.netlify.app/2.0/img/G.png" alt="PlanitLogo" class="t-mg-left--1-07 op-07 fade-05 hover-op-1 pointer w-full-70 h-full-70 t-mg-top-1 t-w-2 t-h-2 m-none center-screen absolute t-top-0 t-center-h-screen">
+      <i id="list" class="pointer absolute left-1-02 top-1-05 font-2 bi bi-list m-block op-1 none white" onclick="replaceId(['list', 'close-list', 'list-menu'], ['op-1', 'op-0', 'm-h-0'], ['op-0', 'op-1', 'm-h-vh-100'])"></i>
+      <i id="close-list" class="pointer absolute left-1-02 top-1-05 font-2 bi bi-x m-block op-0 none white" onclick="replaceId(['close-list', 'list', 'list-menu'], ['op-1', 'op-0', 'm-h-vh-100'], ['op-0', 'op-1', 'm-h-0'])"></i>
+    </div>
+      <div class="mg-left-2 n-mg-left--3 m-mg-top-08 w-30 h-full t-bottom--11 t-center-h-screen t-mg-left-0 t-mg-right-0 absolute center-h-screen flex ctr auto text-center white m-inline t-z-index-15" style="--custom: #fff">
+        <div id="list-menu" class="fade m-h-0 m-inline m-absolute m-top-17 m-bg-custom3 m-w-full-100 m-center-h-screen overflow-hidden z-index-20 no-select">
+          <div class="m-pd-top-2"></div>
+          <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-house mg-right-03"></i>Home</a><br class="m-block none"><br class="m-block none">
+          <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-info-circle mg-right-03"></i>Sobre</a><br class="m-block none"><br class="m-block none">
+          <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="bi bi-code-slash mg-right-03"></i>Projetos</a><br class="m-block none"><br class="m-block none">
+          <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="bi bi-award mg-right-03"></i>Certificados</a><br class="m-block none"><br class="m-block none">
+        </div>
+      </div>
+      <div class="mg-right-2 w-12 h-full absolute right-0 top-0 ctr flex m-absolute m-right--7 t-center-h-screen t-h-3 t-mg-top-3-03 z-index-17">
+        <a href="https://www.linkedin.com/in/gabriel-morais-a3ab91243/" target="_blank" class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onmouseenter="replaceId(['feature'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><i class="white font-1 flex ctr bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/biel_morais51/" target="_blank" class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onmouseenter="replaceId(['feature1'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature1'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature1" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><i class="white font-1 flex ctr bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100005731294669" target="_blank" class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onmouseenter="replaceId(['feature2'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature2'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature2" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><i class="white font-1-04 flex ctr bi bi-facebook"></i></a>
+        <a href="https://github.com/GabrielMoraisDev" target="_blank" class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onmouseenter="replaceId(['feature3'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature3'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature3" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><i class="white font-1-04 flex ctr bi bi-github"></i></a>
+      </div>
+  </nav>
+
+</body>
+</html>

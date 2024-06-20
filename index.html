@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planit.css">
+    <script src="js/syder.js"></script>
+    <link rel="icon" href="img/planit.png" type="image/x-icon">
+    <title>Planit</title>
+</head>
+
+<script>
+
+function Card(title, classes) {
+            var container = document.createElement('div');
+            container.classList.add('inline', 'white');
+            var titleDiv = document.createElement('div');
+            titleDiv.classList.add('bg-custom2', 'custom', 'w-20', 'pd-h-2', 'h-3', 'b-radius-top-05', 'flex', 'ctr');
+            titleDiv.textContent = title;
+            container.appendChild(titleDiv);
+            var mainDiv = document.createElement('div');
+            mainDiv.classList.add('w-20', 'h-auto', 'pd-v-1', 'pd-h-2', 'bg-custom3', 'relative', 'b-radius-bottom-05', 'mg-bottom-4');
+            classes.forEach(classArray => {
+                var flexDiv = document.createElement('div');
+                flexDiv.classList.add('flex');
+                var label1 = document.createElement('label');
+                label1.classList.add('font-1', 'mg-right-04', 'yellow');
+                label1.textContent = classArray[0];
+                var label2 = document.createElement('label');
+                label2.classList.add('font-1', 'mg-right-04');
+                label2.textContent = '-';
+                var label3 = document.createElement('label');
+                label3.classList.add('font-1', 'mg-right-04', 'leaf-light-3');
+                label3.textContent = classArray[1];
+                var label4 = document.createElement('label');
+                label4.classList.add('font-1', 'mg-right-04');
+                label4.textContent = '-';
+                var label5 = document.createElement('label');
+                label5.classList.add('font-1', 'mg-right-04', 'water-light-4');
+                label5.textContent = classArray[2];
+                flexDiv.appendChild(label1);
+                flexDiv.appendChild(label2);
+                flexDiv.appendChild(label3);
+                flexDiv.appendChild(label4);
+                flexDiv.appendChild(label5);
+                mainDiv.appendChild(flexDiv);
+            });
+            
+            container.appendChild(mainDiv);
+            document.getElementById('main1').appendChild(container);
+        }
+
+        function CardSimple(title, classes) {
+            var container = document.createElement('div');
+            container.classList.add('inline', 'white');
+            var titleDiv = document.createElement('div');
+            titleDiv.classList.add('bg-custom2', 'custom', 'w-20', 'pd-h-2', 'h-3', 'b-radius-top-05', 'flex', 'ctr');
+            titleDiv.textContent = title;
+            container.appendChild(titleDiv);
+            var mainDiv = document.createElement('div');
+            mainDiv.classList.add('w-20', 'h-auto', 'pd-v-1', 'pd-h-2', 'bg-custom3', 'relative', 'b-radius-bottom-05', 'mg-bottom-4');
+            classes.forEach(classArray => {
+                var flexDiv = document.createElement('div');
+                flexDiv.classList.add('flex');
+                var label1 = document.createElement('label');
+                label1.classList.add('font-1', 'mg-right-04', 'yellow');
+                label1.textContent = classArray[0];
+                var label2 = document.createElement('label');
+                label2.classList.add('font-1', 'mg-right-04');
+                var label3 = document.createElement('label');
+                label3.classList.add('font-1', 'mg-right-04', 'leaf-light-3');
+                label3.textContent = classArray[1];
+                var label4 = document.createElement('label');
+                label4.classList.add('font-1', 'mg-right-04');
+                var label5 = document.createElement('label');
+                label5.classList.add('font-1', 'mg-right-04', 'water-light-4');
+                label5.textContent = classArray[2];
+                flexDiv.appendChild(label1);
+                flexDiv.appendChild(label2);
+                flexDiv.appendChild(label3);
+                flexDiv.appendChild(label4);
+                flexDiv.appendChild(label5);
+                mainDiv.appendChild(flexDiv);
+            });
+            
+            container.appendChild(mainDiv);
+            document.getElementById('main1').appendChild(container);
+        }
+
+</script>
+
+<style>
+
+:root{
+    --bg-scroll:    #28282800;
+    --scroll:       #a0a0a000;
+    --scroll-border:       #3f3f3f00;
+    --scroll-hover: #67676700;
+    --b-radius-scroll: 0vw;
+    --fade-scroll: 0s;
+    --w-scroll: 0px;
+    --h-scroll: 0px;
+    --h-size: 0;
+    --w-size: 0;
+}
+
+</style>
+
+<body class="bg-console font1 bg-g3" style="--custom: #092330; --bg-custom: #000; --bg-custom2: #0d2e414d; --bg-custom3: #000;">
+
+
+<nav class="h-3-05 t-h-9 w-full flex fixed top-0 m-h-5 m-inline z-index-20 bg-g3" style="--bg-custom: #000; --bg-custom2: #0d2e41b7; --bg-custom3: #000;">
+    <div class="mg-left-2 w-3-05 t-w-full h-full absolute left-0 m-top-9 m-left--7 center-v-screen z-index-11">
+      <img src="https://planit-css.netlify.app/2.0/img/planit-white.png" alt="PlanitLogo" class="t-mg-left--1-07 op-07 fade-05 hover-op-1 pointer w-full-70 h-full-70 t-mg-top-1 t-w-2 t-h-2 m-none center-screen absolute t-top-0 t-center-h-screen">
+      <i id="list" class="pointer absolute left-1-02 top-1-05 font-2 bi bi-list m-block op-1 none white" onclick="replaceId(['list', 'close-list', 'list-menu'], ['op-1', 'op-0', 'm-h-0'], ['op-0', 'op-1', 'm-h-vh-100'])"></i>
+      <i id="close-list" class="pointer absolute left-1-02 top-1-05 font-2 bi bi-x m-block op-0 none white" onclick="replaceId(['close-list', 'list', 'list-menu'], ['op-1', 'op-0', 'm-h-vh-100'], ['op-0', 'op-1', 'm-h-0'])"></i>
+    </div>
+      <div class="mg-left-2 n-mg-left--3 m-mg-top-08 w-40 h-full t-bottom--11 t-center-h-screen t-mg-left-0 t-mg-right-0 absolute center-h-screen flex ctr auto text-center white m-inline t-z-index-15" style="--custom: #fff">
+        <div id="list-menu" class="fade m-h-0 m-inline m-absolute m-top-17 m-bg-custom3 m-w-full-100 m-center-h-screen overflow-hidden z-index-20">
+          <div class="m-pd-top-2"></div>
+          <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 pointer m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-house mg-right-03"></i>Básicos</a><br class="m-block none"><br class="m-block none">
+          <a href="#cores" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 pointer m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-info-circle mg-right-03"></i>Cores</a><br class="m-block none"><br class="m-block none">
+          <a href="#animate" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 pointer m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="bi bi-code-slash mg-right-03"></i>Animações</a><br class="m-block none"><br class="m-block none">
+          <label class="no-click no-select font-09 mg-h-1 op-04 link fade-05 hover-op-1 m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="bi bi-award mg-right-03"></i>Componentes</label><br class="m-block none"><br class="m-block none">
+        </div>
+      </div>
+      <div class="mg-right-2 w-12 h-full absolute right-0 top-0 ctr flex m-absolute m-right--7 t-center-h-screen t-h-3 t-mg-top-3-03 z-index-17">
+        <div class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onclick="redirectLink('syder.html')" onmouseenter="replaceId(['feature'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><img src="https://planit-css.netlify.app/2.0/img/syder-white.png" alt="Syder" class="w-full-70 r-0"></div>
+      </div>
+  </nav>
+
+    <main class="w-full h-21 n-h-17 overflow-hidden bg-g3" style="--bg-custom: #000; --bg-custom2: #0d2e414d; --bg-custom3: #000;">
+
+        <img src="img/new-planit.png" alt="" class="w-full-25 auto mt-20 flex ctr">
+
+    </main>
+
+    <main id="main1" class="w-full h-auto pd-v-4 bg-custom grid n-grid-column-3 grid-column-4 auto ctr " style="--bg-custom: #081014; --bg-custom2: #163141; --bg-custom3: #111d2b; --custom: #91ffff;">
+      
+      <div class="inline white">
+        <div class="bg-sun-dark-2 black w-20 pd-h-2 h-3 b-radius-top-05 flex ctr">Prefixo</div>
+          <div class="w-20 h-auto pd-v-1 pd-h-2 bg-custom3 relative b-radius-bottom-05 mg-bottom-4">
+            <div class="flex ctr auto text-center">
+              <label class="font-1 mg-right-04 yellow">Indica a propriedade do elemento, sendo a base da classe.</label>
+            </div>
+          </div>
+      </div>
+
+      <div class="inline white">
+        <div class="bg-grass-light-2 black w-20 pd-h-2 h-3 b-radius-top-05 flex ctr">Unidade de medida (opcional)</div>
+          <div class="w-20 h-auto pd-v-1 pd-h-2 bg-custom3 relative b-radius-bottom-05 mg-bottom-4">
+            <div class="flex ctr auto text-center">
+              <label class="font-1 mg-right-04 leaf-light-3">Inclui as seguintes unidades: vw, vh, full (%), px. Se não for informada, a unidade passa a ser rem.</label>
+            </div>
+          </div>
+      </div>
+
+      <div class="inline white">
+        <div class="bg-water-light-2 black w-20 pd-h-2 h-3 b-radius-top-05 flex ctr">Valor</div>
+          <div class="w-20 h-auto pd-v-1 pd-h-2 bg-custom3 relative b-radius-bottom-05 mg-bottom-4">
+            <div class="flex ctr auto text-center">
+              <label class="font-1 mg-right-04 water-light-4">Valor de 0 a 100, com excessão dos prefixos de margin, padding e border.</label>
+            </div>
+          </div>
+      </div>
+
+<script>
+
+        Card('Width | Height (0 até 100)', [
+          ['w', 'vw', '20'], 
+          ['h', 'px', '100'], 
+          ['w', 'full', '20'],
+          ['h', 'full', '90'],
+          ['h', 'full', '90'],
+        ]);
+
+        Card('Margin (0 até 20)', [
+          ['mg', 'vw', '01'], 
+          ['mg-top', 'vh', '02'], 
+          ['mg-bottom', 'vw', '08'],
+          ['mg-left', 'vw', '09'],
+          ['mg-right', 'vw', '1'],
+          ['(margem vertical) mg-v', 'vw', '5'],
+          ['(margem horizontal) mg-h', 'vw', '5'],
+        ]);
+
+        Card('Padding (0 até 20)', [
+          ['pd', 'vw', '01'], 
+          ['pd-top', 'vh', '02'], 
+          ['pd-bottom', 'vw', '08'],
+          ['pd-left', 'vw', '09'],
+          ['pd-right', 'vw', '1'],
+          ['pd-v', 'vw', '5'],
+          ['pd-h', 'vw', '5'],
+        ]);
+
+        Card('Border Radius (0 a 20)', [
+          ['b-radius', 'vw', '20'], 
+          ['b-radius', 'px', '15'],
+          ['b-radius-left', 'vw', '20'], 
+          ['b-radius-right', 'vw', '2'], 
+          ['b-radius-top', 'px', '10'], 
+          ['b-radius-bottom', 'full', '20'],
+          ['b-radius-right-top', 'full', '3'],
+          ['b-radius-right-bottom', 'vw', '14'],
+          ['b-radius-left-top', 'full', '10'],
+          ['b-radius-left-bottom', 'px', '5'],
+          
+        ],);
+
+        Card('Border Width (0 a 20)', [
+          ['b-w-left', 'vw', '20'], 
+          ['b-w-right', 'vh', '1'], 
+          ['b-w-bottom', 'full', '5'],
+          ['b-w-top', 'vw', '20'],
+        ]);
+
+        CardSimple('Border Style', [
+          ['b-solid (border-style: solid)'],
+          ['b-none (border-style: none)'],
+          ['b-dotted (border-style: dotted)'],
+          ['b-dashed (border-style: dashed)'],
+          ['b-double (border-style: double)'],
+          ['b-groove (border-style: groove)'],
+          ['b-3d (border-style: groove)'],
+          ['b-ridge (border-style: ridge)'],
+          ['b-inset (border-style: inset)'],
+          ['b-outset (border-style: outset)'],
+          ['b-in (border-style: inset)'],
+          ['b-out (border-style: outset)'],
+          ['no-border'],
+        ]);
+
+        CardSimple('Position', [
+          ['p-fixed ou fixed'], 
+          ['p-sticky ou fixed'], 
+          ['p-static ou static'],
+          ['p-absolute ou absolute'],
+          ['p-relative ou relative'],
+        ]);
+
+        Card('Top | Bottom | Left | Right | (0 a 20)', [
+        ['top', 'vw', '2'], 
+          ['left', 'vw', '1'], 
+          ['bottom', 'vw', '20'],
+          ['right', 'vw', '14'],
+        ]);
+
+        CardSimple('Display', [
+          ['d-flex ou flex'], 
+          ['d-inline ou inline'], 
+          ['d-block ou block'],
+          ['d-grid ou grid'],
+          ['d-none ou none'],
+        ]);
+
+        Card('Font Size (0 a 20)', [
+          ['font', 'vw', '20'], 
+          ['font', 'full', '10'], 
+          ['font', 'px', '7'],
+        ]);
+
+        CardSimple('Text Align | Font Align', [
+          ['text-center ou font-center'], 
+          ['text-right ou font-right ou font-end'], 
+          ['text-left ou font-left'], 
+          ['one-row (white-space: nowrap)'], 
+        ]);
+
+        CardSimple('Text Decoration', [
+          ['no-link-line ou no-decoration (no underline)'], 
+          ['underline ou link-line (underline)'], 
+          ['no-list-style'], 
+          ['font-upper (uppercase font)'], 
+          ['font-lower (lowercase font)'], 
+          ['bold (bold font)'], 
+          ['one-row (white-space: nowrap)'], 
+          ['font-limit (text-overflow: ellipsis)'], 
+        ]);
+
+        CardSimple('Scale 0 a 20', [
+          ['scale-0'], 
+          ['scale-01'], 
+          ['scale-07'], 
+          ['scale-1'], 
+          ['scale-5'], 
+          ['scale-20'], 
+        ]);
+
+        CardSimple('Rotate (-360 a 360)', [
+          ['r--1'], 
+          ['r--360'], 
+          ['r-0'], 
+          ['r-90'], 
+          ['r-360'], 
+        ]);
+
+        CardSimple('Alinhamento | Justify', [
+          ['ctr (centraliza elementos flex)'], 
+          ['auto (margin: auto)'], 
+          ['center-screen (centraliza elementos absolute)'], 
+          ['center-h-screen (centraliza na horizontal elementos absolute)'], 
+          ['center-v-screen (centraliza na vertical elementos absolute)'], 
+          ['v-center-row (flex-direction: row; align-items: center)'], 
+          ['righter (justify: right)'], 
+          ['lefter (justify: left)'], 
+        ]);
+
+        CardSimple('Scroll | Overflow | Scroller', [
+          ['scroll           '],
+          ['no-scroll ou overflow-hidden ou scroll-hidden'],
+          ['no-scroll-x ou overflow-x-hidden'],
+          ['no-scroll-y ou overflow-y-hidden'],
+          ['scroll-hidden    '],
+          ['scroll-x ou overflow-x'],
+          ['scroll-y ou overflow-y'],
+          ['scroll-transparent ou scroll-op-0 ou scroll-w-none'],
+        ]);
+
+        CardSimple('Pointer | Select', [
+          ['pointer (cursor: pointer;)'],
+          ['no-select (user-select: none)'],
+          ['no-click (pointer-events: none)'],
+          ['no-allowed (cursor: not-allowed)'],
+          ['no-action (cursor: not-allowed)'],
+        ]);
+
+        CardSimple('Hover', [
+          ['ao colocar hover- antes que qualquer classe, a propriedade hover é aplicada, exemplo: class="bg-red hover-bg-green" essa classe tem um hover de background green.'],
+        ]);
+        
+        CardSimple('Table', [
+          ['table (width: 100%; border colapse)'],
+          ['th (border: 1px solid #ddd)'],
+          ['td (border: 1px solid #ddd)'],
+        ]);
+
+        CardSimple('Dispositivos na vertical', [
+          ['tv ou vertical'],
+        ]);
+
+        CardSimple('Shadow (0 a 20)', [
+          ['shadow-black-0'],
+          ['shadow-black-01'],
+          ['shadow-black-09'],
+          ['shadow-black-1'],
+          ['shadow-black-10'],
+          ['shadow-black-20'],
+        ]);
+
+        CardSimple('Responsividade', [
+          ['Mobile (até 425px): m- antes de qualquer classe'],
+          ['Tablet (até 768px): t- antes de qualquer classe'],
+          ['Notebook (até 1440px): n- antes de qualquer classe'],
+        ]);
+
+        CardSimple('Fade | Transitions | (0 a 10)', [
+          ['fade (transition: 0.3s ease-in-out)'],
+          ['fade-01 (transition: 0.1s)'],
+          ['fade-09 (transition: 0.9s)'],
+          ['fade-1 (transition: 1s)'],
+          ['fade-10 (transition: 10s)'],
+        ]);
+
+        CardSimple('Opacity (0 a 1)', [
+          ['op-0 ou op-hidden'],
+          ['op-09'],
+          ['op-03'],
+          ['op-1 ou op-solid'],
+        ]);
+  
+</script>
+
+    </main>
+
+    <main id="cores" class="w-full-100 bg-custom auto mg-top--4" style="--bg-custom: #081014;">
+
+      <div class="bg-custom2 w-full-86 n-w-full-95 h-50 n-h-30 auto b-radius-1 scroll">
+        <table class="table bg-transparent white scroll">
+          <thead>
+            <th class="sticky top-0 bg-planit pd-v-1 black" colspan="2">Cores</th>
+          </thead>
+          <tr>
+            <td class="h-2"></td>
+          </tr>
+          <tbody id="parent-element" class="flex font-vw-09 auto">
+            
+              <script>
+
+                function element(td_color, tr_color, div_color, color, j, i, intensity){
+                  var td_color = document.createElement('td');
+                  var div_color = document.createElement('div');
+                  div_color.classList.add('w-1-05', 'h-1-05', 'mg-right-1', 'b-radius-02');
+                  td_color.classList.add('flex', 'v-center-row', 'mg-left-2', 'mg-bottom-05', 'w-full');
+                  td_color.appendChild(div_color);
+                  if(j == 0){
+                    if(intensity != 'dark'){
+                      td_color.appendChild(document.createTextNode(color[i])); 
+                      var stringer_color = color[i];
+                    }
+                  }else{
+                    td_color.appendChild(document.createTextNode(color[i]+'-'+intensity+'-'+j)); 
+                    var stringer_color = color[i]+'-'+intensity+'-'+j;
+                  }
+                  div_color.classList.add('bg-'+String(stringer_color))
+                  tr_color.appendChild(td_color);
+                }
+
+                  var red =    ['cherry',     'strawberry', 'fire',           'blood',      'rose',      'apple',    'watermelon',  'raspberry',  'pepper',     'chili'  ];
+                  var blue =   ['royal',      'aqua',       'sky',            'blueberry',  'deep',      'ocean',    'lake',        'water',      'rain',       'ice'    ];
+                  var green =  ['emerald',    'leaf',       'tree',           'lemon',      'kiwi',      'grass',    'lime',        'avocado',    'forest',     'swamp'  ];
+                  var purple = ['grape',      'plum',       'açai',           'berry',      'dragon',    'eggplant', 'violet',      'lilac',      'jellyfish',  'octopus'];
+                  var yellow = ['banana',     'melon',      'sun',            'gold',       'pineapple', 'egg',      'sunset',      'golden',     'mango',      'honey'  ];
+                  var orange = ['tangerine',  'tiger',      'orange-juice',   'fox',        'salmon',    'carrot',   'pumpkin',     'afternoon'                          ];
+                  var pink =   ['tongue',     'flamingo',   'pinky',          'shock-pink', 'orquide',   'sakura',   'pitaya'                                            ];
+                  
+                  var parentElement = document.getElementById('parent-element'); // Ensure this element exists in your HTML
+                  var tr_red = document.createElement('tr');
+                  var tr_blue = document.createElement('tr');
+                  var tr_green = document.createElement('tr');
+                  var tr_purple = document.createElement('tr');
+                  var tr_yellow = document.createElement('tr');
+                  var tr_orange = document.createElement('tr');
+                  var tr_pink = document.createElement('tr');
+                  for (var i = 0; i <= 9; i++) { 
+                      for (var j = 0; j <= 10; j++) {
+                          var td_red = document.createElement('td');
+                          var div_red = document.createElement('div');
+                          var td_blue = document.createElement('td');
+                          var div_blue = document.createElement('div');
+                          var td_green = document.createElement('td');
+                          var div_green = document.createElement('div');
+                          var td_purple = document.createElement('td');
+                          var div_purple = document.createElement('div');
+                          var td_yellow = document.createElement('td');
+                          var div_yellow = document.createElement('div');
+                          var td_orange = document.createElement('td');
+                          var div_orange = document.createElement('div');
+                          var td_pink = document.createElement('td');
+                          var div_pink = document.createElement('div');
+
+                        // RED
+                        element(td_red, tr_red, div_red, red, j, i, 'light')
+
+                        // BLUE
+                        element(td_blue, tr_blue, div_blue, blue, j, i, 'light')
+
+                        // GREEN
+                        element(td_green, tr_green, div_green, green, j, i, 'light')
+
+                        // PURPLE
+                        element(td_purple, tr_purple, div_purple, purple, j, i, 'light')
+
+                        // YELLOW
+                        element(td_yellow, tr_yellow, div_yellow, yellow, j, i, 'light')
+
+                        // ORANGE
+                        if(orange[i] !== undefined){
+                          element(td_orange, tr_orange, div_orange, orange, j, i, 'light')
+                        }
+                        
+                        // PINK
+                        if(pink[i] !== undefined){
+                          element(td_pink, tr_pink, div_pink, pink, j, i, 'light')
+                        }
+                      }for (var j = 0; j <= 10; j++) {
+                        // RED
+                        element(td_red, tr_red, div_red, red, j, i, 'dark')
+
+                        // BLUE
+                        element(td_blue, tr_blue, div_blue, blue, j, i, 'dark')
+
+                        // BLUE
+                        element(td_green, tr_green, div_green, green, j, i, 'dark')
+
+                        // PURPLE
+                        element(td_purple, tr_purple, div_purple, purple, j, i, 'dark')
+
+                        // YELLOW
+                        element(td_yellow, tr_yellow, div_yellow, yellow, j, i, 'dark')
+
+                        // ORANGE
+                        if(orange[i] !== undefined){
+                          element(td_orange, tr_orange, div_orange, orange, j, i, 'dark')
+                        }
+
+                        // PINK
+                        if(pink[i] !== undefined){
+                          element(td_pink, tr_pink, div_pink, pink, j, i, 'dark')
+                        }
+                      }
+                      
+                      parentElement.appendChild(tr_red);
+                      parentElement.appendChild(tr_blue);
+                      parentElement.appendChild(tr_green);
+                      parentElement.appendChild(tr_purple);
+                      parentElement.appendChild(tr_yellow);
+                      parentElement.appendChild(tr_orange);
+                      parentElement.appendChild(tr_pink);
+                  }
+
+              </script>
+
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="mg-top-3 w-full-95 h-auto bg-custom2 white auto b-radius-05 text-center pd-vw-2 flex font-vw-1 auto ctr text-center">
+        <div class="flex ctr text-center"><div class="bg-nightstar w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">nightstar</div></div>
+        <div class="flex ctr text-center"><div class="bg-black w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">black</div></div>
+        <div class="flex ctr text-center"><div class="bg-console w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">console</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray1 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray1</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray2 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray2</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray3 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray3</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray4 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray4</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray5 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray5</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray6 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray6</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray7 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray7</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray8 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray8</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray9 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray9</div></div>
+        <div class="flex ctr text-center"><div class="bg-gray10 w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">gray10</div></div>
+        <div class="flex ctr text-center"><div class="bg-white w-1-05 h-1-05 b-radius-02"></div><div class="w-auto mg-left-04 mg-right-1">white</div></div>
+      </div>
+
+      <div class="mg-top-3 w-full-95 h-auto bg-custom2 white auto b-radius-05 text-center">
+        <p class="pd-vw-1">
+          Para usar cores como background em elementos basta adicionar o bg- antes das cores, exemplo: bg-cherry. 
+        </p>
+      </div>
+
+      <div class="mg-top-3 w-full-95 h-auto bg-custom2 white auto b-radius-05 text-center">
+        <p class="pd-vw-1">
+          Para usar variáveis é necessário o uso de <label class="royal-light-2">style</label>=<label class="fox-light-2">""</label> em sua tag html. Veja abaixo exemplos de uso de algumas variáveis! 
+        </p>
+      </div>
+
+      <div class="mg-top-2 w-full-95 h-auto bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-bottom-vw-2">
+        <p>
+          Para aplicar uma <label class="underline">cor de texto</label> customizada usamos a variável --custom <br>
+          <label class="royal-light-2">&lt;div class<label class="white">=</label><label class="fox-light-2">"bg-octopus-dark-6 w-10 pd-vw-1 custom"</label> style<label class="white">=</label><label class="fox-light-2">"--custom: <label class="açai-light-4">#c370ff</label>"</label>&gt;<label class="white"> Hello World! </label>&lt;/div&gt;</label>
+        </p>
+        <div class="auto bg-octopus-dark-6 w-10 pd-vw-1 custom" style="--custom: var(--açai-light-4);">Hello World!</div>
+      </div>
+
+      <div class="mg-top-2 w-full-95 h-auto bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-bottom-vw-2">
+        <p>
+          Para aplicar uma <label class="underline">cor de fundo</label> customizada usamos a variável --bg-custom <br>
+          <label class="royal-light-2">&lt;div class<label class="white">=</label><label class="fox-light-2">"bg-custom w-10 pd-vw-1 black"</label> style<label class="white">=</label><label class="fox-light-2">"--bg-custom: <label class="apple-light-2">#ff7070</label>"</label>&gt;<label class="white"> Hello World! </label>&lt;/div&gt;</label>
+        </p>
+        <div class="auto bg-custom w-10 pd-vw-1 black" style="--bg-custom: var(--apple-light-2);">Hello World!</div>
+      </div>
+
+      <h1 class="text-center white font-vw-1-05 mg-bottom--1 mg-top-2">Variáveis e mais variáveis</h1>
+
+      <div class="mg-top-2 w-full-95 h-auto bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-bottom-vw-2">
+        <p>
+          A lista de variáveis 'custom' é a seguinte: <br>
+          <label class="royal-light-2">--custom --custom2 --custom3 --custom4 --custom5 --custom6 --custom7 --custom8 --custom9 --custom10</label>
+          <br>
+          <label class="royal-light-2">--bg-custom --bg-custom2 --bg-custom3 --bg-custom4 --bg-custom5 --bg-custom6 --bg-custom7 --bg-custom8 --bg-custom9 --bg-custom10</label>
+        </p>
+        Existem muitas outras variáveis, mas a lógica é a mesma. <br> Note abaixo que os elementos utilizam muitas variáveis, tudo isso para facilitar a estilização dos mesmos.
+      </div>
+      <div class="h-3" id="animate"></div>
+<hr class="w-full-80 auto">
+      <h1 class="white text-center">Animações</h1>
+      <div class="grid grid-column-2 mg-h-2" >
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          loading <br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"loading h-vw-5 w-vw-5 auto"</label> style=<label class="fox-light-2">"--w-custom: 1vw; --custom: #244950; --custom2: #1ad9df;"</label>&gt;</div>
+          <div class="loading h-vw-3 w-vw-3 auto" style="--w-custom: 1vw; --custom: #244950; --custom2: #1ad9df;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani-g (ou bg-ani-g2)<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani-g h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani-g h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani-g3 <br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani-g3 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani-g3 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani-g4 <br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani-g4 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950; --bg-custom3: #58ff74;"</label>&gt;</div>
+          <div class="bg-ani-g4 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950; --bg-custom3: #58ff74;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani-g5 <br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani-g5 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950; --bg-custom3: #58ff74; --bg-custom4: #f4ff58;"</label>&gt;</div>
+          <div class="bg-ani-g5 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950; --bg-custom3: #58ff74; --bg-custom4: #f4ff58;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani3 <br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani3 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani3 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani4 <br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani4 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani4 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani5 (pisca somente uma vez)<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani5 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani5 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+      
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani6 (pisca somente uma vez)<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani6 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani6 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani7<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani7 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani7 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani8<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani8 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani8 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani9<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani9 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani9 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2">
+        <p>
+          bg-ani10<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani10 h-vw-5 w-vw-5 auto b-radius-05"</label> style=<label class="fox-light-2">"--bg-custom: #1ad9df; --bg-custom2: #244950;"</label>&gt;</div>
+          <div class="bg-ani10 h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2 overflow-hidden">
+        <p>
+          ani-scale<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"ani-scale bg-planit h-vw-5 w-vw-5 auto b-radius-05"</label> &gt;</div>
+          <div class="ani-scale bg-planit h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2 overflow-hidden">
+        <p>
+          ani-scale2 (variações até ani-scale10)<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"ani-scale2 bg-planit h-vw-5 w-vw-5 auto b-radius-05"</label> &gt;</div>
+          <div class="ani-scale2 bg-planit h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2 overflow-hidden">
+        <p>
+          ani-bounce<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"ani-bounce bg-planit h-vw-5 w-vw-5 auto b-radius-05"</label> &gt;</div>
+          <div class="ani-bounce bg-planit h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2 overflow-hidden">
+        <p>
+          ani-one-bounce<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"ani-one-bounce bg-planit h-vw-5 w-vw-5 auto b-radius-05"</label> &gt;</div>
+          <div class="ani-one-bounce bg-planit h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2 overflow-hidden">
+        <p>
+          ani-one-bounce (variações até ani-bounce3)<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"ani-one-bounce bg-planit h-vw-5 w-vw-5 auto b-radius-05"</label> &gt;</div>
+          <div class="ani-one-bounce bg-planit h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2 overflow-hidden">
+        <p>
+          ani-size-invert (variações até ani-bounce3)<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"ani-size-invert bg-planit h-vw-5 w-vw-5 auto b-radius-05"</label> &gt;</div>
+          <div class="ani-size-invert bg-planit h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2 overflow-hidden">
+        <p>
+          ani-size (variações até ani-size3)<br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"ani-size bg-planit h-vw-5 w-vw-5 auto b-radius-05"</label> &gt;</div>
+          <div class="ani-size bg-planit h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2 overflow-hidden">
+        <p>
+          ani-float (variações até ani-float3) <br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"ani-float bg-planit h-vw-5 w-vw-5 auto b-radius-05"</label> &gt;</div>
+          <div class="ani-float bg-planit h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+      <div class="mg-top-2 w-full-85 h-15 bg-custom2 white auto b-radius-05 text-center pd-top-vw-1 pd-h-vw-2 overflow-hidden">
+        <p>
+          bg-ani-blink <br>
+          <div class="royal-light-2 mg-bottom-1">&lt;div class=<label class="fox-light-2">"bg-ani-blink bg-planit h-vw-5 w-vw-5 auto b-radius-05"</label> &gt;</div>
+          <div class="bg-ani-blink bg-planit h-vw-5 w-vw-5 auto b-radius-05" style="--bg-custom: #1ad9df; --bg-custom2: #244950;"></div>
+          <br>
+         </p>
+      </div>
+
+
+    </div>
+
+      <div class="h-10"></div>
+    </main>
+</body>
+</html>

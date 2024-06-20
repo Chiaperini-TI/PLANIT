@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Navs!</title>
+    <link rel="stylesheet" href="../planit.css">
+    <link rel="icon" type="image/x-icon" href="https://planit-css.netlify.app/2.0/img/planit.png">
+    <script src="../js/script.js"></script>
+  </head>
+
+  <body class="bg-nightstar font1">
+
+    <nav class="h-3-05 t-h-9 w-full flex fixed top-0 m-h-5 m-inline z-index-11 bg-g3" style="--bg-custom: #0d1116; --bg-custom2: #1e2633; --bg-custom3: #0d1116;">
+      <div class="mg-left-2 w-3-05 t-w-full h-full absolute left-0 m-top-9 m-left--7 center-v-screen z-index-11">
+        <img src="https://planit-css.netlify.app/2.0/img/planit-white.png" alt="PlanitLogo" class="t-mg-left--1-07 op-07 fade-05 hover-op-1 pointer w-full-70 h-full-70 t-mg-top-1 t-w-2 t-h-2 m-none center-screen absolute t-top-0 t-center-h-screen">
+        <i id="list" class="pointer absolute left-1-02 top-1-05 font-2 bi bi-list m-block op-1 none white" onclick="replaceId(['list', 'close-list', 'list-menu'], ['op-1', 'op-0', 'm-h-0'], ['op-0', 'op-1', 'm-h-vh-100'])"></i>
+        <i id="close-list" class="pointer absolute left-1-02 top-1-05 font-2 bi bi-x m-block op-0 none white" onclick="replaceId(['close-list', 'list', 'list-menu'], ['op-1', 'op-0', 'm-h-vh-100'], ['op-0', 'op-1', 'm-h-0'])"></i>
+      </div>
+        <div class="mg-left-2 n-mg-left--3 m-mg-top-08 w-30 h-full t-bottom--11 t-center-h-screen t-mg-left-0 t-mg-right-0 absolute center-h-screen flex ctr auto text-center white m-inline t-z-index-15" style="--custom: #fff">
+          <div id="list-menu" class="fade m-h-0 m-inline m-absolute m-top-17 m-bg-custom3 m-w-full-100 m-center-h-screen overflow-hidden z-index-20 no-select">
+            <div class="m-pd-top-2"></div>
+            <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-house mg-right-03"></i>Home</a><br class="m-block none"><br class="m-block none">
+            <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-info-circle mg-right-03"></i>Sobre</a><br class="m-block none"><br class="m-block none">
+            <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="bi bi-code-slash mg-right-03"></i>Projetos</a><br class="m-block none"><br class="m-block none">
+            <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="bi bi-award mg-right-03"></i>Certificados</a><br class="m-block none"><br class="m-block none">
+          </div>
+        </div>
+        <div class="mg-right-2 w-12 h-full absolute right-0 top-0 ctr flex m-absolute m-right--7 t-center-h-screen t-h-3 t-mg-top-3-03 z-index-17">
+          <div class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onmouseenter="replaceId(['feature'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><i class="white font-1 flex ctr bi bi-linkedin"></i></div>
+          <div class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onmouseenter="replaceId(['feature1'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature1'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature1" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><i class="white font-1 flex ctr bi bi-instagram"></i></div>
+          <div class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onmouseenter="replaceId(['feature2'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature2'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature2" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><i class="white font-1-04 flex ctr bi bi-facebook"></i></div>
+          <div class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onmouseenter="replaceId(['feature3'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature3'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature3" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><i class="white font-1-04 flex ctr bi bi-github"></i></div>
+        </div>
+    </nav>
+
+      <!-- <nav class="m-none h-3-05 w-full bg-g3 flex fixed top-6" style="--bg-custom: #0d1116; --bg-custom2: #1e2633; --bg-custom3: #0d1116;">
+        <div class="mg-left-2 w-3-05 h-full absolute left-0 center-v-screen"><img src="https://planit-css.netlify.app/2.0/img/planit-white.png" alt="PlanitLogo" class="pointer w-full-70 h-full-70 center-screen absolute hover-op-07 fade-03"></div>
+        <div class="mg-left-2 w-30 h-full absolute center-h-screen flex ctr auto text-center white relative" style="--custom: #fff; --custom2: #424242;">
+            <div id="positer" class="bg-white w-2-05 h-2-05 absolute left-full-45 mg-left-03 b-radius-full fade-03"></div>
+            <a id="linker1" href="#" class="custom" onclick="replaceId(['linker1'], ['custom'], ['custom2']); replaceId(['linker2'], ['custom2'], ['custom']); replaceId(['linker3'], ['custom2'], ['custom']); replaceId(['linker4'], ['custom2'], ['custom']); replaceId(['linker5'], ['custom2'], ['custom']); replaceId(['positer', 'positer', 'positer', 'positer', 'positer'], ['left-full-85', 'left-full-65', 'left-full-45', 'left-full-25', 'left-full-5'], ['left-full-5', 'left-full-5', 'left-full-5', 'left-full-5', 'left-full-5'])"     ><i class="font-1-02 hover-op-07 fade-03 absolute center-v-screen left-full-5  mg-h-1 bi bi-cup-hot"></i></a>
+            <a id="linker2" href="#" class="custom" onclick="replaceId(['linker2'], ['custom'], ['custom2']); replaceId(['linker1'], ['custom2'], ['custom']); replaceId(['linker3'], ['custom2'], ['custom']); replaceId(['linker4'], ['custom2'], ['custom']); replaceId(['linker5'], ['custom2'], ['custom']); replaceId(['positer', 'positer', 'positer', 'positer', 'positer'], ['left-full-85', 'left-full-65', 'left-full-45', 'left-full-25', 'left-full-5'], ['left-full-25', 'left-full-25', 'left-full-25', 'left-full-25', 'left-full-25'])"><i class="font-1-02 hover-op-07 fade-03 absolute center-v-screen left-full-25 mg-h-1 bi bi-archive"></i></a>
+            <a id="linker3" href="#" class="custom2"onclick="replaceId(['linker3'], ['custom'], ['custom2']); replaceId(['linker2'], ['custom2'], ['custom']); replaceId(['linker1'], ['custom2'], ['custom']); replaceId(['linker4'], ['custom2'], ['custom']); replaceId(['linker5'], ['custom2'], ['custom']); replaceId(['positer', 'positer', 'positer', 'positer', 'positer'], ['left-full-85', 'left-full-65', 'left-full-45', 'left-full-25', 'left-full-5'], ['left-full-45', 'left-full-45', 'left-full-45', 'left-full-45', 'left-full-45'])"><i class="font-1-02 hover-op-07 fade-03 absolute center-v-screen left-full-45 mg-h-1 bi bi-house"></i></a>
+            <a id="linker4" href="#" class="custom" onclick="replaceId(['linker4'], ['custom'], ['custom2']); replaceId(['linker2'], ['custom2'], ['custom']); replaceId(['linker3'], ['custom2'], ['custom']); replaceId(['linker1'], ['custom2'], ['custom']); replaceId(['linker5'], ['custom2'], ['custom']); replaceId(['positer', 'positer', 'positer', 'positer', 'positer'], ['left-full-85', 'left-full-65', 'left-full-45', 'left-full-25', 'left-full-5'], ['left-full-65', 'left-full-65', 'left-full-65', 'left-full-65', 'left-full-65'])"><i class="font-1-02 hover-op-07 fade-03 absolute center-v-screen left-full-65 mg-h-1 bi bi-easel2"></i></a>
+            <a id="linker5" href="#" class="custom" onclick="replaceId(['linker5'], ['custom'], ['custom2']); replaceId(['linker2'], ['custom2'], ['custom']); replaceId(['linker3'], ['custom2'], ['custom']); replaceId(['linker4'], ['custom2'], ['custom']); replaceId(['linker1'], ['custom2'], ['custom']); replaceId(['positer', 'positer', 'positer', 'positer', 'positer'], ['left-full-85', 'left-full-65', 'left-full-45', 'left-full-25', 'left-full-5'], ['left-full-85', 'left-full-85', 'left-full-85', 'left-full-85', 'left-full-85'])"><i class="font-1-02 hover-op-07 fade-03 absolute center-v-screen left-full-85 mg-h-1 bi bi-basket"></i></a>
+        </div>
+        <div class="mg-right-2 w-12 h-full absolute right-0 top-0 ctr flex">
+          <a href="#" onmouseenter="replaceId(['linklabel'], ['white'], ['console'])" onmouseleave="replaceId(['linklabel'], ['console'], ['white'])" id="linklabel" class="btn-fill bg-transparent white b-solid b-white b-w-01 w-5-05 h-2-02 pointer fade-03 bold font1 mg-h-05 font-08" style="--bg-custom: var(--royal-light-6);"><label class="one-row pointer z-index-3 mg-0 absolute center-screen">Sign in</label></a>
+          <a href="#" class="btn-fill bg-white w-5-05 h-2-02 pointer fade-03 bold font1 mg-h-05 console b-solid b-white b-w-01 font-08" style="--bg-custom: var(--royal-light-6);"><label class="one-row pointer z-index-3 mg-0 absolute center-screen">Sign up</label></a>
+        </div>
+      </nav>
+      
+      <nav class="m-none h-3-05 w-full bg-g3 flex fixed top-12" style="--bg-custom: #0d1116; --bg-custom2: #1e2633; --bg-custom3: #0d1116;">
+        <div class="mg-left-2 w-3-05 h-full absolute left-0 center-v-screen"><img src="https://planit-css.netlify.app/2.0/img/planit-white.png" alt="PlanitLogo" class="op-07 fade-05 hover-op-1 pointer w-full-70 h-full-70 center-screen absolute"></div>
+          <div class="mg-left-0 w-50 h-full absolute center-h-screen flex ctr auto text-center white" style="--custom: var(--sun)">
+            <a href="#" class="font-09 white mg-h-1 op-1 link-left fade-05 hover-sun pointer" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-house mg-right-03"></i>Home</a>
+            <a href="#" class="font-09 white mg-h-1 op-1 link fade-05 hover-sun pointer" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-info-circle mg-right-03"></i>Sobre</a>
+            <a href="#" class="font-09 white mg-h-1 op-1 link fade-05 hover-sun pointer" style="--h-custom: 1px;"><i class="bi bi-code-slash mg-right-03"></i>Projetos</a>
+            <a href="#" class="font-09 white mg-h-1 op-1 link-right fade-05 hover-sun pointer" style="--h-custom: 1px;"><i class="bi bi-award mg-right-03"></i>Certificados</a>
+            <input type="text" placeholder="Search" class="b-radius-left-100 no-border no-outline pd-left-1 pd-right-05 pd-v-02 font1 mg-left-4">
+            <i class="bi bi-search pointer bg-white console pd-right-1 pd-top-01 pd-bottom-02 b-radius-right-100"></i>
+          </div>
+          <div class="mg-right-2 w-12 h-full absolute right-0 top-0 ctr flex">
+            <a href="" class="white font-09 hover-sun fade-03 mg-right-08">Login</a>
+            <a href="" class="white font-09 hover-sun fade-03 mg-left-08">New account</a>
+          </div>
+      </nav> -->
+
+  </body>
+</html>
+

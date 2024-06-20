@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planit.css">
+    <script src="js/syder.js"></script>
+    <link rel="icon" href="img/planit.png" type="image/x-icon">
+    <title>Syder & Planit</title>
+</head>
+
+<style>
+
+:root{
+    --bg-scroll:    #28282800;
+    --scroll:       #a0a0a000;
+    --scroll-border:       #3f3f3f00;
+    --scroll-hover: #67676700;
+    --b-radius-scroll: 0vw;
+    --fade-scroll: 0s;
+    --w-scroll: 0px;
+    --h-scroll: 0px;
+    --h-size: 0;
+    --w-size: 0;
+}
+
+</style>
+
+<body class="bg-console font1 bg-g3" style="--custom: #092330; --bg-custom: #000; --bg-custom2: #0d41164d; --bg-custom3: #000;">
+
+
+<nav class="h-3-05 t-h-9 w-full flex fixed top-0 m-h-5 m-inline z-index-20 bg-g3" style="--bg-custom: #000; --bg-custom2: #0d4136b7; --bg-custom3: #000;">
+    <div class="mg-left-2 w-3-05 t-w-full h-full absolute left-0 m-top-9 m-left--7 center-v-screen z-index-11">
+      <img src="https:planit-css.netlify.app/2.0/img/syder-white.png" alt="PlanitLogo" class="t-mg-left--1-07 op-07 fade-05 hover-op-1 pointer w-full-70 h-full-70 t-mg-top-1 t-w-2 t-h-2 m-none center-screen absolute t-top-0 t-center-h-screen">
+      <i id="list" class="pointer absolute left-1-02 top-1-05 font-2 bi bi-list m-block op-1 none white" onclick="replaceId(['list', 'close-list', 'list-menu'], ['op-1', 'op-0', 'm-h-0'], ['op-0', 'op-1', 'm-h-vh-100'])"></i>
+      <i id="close-list" class="pointer absolute left-1-02 top-1-05 font-2 bi bi-x m-block op-0 none white" onclick="replaceId(['close-list', 'list', 'list-menu'], ['op-1', 'op-0', 'm-h-vh-100'], ['op-0', 'op-1', 'm-h-0'])"></i>
+    </div>
+      <div class="mg-left-2 n-mg-left--3 m-mg-top-08 w-30 h-full t-bottom--11 t-center-h-screen t-mg-left-0 t-mg-right-0 absolute center-h-screen flex ctr auto text-center white m-inline t-z-index-15" style="--custom: #fff">
+        <div id="list-menu" class="fade m-h-0 m-inline m-absolute m-top-17 m-bg-custom3 m-w-full-100 m-center-h-screen overflow-hidden z-index-20 pointer">
+          <div class="m-pd-top-2"></div>
+          <!-- <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 pointer m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-house mg-right-03"></i></a><br class="m-block none"><br class="m-block none">
+          <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 pointer m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="ctr auto text-center bi bi-info-circle mg-right-03"></i></a><br class="m-block none"><br class="m-block none">
+          <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 pointer m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="bi bi-code-slash mg-right-03"></i></a><br class="m-block none"><br class="m-block none">
+          <a href="#" class="font-09 mg-h-1 op-07 link fade-05 hover-op-1 pointer m-mg-left--4 m-font-1" style="--h-custom: 1px;"><i class="bi bi-award mg-right-03"></i></a><br class="m-block none"><br class="m-block none">
+          -->
+        </div> 
+      </div>
+      <div class="mg-right-2 w-12 h-full absolute right-0 top-0 ctr flex m-absolute m-right--7 t-center-h-screen t-h-3 t-mg-top-3-03 z-index-17">
+        <div class="h-1-05 w-1-05 mg-h-05 b-radius-full b-white b-solid b-w-01 flex ctr pointer op-07 fade-03 hover-op-1 relative overflow-hidden flex ctr" onclick="redirectLink('index.html')" onmouseenter="replaceId(['feature'], ['left--3', 'fade-0'], ['left-3', 'fade-08'])" onmouseleave="replaceId(['feature'], ['left-3', 'fade-08'], ['left--3', 'fade-0'])"><div id="feature" class="fade-08 bg-white w-1 h-10 r-40 absolute left--3"></div><img src="https:planit-css.netlify.app/2.0/img/planit-white.png" alt="Syder" class="w-full-70 r-0"></div>
+      </div>
+  </nav>
+
+<main class="white mg-left-5 mg-top-7">
+
+  <h1>Functions e como usar com o Syder</h1>
+
+  <hr class="w-70 mg-left--1">
+<p>    textReplace('id', 'texto novo', delay)</p>
+<hr class="w-70 mg-left--1">
+<p>  textReplace2('id', 'texto atual', 'texto novo', delay)</p>
+<hr class="w-70 mg-left--1">
+
+
+
+<p>  replaceClass(['classeTarget'], ['classe inicial'], ['classe final'], [delay])</p>
+<hr class="w-70 mg-left--1">
+
+
+<p>  replaceId(['id'], ['classe inicial'], ['classe final'], [delay])</p>
+<hr class="w-70 mg-left--1">
+
+
+
+<p>  replaceId2(['id'], ['classe inicial'], ['classe final'], [delay]) essa função suporta clique duplo no elemento</p>
+<hr class="w-70 mg-left--1">
+
+
+<p>  replaceClass2('[classeTarget]', ['classe inicial'], ['classe final'], [delay]) essa função suporta clique duplo no elemento</p>
+<hr class="w-70 mg-left--1">
+
+
+
+<p>  replaceId(['id'], ['classe inicial'], ['classe final'], 2)</p>
+<hr class="w-70 mg-left--1">
+
+
+
+<p>  addClass2('id', 'class', delay) adiciona e depois remove a class </p>
+<hr class="w-70 mg-left--1">
+
+
+
+<p>  removeClass2('id', 'class', delay) remove e depois adiciona a class </p>
+<hr class="w-70 mg-left--1">
+<p>  textCopy('id') copia o texto dentro de um elemento com esse id</p>
+<hr class="w-70 mg-left--1">
+
+<p>  textLimit('id', tamanho) limita o texto ao tamanho de caracteres</p>
+<hr class="w-70 mg-left--1">
+<p>  observeId(['id'], areaDeView pode ser de 0.1 a 10 é opcional ) substitui os elementos id com a classe op-0 para op-1 de acordo com a visualização do user</p>
+<hr class="w-70 mg-left--1">
+
+
+<p>  observeReplace(['id'], ['classe inicial'], ['classe final']);</p>
+<hr class="w-70 mg-left--1">
+
+
+<p> scrollId(['id'], [tempo do scroll], [delay ao chegar no fim do scroll], [tempo da volta do scroll], [delay antes de executar o scroll inicial]);</p>
+<hr class="w-70 mg-left--1">
+
+
+<p>scrollClass(['classe'], [tempo do scroll], [delay ao chegar no fim do scroll], [tempo da volta do scroll], [delay antes de executar o scroll inicial]);</p>
+<hr class="w-70 mg-left--1">
+
+
+
+<p> scrollTo(['id'], ['bottom (ou top)'], [tempo de scroll], [delay antes de executar a função])</p>
+<hr class="w-70 mg-left--1">
+
+<p>  loop(</p>
+<p>  () => addClass('cadentstar1', 'cadentstar'),</p>
+<p>  () => removeClass('cadentstar1', 'cadentstar')</p>
+<p> ,10);</p>
+<hr class="w-70 mg-left--1">
+
+
+<p> customCss(elementoId, prop, cor, delay = 0)</p>
+<hr class="w-70 mg-left--1">
+
+
+
+<!-- <input type="text" id="seach" oninput="searchInput('seach')">
+<p>  <div id="Resultado 1" class="resultado">
+<p>    <p>Resultado 1</p>
+<p>  </div> -->
+<p> searchInput(idSearch)</p>
+<hr class="w-70 mg-left--1">
+
+
+
+
+<p> orderTable(['id'], ['coluna'], ['asc' ou 'desc']);</p>
+<hr class="w-70 mg-left--1">
+
+
+
+<p> orderTableString(tableIds, columnIndexes, order = 'asc')</p>
+<hr class="w-70 mg-left--1">
+
+
+
+<p> removerCaracteres(valor, caracteres)</p>
+<hr class="w-70 mg-left--1">
+
+<p> countClassesInDiv(containerClass, targetClass) </p>
+<hr class="w-70 mg-left--1">
+
+
+</main>
+
+</body>
+</html>

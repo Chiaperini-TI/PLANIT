@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../planit.css">
+    <link rel="icon" type="image/x-icon" href="https://planit-css.netlify.app/2.0/img/planit.png">
+    <script src="../js/script.js"></script>
+</head>
+
+<style>:root{--h-custom:0%;--h-custom2:var(--h-custom);}</style>
+
+<body class="bg-custom font1 h-vh-100 flex ctr auto text-center" style="--bg-custom: #0a0a0e;">
+    
+    <div class="ctr flex">
+        <div id="waver" class="fade water-wave bg-royal w-vw-20 h-vw-20 b-radius-vw-100 b-solid b-white b-w-vw-02" style="--bg-custom: #0a0a0e; --h-custom: -50%;">
+            <div class="absolute center-screen z-index-10 w-vw-50 h-vw-50 white font-vw-2 flex ctr text-center auto">
+                <h1 class="flex ctr text-center auto white" style="--custom: #0a0a0e;">50%</h1>
+            </div>
+            <div id="waterFall"  class="fade-4 absolute center-h-screen top-vw--15 z-index-5 bg-royal w-vw-3-09 h-vw-0 b-radius-vw-100"></div>
+            <div id="bble1"  class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-10"></div>
+            <div id="bble2"  class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-20"></div>
+            <div id="bble3"  class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-30"></div>
+            <div id="bble4"  class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-40"></div>
+            <div id="bble5"  class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-40"></div>
+            <div id="bble6"  class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-60"></div>
+            <div id="bble7"  class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-60"></div>
+            <div id="bble8"  class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-80"></div>
+            <div id="bble9"  class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-70"></div>
+            <div id="bble10" class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-10"></div>
+            <div id="bble11" class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-20"></div>
+            <div id="bble12" class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-30"></div>
+            <div id="bble13" class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-60"></div>
+            <div id="bble14" class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-50"></div>
+            <div id="bble15" class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-20"></div>
+            <div id="bble16" class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-70"></div>
+            <div id="bble17" class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-100"></div>
+            <div id="bble18" class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-90"></div>
+            <div id="bble19" class="fade-in-5 w-vw-1 h-vw-1 bg-royal-light-3 b-radius-vw-100 absolute bottom-full--40 left-full-50"></div>
+            <div id="bble20" class="fade-in-5 w-vw-1-05 h-vw-1-05 bg-royal-light-3 b-radius-vw-100 absolute bottom-full---40 left-full-40"></div>
+        </div>
+    </div>
+
+    <script>
+
+        replaceId(['waterFall'], ['h-vw-0'], ['h-vw-100'], [1])
+        replaceId(['waterFall'], ['top-vw--15'], ['bottom-vw--5'], [2])
+        replaceId(['waterFall'], ['h-vw-100'], ['h-vw-0'], [4])
+
+        function bubleGraf(){
+            setTimeout(function() {
+            replaceId(['bble1', 
+                           'bble2', 
+                           'bble3',
+                           'bble4',
+                           'bble5',
+                           'bble6',
+                           'bble7',
+                           'bble8',
+                           'bble9',
+                           'bble10',
+                           'bble11',
+                           'bble12',
+                           'bble13',
+                           'bble14',
+                           'bble15',
+                           'bble16',
+                           'bble17',
+                           'bble18',
+                           'bble19',
+                           'bble20'], 
+
+                           ['bottom-full--40', 'bottom-full--40','bottom-full--40','bottom-full--40', 'bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40','bottom-full--40',], 
+
+                           ['bottom-full-100', 'bottom-full-100','bottom-full-100','bottom-full-100', 'bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100','bottom-full-100',], 
+                            [0, 1.5, 2, 2.5, 3, 3.5, 4, 1.2, 2.2, 2.2, 3.2, 4.4, 1, 1.5, 2, 2.5, 3, 3.5, 4, 1.2]);
+                        }, 1000)
+        }
+        bubleGraf()
+        
+    </script>
+
+</body>
+</html>

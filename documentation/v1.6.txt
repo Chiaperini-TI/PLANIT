@@ -1,0 +1,7 @@
+--CÓDIGO OTIMIZADO E LIMITADO A UNIDADES DE MEDIDA EM 
+--NO MÁXIMO 20VW COM EXCEÇÃO DO WIDTH E DO HEIGHT
+
+planit.css
+  Contém todas as propriedades: tamanhos, cores, e funções. A partir da 
+  palavra 'n', 'm' ou 't' antes de qualquer
+  classe, a página ganha responsividade, foram excluidas as maiorias das classes não usadas.

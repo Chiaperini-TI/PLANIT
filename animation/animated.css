@@ -1,0 +1,614 @@
+.link-left                                                           { position: relative;text-decoration: none;color: var(--custom);overflow: hidden; }
+.link-left:after                                                     { content: '';position: absolute;width: 0;height: var(--h-custom);bottom: 0;left: 0;background-color: var(--custom);transition: width 0.3s ease; }
+.link-left:hover:after                                               { width: 100%; }
+.link, .link-center, .link-right                                     { position: relative;text-decoration: none;color: var(--custom);overflow: hidden; }
+.link:after, .link-center:after, .link-right:after                   { content: '';position: absolute;width: 100%;height: var(--h-custom);bottom: 0;left: 0;background-color: var(--custom);transform: scaleX(0);transition: transform 0.3s ease, width 0.3s ease, left 0.3s ease; }
+.link:hover:after, .link-center:hover:after, .link-right:hover:after { transform: scaleX(1); }
+.link-right:after                                                    { left: 100%; }
+.link-right:hover:after                                              { left: 0; }
+.loading-circle                                                      { border: 1vw solid var(--custom);border-top: 1vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading                                                             { border: var(--w-custom) solid var(--custom);border-top: var(--w-custom) solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-1                                                    { border: 1vw solid var(--custom);border-top: 1vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-2                                                    { border: 2vw solid var(--custom);border-top: 2vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-3                                                    { border: 3vw solid var(--custom);border-top: 3vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-4                                                    { border: 4vw solid var(--custom);border-top: 4vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-5                                                    { border: 5vw solid var(--custom);border-top: 5vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-6                                                    { border: 6vw solid var(--custom);border-top: 6vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-7                                                    { border: 7vw solid var(--custom);border-top: 7vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-8                                                    { border: 8vw solid var(--custom);border-top: 8vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-9                                                    { border: 9vw solid var(--custom);border-top: 9vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+.loading-circle-10                                                   { border: 10vw solid var(--custom);border-top: 10vw solid var(--custom2);border-radius: 50%;animation: spin 1s linear infinite; }
+
+@keyframes spin { 0% { transform: rotate(0deg); }100% { transform: rotate(360deg); } }
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+}
+  
+.btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+  
+.btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+  
+.btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: var(--custom);
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: var(--bg-custom);
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+  
+.btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: var(--custom2);
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: var(--bg-custom2);
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+.star{
+    background-color: var(--custom);
+    box-shadow: var(--custom2) 0vw 0vw 1vw;
+    border-radius: 100vw;
+    position: absolute;
+}
+
+.cadentstar{
+    height: 0.1vw;
+    background-color: var(--custom);
+    box-shadow: var(--custom2) 1px 1px 10px;
+    animation: cadent 0.5s; 
+    position: absolute;
+}
+
+
+@keyframes cadent {
+    0% {
+        width: 0px;
+        transform: scaleX(1);
+    }
+
+    100% {
+        width: 40vw;
+        transform: scaleX(0);
+    }
+}
+
+.star:nth-child(1)  {animation: twinkle 14s infinite; top: 20%; left: 50%;}
+.star:nth-child(2)  {animation: twinkle 2s infinite; top: 50%; left: 70%;}
+.star:nth-child(3)  {animation: twinkle 3s infinite; top: 95%; left: 40%;}
+.star:nth-child(4)  {animation: twinkle 4s infinite; top: 10%; left: 30%;}
+.star:nth-child(5)  {animation: twinkle 5s infinite; top: 20%; left: 100%;}
+.star:nth-child(6)  {animation: twinkle 6s infinite; top: 30%; left: 10%;}
+.star:nth-child(7)  {animation: twinkle 7s infinite; top: 70%; left: 60%;}
+.star:nth-child(8)  {animation: twinkle 8s infinite; top: 95%; left: 65%;}
+.star:nth-child(9)  {animation: twinkle 9s infinite; top: 80%; left: 30%;}
+.star:nth-child(10) {animation: twinkle 10s infinite; top: 50%; left: 50%;}
+.star:nth-child(11) {animation: twinkle 11s infinite; top: 10%; left: 90%;}
+.star:nth-child(12) {animation: twinkle 12s infinite; top: 15%; left: 75%;}
+.star:nth-child(13) {animation: twinkle 13s infinite; top: 90%; left: 10%;}
+.star:nth-child(14) {animation: twinkle 14s infinite; top: 95%; left: 90%;}
+.star:nth-child(15) {animation: twinkle 2s infinite; top: 70%; left: 95%;}
+.star:nth-child(16) {animation: twinkle 3s infinite; top: 80%; left: 80%;}
+.star:nth-child(17) {animation: twinkle 4s infinite; top: 40%; left: 85%;}
+.star:nth-child(18) {animation: twinkle 5s infinite; top: 60%; left: 20%;}
+.star:nth-child(19) {animation: twinkle 6s infinite; top: 5%; left: 5%;}
+.star:nth-child(20) {animation: twinkle 7s infinite; top: 20%; left: 20%;}
+.star:nth-child(21) {animation: twinkle 8s infinite; top: 65%; left: 5%;}
+.star:nth-child(22) {animation: twinkle 9s infinite; top: 60%; left: 38%;}
+.star:nth-child(23) {animation: twinkle 10s infinite; top: 40%; left: 32%;}
+.star:nth-child(24) {animation: twinkle 11s infinite; top: 95%; left: 50%;}
+.star:nth-child(25) {animation: twinkle 12s infinite; top: 95%; left: 20%;}
+.star:nth-child(26) {animation: twinkle 13s infinite; top: 5%; left: 58%;}
+.star:nth-child(27) {animation: twinkle 14s infinite; top: 90%; left: 70%;}
+.star:nth-child(28) {animation: twinkle 15s infinite; top: 80%; left: 45%;}
+.star:nth-child(29) {animation: twinkle 16s infinite; top: 25%; left: 40%;}
+.star:nth-child(30) {animation: twinkle 17s infinite; top: 4%; left: 45%;}
+
+.star:nth-child(60)  {animation: twinkle 14s infinite; top: 20%; left: 50%;}
+.star:nth-child(59)  {animation: twinkle 2s infinite; top: 50%; left: 70%;}
+.star:nth-child(58)  {animation: twinkle 3s infinite; top: 95%; left: 40%;}
+.star:nth-child(57)  {animation: twinkle 4s infinite; top: 10%; left: 30%;}
+.star:nth-child(56)  {animation: twinkle 5s infinite; top: 20%; left: 100%;}
+.star:nth-child(55)  {animation: twinkle 6s infinite; top: 30%; left: 10%;}
+.star:nth-child(54)  {animation: twinkle 7s infinite; top: 70%; left: 60%;}
+.star:nth-child(53)  {animation: twinkle 8s infinite; top: 95%; left: 65%;}
+.star:nth-child(52)  {animation: twinkle 9s infinite; top: 80%; left: 30%;}
+.star:nth-child(51) {animation: twinkle 10s infinite; top: 50%; left: 50%;}
+.star:nth-child(50) {animation: twinkle 11s infinite; top: 10%; left: 90%;}
+.star:nth-child(49) {animation: twinkle 12s infinite; top: 15%; left: 75%;}
+.star:nth-child(48) {animation: twinkle 13s infinite; top: 90%; left: 10%;}
+.star:nth-child(47) {animation: twinkle 14s infinite; top: 95%; left: 90%;}
+.star:nth-child(46) {animation: twinkle 2s infinite; top: 70%; left: 95%;}
+.star:nth-child(45) {animation: twinkle 3s infinite; top: 80%; left: 80%;}
+.star:nth-child(44) {animation: twinkle 4s infinite; top: 40%; left: 85%;}
+.star:nth-child(43) {animation: twinkle 5s infinite; top: 60%; left: 20%;}
+.star:nth-child(42) {animation: twinkle 6s infinite; top: 5%; left: 5%;}
+.star:nth-child(41) {animation: twinkle 7s infinite; top: 20%; left: 20%;}
+.star:nth-child(40) {animation: twinkle 8s infinite; top: 65%; left: 5%;}
+.star:nth-child(39) {animation: twinkle 9s infinite; top: 60%; left: 38%;}
+.star:nth-child(38) {animation: twinkle 10s infinite; top: 40%; left: 32%;}
+.star:nth-child(37) {animation: twinkle 11s infinite; top: 95%; left: 50%;}
+.star:nth-child(36) {animation: twinkle 12s infinite; top: 95%; left: 20%;}
+.star:nth-child(35) {animation: twinkle 13s infinite; top: 5%; left: 58%;}
+.star:nth-child(34) {animation: twinkle 14s infinite; top: 90%; left: 70%;}
+.star:nth-child(33) {animation: twinkle 15s infinite; top: 80%; left: 45%;}
+.star:nth-child(32) {animation: twinkle 16s infinite; top: 25%; left: 40%;}
+.star:nth-child(31) {animation: twinkle 17s infinite; top: 4%; left: 45%;}
+
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.bg-ani-g{
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--bg-custom), var(--bg-custom2));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.bg-ani-g2{
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--bg-custom), var(--bg-custom2));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.bg-ani-g3{
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.bg-ani-g4{
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.bg-ani-g5{
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.bg-ani{
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+.bg-ani2{
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+}
+  
+@keyframes gradientAnimation {
+  0% {background-position: 200%;}
+  100% {background-position: 0%;}
+}
+
+.bg-ani3{
+    background-color: var(--bg-custom);
+    animation: colorAnimation 5s linear infinite;
+}
+
+.bg-ani4{
+    background-color: var(--bg-custom);
+    animation: colorAnimation 5s ease infinite;
+}
+
+@keyframes colorAnimation {
+    0% {background-color: var(--bg-custom);}
+    50% {background-color: var(--bg-custom2);}
+    100% {background-color: var(--bg-custom);}
+} 
+
+.bg-ani5{
+    background-color: var(--bg-custom);
+    animation: colorAnimation2 5s linear;
+}
+
+.bg-ani6{
+    background-color: var(--bg-custom);
+    animation: colorAnimation2 5s ease;
+}
+
+@keyframes colorAnimation2 {
+    0% {background-color: var(--bg-custom2);}
+    100% {background-color: var(--bg-custom);}
+} 
+
+.bg-ani7{
+    background-color: var(--bg-custom);
+    animation: blink 5s linear infinite;
+}
+
+.bg-ani8{
+    background-color: var(--bg-custom);
+    animation: blink 5s ease infinite;
+}
+
+@keyframes blink {
+    0% {background-color: var(--bg-custom);}
+    40% {background-color: var(--bg-custom);}
+    60% {background-color: var(--bg-custom2);}
+    80% {background-color: var(--bg-custom);}
+    100% {background-color: var(--bg-custom);}
+} 
+
+.bg-ani9{
+    background: linear-gradient(to right, var(--bg-custom), var(--bg-custom2));
+    background-size: 200% 200%;
+    animation: outy 5s ease infinite;
+}
+
+.bg-ani10{
+    background: linear-gradient(to right, var(--bg-custom), var(--bg-custom2));
+    background-size: 200% 200%;
+    animation: outy2 5s ease infinite;
+}
+
+@keyframes outy {
+    0% {background-position: 0%;}
+    100% {background-position: 200%;}
+} 
+
+@keyframes outy2 {
+    0% {background-position: 200%;}
+    100% {background-position: 0%;}
+} 
+
+.ani-scale{
+    animation: scale1 5s ease infinite;
+}
+
+.ani-scale2{
+    animation: scale1 2s ease infinite;
+}
+
+@keyframes scale1 {
+    0%   {transform: scale(1.0);}
+    50%  {transform: scale(1.1);}
+    100% {transform: scale(1.0);}
+} 
+
+.ani-scale3{
+    animation: scale2 5s ease infinite;
+}
+
+.ani-scale4{
+    animation: scale2 2s ease infinite;
+}
+
+@keyframes scale2 {
+    0%   {transform: scale(0.9);}
+    50%  {transform: scale(1.0);}
+    100% {transform: scale(0.9);}
+} 
+
+.ani-scale5{
+    animation: scale3 5s ease;
+    transform: scale(1);
+}
+
+.ani-scale6{
+    animation: scale3 2s ease;
+    transform: scale(1);
+}
+
+@keyframes scale3 {
+    0%   {transform: scale(0.9);}
+    100% {transform: scale(1);}
+} 
+
+.ani-scale7{
+    animation: scale4 5s ease;
+    transform: scale(0.9);
+}
+
+.ani-scale8{
+    animation: scale4 2s ease;
+    transform: scale(0.9);
+}
+
+@keyframes scale4 {
+    0%   {transform: scale(1);}
+    100% {transform: scale(0.9);}
+} 
+
+.ani-scale9{
+    animation: scale55 5s ease;
+    transform: scale(50);
+}
+
+.ani-scale10{
+    animation: scale5 2s ease;
+    transform: scale(1);
+}
+
+@keyframes scale55 {
+    0%   {transform: scale(1);}
+    100% {transform: scale(50);}
+} 
+
+@keyframes scale5 {
+    0%   {transform: scale(50);}
+    100% {transform: scale(1);}
+} 
+
+.ani-bounce{
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); 
+    }
+    40% {
+      transform: translateY(-5px); 
+    }
+    60% {
+      transform: translateY(-5px); 
+    }
+}
+
+.ani-one-bounce{
+    animation: bouncee 2s;
+}
+
+@keyframes bouncee {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); 
+    }
+    40% {
+      transform: translateY(-5px); 
+    }
+    60% {
+      transform: translateY(-5px); 
+    }
+}
+
+.ani-bounce2{
+    animation: bounce2 2s infinite;
+}
+
+@keyframes bounce2 {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); 
+    }
+    40% {
+      transform: translateY(-10px); 
+    }
+    60% {
+      transform: translateY(-10px); 
+    }
+}
+
+.ani-bounce3{
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce3 {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); 
+    }
+    40% {
+      transform: translateY(-20px); 
+    }
+    60% {
+      transform: translateY(-20px); 
+    }
+}
+
+.ani-size-invert{
+    animation: size 4s infinite;
+}
+
+@keyframes size {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+
+.ani-size{
+    animation: size 4s infinite;
+    transform: scale(0.9);
+}
+
+@keyframes size {
+    0% {
+      transform: scale(0.9);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+}
+
+.ani-size2{
+    animation: size2 4s infinite;
+    transform: scale(0.8);
+}
+
+@keyframes size2 {
+    0% {
+      transform: scale(0.8);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+}
+
+.ani-size3{
+    animation: size3 4s infinite;
+}
+
+@keyframes size3 {
+    0% {
+      transform: scale(0.8);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+}
+
+.ani-float-custom{
+    animation: float var(--custom) infinite;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.ani-float{
+    animation: float 4s infinite;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.ani-float2{
+    animation: float2 5s infinite;
+}
+
+@keyframes float2 {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(15px);
+    }
+    
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.ani-float3{
+    animation: float3 4s infinite;
+}
+
+@keyframes float3 {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+      }
+
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.ani-rotate-star{
+    animation: spiner 5s infinite linear;
+}
+
+.ani-rotate-star-2{
+    animation: spin2 5s ease-in-out infinite;
+}
+
+@keyframes spin2 {
+    0% { transform: rotate(-30deg); }
+    50% { transform: rotate(360deg); }
+    70% { transform: rotate(360deg); }
+    100% { transform: rotate(330deg); }
+}
+
+@keyframes spiner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.bg-ani-blink{
+    background-color: var(--bg-custom);
+    animation: piscae 2s linear infinite;
+}
+
+@keyframes piscae {
+    0% {background-color: var(--bg-custom);}
+    50% {background-color: var(--bg-custom2);}
+    100% {background-color: var(--bg-custom);}
+} 

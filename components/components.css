@@ -1,0 +1,173 @@
+.dropdown{
+    position: relative;
+}
+
+.dropdown-item{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 105;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.btn{
+    border-radius: 0.3rem;
+    outline: none;
+    border-style: none;
+    padding: 0.5rem 1rem;
+}
+
+.btn-slice{
+    position: relative;
+    border-radius: 0.3rem;
+    outline: none;
+    overflow: hidden;
+    border-style: none;
+    padding: 0.5rem 1rem;
+}
+
+.btn-slice::after{
+    content: '';
+    background-color: white;
+    position: absolute;
+    left: -120%;
+    transform: rotate(30deg);
+    transition: all 0s;
+    top: -5vw;
+    height: 20vw;
+    width: 2vw;
+}
+
+.btn-slice:hover::after{
+    content: '';
+    background-color: white;
+    position: absolute;
+    transition: all 1.2s;
+    left: 150%;
+    height: 20vw;
+    width: 2vw;
+}
+
+.btn-fill{
+    border-radius: 0.3rem;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    border-style: none;
+}
+
+.btn-fill::after{
+    content: '';
+    position: absolute;
+    background-color: var(--bg-custom);
+    width: 0%;
+    transition: all 0.5s;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 20vw;
+}
+
+.btn-fill:hover::after{
+    content: '';
+    position: absolute;
+    background-color: var(--bg-custom);
+    width: 100%;
+    transition: all 0.5s;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 20vw;
+}
+
+.btn-scale{
+    border-radius: 0.3rem;
+    outline: none;
+    border-style: none;
+    padding: 0.5rem 1rem;
+}
+
+.btn-outline{
+    border-radius: 0.3rem;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    border-style: none;
+    padding: 0.5rem 1rem;
+}
+
+.water-wave{
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+  }
+
+  .water-wave:after,
+  .water-wave:before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: 50%;
+    background: var(--bg-custom);
+    transition: 1s ease-in-out;
+  }
+
+  .water-wave:after {
+    border-radius: 45%;
+    animation: startgraf 5s linear, waterwave 5s linear infinite;
+    transform: translate(-50%, -50%) rotate(0deg);
+    top: 20%;
+    animation-delay: 1s, 6s; /* startgraf começa imediatamente, waterwave começa após 5s */
+    transition: 1s ease-in-out;
+  }
+
+  .water-wave:before {
+        border-radius: 35%;
+        background-color: rgba(255, 255, 255, .3);
+        animation: startgraf 5s linear, waterwave 5s linear infinite;
+        transform: translate(-50%, -50%) rotate(0deg);
+        top: 20%;
+        animation-delay: 1s, 6s; /* startgraf começa imediatamente, waterwave começa após 5s */
+        transition: 1s ease-in-out;
+  }
+
+@keyframes waterwave {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        top: var(--h-custom);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        top: var(--h-custom);
+    }
+}
+
+@keyframes startgraf {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        top: 20%;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        top: var(--h-custom);
+    }
+}
