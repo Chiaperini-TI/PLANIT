@@ -1,4 +1,5 @@
-# Planit
+# Planit 
+<hr>Documentações e usos: https://chiaperini-ti.github.io/PLANIT/ <br><hr>
 Planit é uma biblioteca CSS que facilita o desenvolvimento de diversos projetos.<br>
 Para usar no seu código, adicione os seguintes links em seu html:
 <hr>
