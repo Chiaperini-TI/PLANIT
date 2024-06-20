@@ -1,0 +1,947 @@
+@media (min-width: 768px) and (max-width: 1440px){
+  .n-chiaperini                 { color: #313b6c;              }
+  .n-chiaperini2                { color: #455296;              }
+  .n-chiaperini-amarelo         { color: #ffd600;              }
+  .n-bg-chiaperini              { background-color: #313b6c;   }
+  .n-bg-chiaperini-amarelo      { background-color: #ffd600;   }
+  .n-b-chiaperini               { border-color: #313b6c;       }
+  .n-b-chiaperini-amarelo       { border-color: #ffd600;       }
+  .n-bg-chiaperini-dark         { background-color: #0a0f26e5; }
+  .n-bg-chiaperini2             { background-color: #455296;   }
+  .n-bg-chiaperini2-hover:hover { background-color: #455296;   }
+  .n-hover-color:hover    { color: var(--color);}
+  .n-color    { color: var(--color);}
+  .n-custom   { color: var(--custom)  ;}
+  .n-custom2  { color: var(--custom2 );}
+  .n-custom3  { color: var(--custom3 );}
+  .n-custom4  { color: var(--custom4 );}
+  .n-hover-custom:hover   { color: var(--custom)  ;}
+  .n-hover-custom2:hover  { color: var(--custom2 );}
+  .n-hover-custom3:hover  { color: var(--custom3 );}
+  .n-hover-custom4:hover  { color: var(--custom4 );}
+  .n-bg-custom   { background-color: var(--bg-custom)  ;}
+  .n-bg-custom2  { background-color: var(--bg-custom2 );}
+  .n-bg-custom3  { background-color: var(--bg-custom3 );}
+  .n-bg-custom4  { background-color: var(--bg-custom4 );}
+  .n-hover-bg-custom:hover   { background-color: var(--bg-custom)  ;}
+  .n-hover-bg-custom2:hover  { background-color: var(--bg-custom2 );}
+  .n-hover-bg-custom3:hover  { background-color: var(--bg-custom3 );}
+  .n-hover-bg-custom4:hover  { background-color: var(--bg-custom4 );}
+  .n-bg-g   { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom)); }
+  .n-bg-g2  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2)); }
+  .n-bg-g3  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3));}
+  .n-bg-g4  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4)); }
+  .n-bg-g5  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom)); }
+  .n-bg-g6  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2)); }
+  .n-bg-g7  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2), var(--bg-custom3)); }
+  .n-bg-g8  { background-image: linear-gradient(to right, var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4), var(--bg-custom), var(--bg-custom2), var(--bg-custom3), var(--bg-custom4)); }
+  .n-cherry     { color: var(--cherry);     }
+  .n-strawberry { color: var(--strawberry); }
+  .n-fire       { color: var(--fire);       }
+  .n-blood      { color: var(--blood);      }
+  .n-rose       { color: var(--rose);       }
+  .n-apple      { color: var(--apple);      }
+  .n-watermelon { color: var(--watermelon); }
+  .n-raspberry  { color: var(--raspberry);  }
+  .n-pepper     { color: var(--pepper);     }
+  .n-chili      { color: var(--chili);      }
+  .n-bg-cherry     { background-color: var(--cherry);     }
+  .n-bg-strawberry { background-color: var(--strawberry); }
+  .n-bg-fire       { background-color: var(--fire);       }
+  .n-bg-blood      { background-color: var(--blood);      }
+  .n-bg-rose       { background-color: var(--rose);       }
+  .n-bg-apple      { background-color: var(--apple);      }
+  .n-bg-watermelon { background-color: var(--watermelon); }
+  .n-bg-raspberry  { background-color: var(--raspberry);  }
+  .n-bg-pepper     { background-color: var(--pepper);     }
+  .n-bg-chili      { background-color: var(--chili);      }
+  .n-red    { color: rgb(255, 0, 0);     }
+  .n-red1   { color: rgb(255, 20, 20);   }
+  .n-red2   { color: rgb(255, 40, 40);   }
+  .n-red3   { color: rgb(255, 60, 60);   }
+  .n-red4   { color: rgb(255, 80, 80);   }
+  .n-red5   { color: rgb(255, 100, 100); }
+  .n-red6   { color: rgb(255, 120, 120)  }
+  .n-red7   { color: rgb(255, 140, 140); }
+  .n-red8   { color: rgb(255, 160, 160); }
+  .n-red9   { color: rgb(255, 180, 180); }
+  .n-red10  { color: rgb(255, 200, 200); }
+  .n-bg-red    { background-color: rgb(255, 0, 0);     }
+  .n-bg-red1   { background-color: rgb(255, 20, 20);   }
+  .n-bg-red2   { background-color: rgb(255, 40, 40);   }
+  .n-bg-red3   { background-color: rgb(255, 60, 60);   }
+  .n-bg-red4   { background-color: rgb(255, 80, 80);   }
+  .n-bg-red5   { background-color: rgb(255, 100, 100); }
+  .n-bg-red6   { background-color: rgb(255, 120, 120)  }
+  .n-bg-red7   { background-color: rgb(255, 140, 140); }
+  .n-bg-red8   { background-color: rgb(255, 160, 160); }
+  .n-bg-red9   { background-color: rgb(255, 180, 180); }
+  .n-bg-red10  { background-color: rgb(255, 200, 200); }
+  .n-dark-red    { color: rgb(209, 0, 0);   }
+  .n-dark-red1   { color: rgb(192, 0, 0);   }
+  .n-dark-red2   { color: rgb(174, 0, 0);   }
+  .n-dark-red3   { color: rgb(159, 4, 4);   }
+  .n-dark-red4   { color: rgb(142, 0, 0);   }
+  .n-dark-red5   { color: rgb(119, 1, 1);   }
+  .n-dark-red6   { color: rgb(94, 2, 2);    }
+  .n-dark-red7   { color: rgb(82, 4, 4);    }
+  .n-dark-red8   { color: rgb(63, 5, 5);    }
+  .n-dark-red9   { color: rgb(50, 4, 4);    }
+  .n-dark-red10  { color: rgb(26, 0, 0);    }
+  .n-bg-dark-red    { background-color: rgb(209, 0, 0); }
+  .n-bg-dark-red1   { background-color: rgb(192, 0, 0); }
+  .n-bg-dark-red2   { background-color: rgb(174, 0, 0); }
+  .n-bg-dark-red3   { background-color: rgb(159, 4, 4); }
+  .n-bg-dark-red4   { background-color: rgb(142, 0, 0); }
+  .n-bg-dark-red5   { background-color: rgb(119, 1, 1); }
+  .n-bg-dark-red6   { background-color: rgb(94, 2, 2);  }
+  .n-bg-dark-red7   { background-color: rgb(82, 4, 4);  }
+  .n-bg-dark-red8   { background-color: rgb(63, 5, 5);  }
+  .n-bg-dark-red9   { background-color: rgb(50, 4, 4);  }
+  .n-bg-dark-red10  { background-color: rgb(26, 0, 0);  }
+  .n-hover-cherry:hover     { color: var(--cherry);     }
+  .n-hover-strawberry:hover { color: var(--strawberry); }
+  .n-hover-fire:hover       { color: var(--fire);       }
+  .n-hover-blood:hover      { color: var(--blood);      }
+  .n-hover-rose:hover       { color: var(--rose);       }
+  .n-hover-apple:hover      { color: var(--apple);      }
+  .n-hover-watermelon:hover { color: var(--watermelon); }
+  .n-hover-raspberry:hover  { color: var(--raspberry);  }
+  .n-hover-pepper:hover     { color: var(--pepper);     }
+  .n-hover-chili:hover      { color: var(--chili);      }
+  .n-hover-bg-cherry:hover     { background-color: var(--cherry);     }
+  .n-hover-bg-strawberry:hover { background-color: var(--strawberry); }
+  .n-hover-bg-fire:hover       { background-color: var(--fire);       }
+  .n-hover-bg-blood:hover      { background-color: var(--blood);      }
+  .n-hover-bg-rose:hover       { background-color: var(--rose);       }
+  .n-hover-bg-apple:hover      { background-color: var(--apple);      }
+  .n-hover-bg-watermelon:hover { background-color: var(--watermelon); }
+  .n-hover-bg-raspberry:hover  { background-color: var(--raspberry);  }
+  .n-hover-bg-pepper:hover     { background-color: var(--pepper);     }
+  .n-hover-bg-chili:hover      { background-color: var(--chili);      }
+  .n-hover-red:hover    { color: rgb(255, 0, 0);     }
+  .n-hover-red1:hover   { color: rgb(255, 20, 20);   }
+  .n-hover-red2:hover   { color: rgb(255, 40, 40);   }
+  .n-hover-red3:hover   { color: rgb(255, 60, 60);   }
+  .n-hover-red4:hover   { color: rgb(255, 80, 80);   }
+  .n-hover-red5:hover   { color: rgb(255, 100, 100); }
+  .n-hover-red6:hover   { color: rgb(255, 120, 120)  }
+  .n-hover-red7:hover   { color: rgb(255, 140, 140); }
+  .n-hover-red8:hover   { color: rgb(255, 160, 160); }
+  .n-hover-red9:hover   { color: rgb(255, 180, 180); }
+  .n-hover-red10:hover  { color: rgb(255, 200, 200); }
+  .n-hover-bg-red:hover    { background-color: rgb(255, 0, 0);     }
+  .n-hover-bg-red1:hover   { background-color: rgb(255, 20, 20);   }
+  .n-hover-bg-red2:hover   { background-color: rgb(255, 40, 40);   }
+  .n-hover-bg-red3:hover   { background-color: rgb(255, 60, 60);   }
+  .n-hover-bg-red4:hover   { background-color: rgb(255, 80, 80);   }
+  .n-hover-bg-red5:hover   { background-color: rgb(255, 100, 100); }
+  .n-hover-bg-red6:hover   { background-color: rgb(255, 120, 120)  }
+  .n-hover-bg-red7:hover   { background-color: rgb(255, 140, 140); }
+  .n-hover-bg-red8:hover   { background-color: rgb(255, 160, 160); }
+  .n-hover-bg-red9:hover   { background-color: rgb(255, 180, 180); }
+  .n-hover-bg-red10:hover  { background-color: rgb(255, 200, 200); }
+  .n-hover-dark-red:hover    { color: rgb(209, 0, 0);   }
+  .n-hover-dark-red1:hover   { color: rgb(192, 0, 0);   }
+  .n-hover-dark-red2:hover   { color: rgb(174, 0, 0);   }
+  .n-hover-dark-red3:hover   { color: rgb(159, 4, 4);   }
+  .n-hover-dark-red4:hover   { color: rgb(142, 0, 0);   }
+  .n-hover-dark-red5:hover   { color: rgb(119, 1, 1);   }
+  .n-hover-dark-red6:hover   { color: rgb(94, 2, 2);    }
+  .n-hover-dark-red7:hover   { color: rgb(82, 4, 4);    }
+  .n-hover-dark-red8:hover   { color: rgb(63, 5, 5);    }
+  .n-hover-dark-red9:hover   { color: rgb(50, 4, 4);    }
+  .n-hover-dark-red10:hover  { color: rgb(26, 0, 0);    }
+  .n-hover-bg-dark-red:hover    { background-color: rgb(209, 0, 0); }
+  .n-hover-bg-dark-red1:hover   { background-color: rgb(192, 0, 0); }
+  .n-hover-bg-dark-red2:hover   { background-color: rgb(174, 0, 0); }
+  .n-hover-bg-dark-red3:hover   { background-color: rgb(159, 4, 4); }
+  .n-hover-bg-dark-red4:hover   { background-color: rgb(142, 0, 0); }
+  .n-hover-bg-dark-red5:hover   { background-color: rgb(119, 1, 1); }
+  .n-hover-bg-dark-red6:hover   { background-color: rgb(94, 2, 2);  }
+  .n-hover-bg-dark-red7:hover   { background-color: rgb(82, 4, 4);  }
+  .n-hover-bg-dark-red8:hover   { background-color: rgb(63, 5, 5);  }
+  .n-hover-bg-dark-red9:hover   { background-color: rgb(50, 4, 4);  }
+  .n-hover-bg-dark-red10:hover  { background-color: rgb(26, 0, 0);  }
+  .n-royal     { color: var(--royal);     }
+  .n-aqua      { color: var(--aqua);      }
+  .n-sky       { color: var(--sky);       }
+  .n-blueberry { color: var(--blueberry); }
+  .n-deep      { color: var(--deep);      }
+  .n-ocean     { color: var(--ocean);     }
+  .n-lake      { color: var(--lake);      }
+  .n-water     { color: var(--water);     }
+  .n-rain      { color: var(--rain);      }
+  .n-ice       { color: var(--ice);       }
+  .n-bg-royal     { background-color: var(--royal);     }
+  .n-bg-aqua      { background-color: var(--aqua);      }
+  .n-bg-sky       { background-color: var(--sky);       }
+  .n-bg-blueberry { background-color: var(--blueberry); }
+  .n-bg-deep      { background-color: var(--deep);      }
+  .n-bg-ocean     { background-color: var(--ocean);     }
+  .n-bg-lake      { background-color: var(--lake);      }
+  .n-bg-water     { background-color: var(--water);     }
+  .n-bg-rain      { background-color: var(--rain);      }
+  .n-bg-ice       { background-color: var(--ice);       }
+  .n-blue    { color: rgb(0, 119, 255);   }
+  .n-blue1   { color: rgb(20, 141, 255);  }
+  .n-blue2   { color: rgb(40, 151, 255);  }
+  .n-blue3   { color: rgb(60, 167, 255);  }
+  .n-blue4   { color: rgb(80, 170, 255);  }
+  .n-blue5   { color: rgb(100, 172, 255); }
+  .n-blue6   { color: rgb(120, 183, 255)  }
+  .n-blue7   { color: rgb(140, 186, 255); }
+  .n-blue8   { color: rgb(160, 209, 255); }
+  .n-blue9   { color: rgb(180, 215, 255); }
+  .n-blue10  { color: rgb(200, 230, 255); }
+  .n-bg-blue    { background-color: rgb(0, 119, 255);   }
+  .n-bg-blue1   { background-color: rgb(20, 141, 255);  }
+  .n-bg-blue2   { background-color: rgb(40, 151, 255);  }
+  .n-bg-blue3   { background-color: rgb(60, 167, 255);  }
+  .n-bg-blue4   { background-color: rgb(80, 170, 255);  }
+  .n-bg-blue5   { background-color: rgb(100, 172, 255); }
+  .n-bg-blue6   { background-color: rgb(120, 183, 255)  }
+  .n-bg-blue7   { background-color: rgb(140, 186, 255); }
+  .n-bg-blue8   { background-color: rgb(160, 209, 255); }
+  .n-bg-blue9   { background-color: rgb(180, 215, 255); }
+  .n-bg-blue10  { background-color: rgb(200, 230, 255); }
+  .n-dark-blue   { color: rgb(5, 43, 100); }
+  .n-dark-blue1  { color: rgb(5, 39, 90);  }
+  .n-dark-blue2  { color: rgb(5, 40, 85);  }
+  .n-dark-blue3  { color: rgb(5, 40, 80);  }
+  .n-dark-blue4  { color: rgb(5, 33, 70);  }
+  .n-dark-blue5  { color: rgb(5, 29, 65);  }
+  .n-dark-blue6  { color: rgb(5, 29, 60);  }
+  .n-dark-blue7  { color: rgb(5, 24, 50);  }
+  .n-dark-blue8  { color: rgb(5, 26, 45);  }
+  .n-dark-blue9  { color: rgb(5, 21, 40);  }
+  .n-dark-blue10 { color: rgb(5, 18, 30);  }
+  .n-bg-dark-blue   { background-color: rgb(5, 43, 100); }
+  .n-bg-dark-blue1  { background-color: rgb(5, 39, 90);  }
+  .n-bg-dark-blue2  { background-color: rgb(5, 40, 85);  }
+  .n-bg-dark-blue3  { background-color: rgb(5, 40, 80);  }
+  .n-bg-dark-blue4  { background-color: rgb(5, 33, 70);  }
+  .n-bg-dark-blue5  { background-color: rgb(5, 29, 65);  }
+  .n-bg-dark-blue6  { background-color: rgb(5, 29, 60);  }
+  .n-bg-dark-blue7  { background-color: rgb(5, 24, 50);  }
+  .n-bg-dark-blue8  { background-color: rgb(5, 26, 45);  }
+  .n-bg-dark-blue9  { background-color: rgb(5, 21, 40);  }
+  .n-bg-dark-blue10 { background-color: rgb(5, 18, 30);  }
+  .n-hover-royal:hover     { color: var(--royal);     }
+  .n-hover-aqua:hover      { color: var(--aqua);      }
+  .n-hover-sky:hover       { color: var(--sky);       }
+  .n-hover-blueberry:hover { color: var(--blueberry); }
+  .n-hover-deep:hover      { color: var(--deep);      }
+  .n-hover-ocean:hover     { color: var(--ocean);     }
+  .n-hover-lake:hover      { color: var(--lake);      }
+  .n-hover-water:hover     { color: var(--water);     }
+  .n-hover-rain:hover      { color: var(--rain);      }
+  .n-hover-ice:hover       { color: var(--ice);       }
+  .n-hover-bg-royal:hover     { background-color: var(--royal);     }
+  .n-hover-bg-aqua:hover      { background-color: var(--aqua);      }
+  .n-hover-bg-sky:hover       { background-color: var(--sky);       }
+  .n-hover-bg-blueberry:hover { background-color: var(--blueberry); }
+  .n-hover-bg-deep:hover      { background-color: var(--deep);      }
+  .n-hover-bg-ocean:hover     { background-color: var(--ocean);     }
+  .n-hover-bg-lake:hover      { background-color: var(--lake);      }
+  .n-hover-bg-water:hover     { background-color: var(--water);     }
+  .n-hover-bg-rain:hover      { background-color: var(--rain);      }
+  .n-hover-bg-ice:hover       { background-color: var(--ice);       }
+  .n-hover-blue:hover    { color: rgb(0, 119, 255);   }
+  .n-hover-blue1:hover   { color: rgb(20, 141, 255);  }
+  .n-hover-blue2:hover   { color: rgb(40, 151, 255);  }
+  .n-hover-blue3:hover   { color: rgb(60, 167, 255);  }
+  .n-hover-blue4:hover   { color: rgb(80, 170, 255);  }
+  .n-hover-blue5:hover   { color: rgb(100, 172, 255); }
+  .n-hover-blue6:hover   { color: rgb(120, 183, 255)  }
+  .n-hover-blue7:hover   { color: rgb(140, 186, 255); }
+  .n-hover-blue8:hover   { color: rgb(160, 209, 255); }
+  .n-hover-blue9:hover   { color: rgb(180, 215, 255); }
+  .n-hover-blue10:hover  { color: rgb(200, 230, 255); }
+  .n-hover-bg-blue:hover    { background-color: rgb(0, 119, 255);   }
+  .n-hover-bg-blue1:hover   { background-color: rgb(20, 141, 255);  }
+  .n-hover-bg-blue2:hover   { background-color: rgb(40, 151, 255);  }
+  .n-hover-bg-blue3:hover   { background-color: rgb(60, 167, 255);  }
+  .n-hover-bg-blue4:hover   { background-color: rgb(80, 170, 255);  }
+  .n-hover-bg-blue5:hover   { background-color: rgb(100, 172, 255); }
+  .n-hover-bg-blue6:hover   { background-color: rgb(120, 183, 255)  }
+  .n-hover-bg-blue7:hover   { background-color: rgb(140, 186, 255); }
+  .n-hover-bg-blue8:hover   { background-color: rgb(160, 209, 255); }
+  .n-hover-bg-blue9:hover   { background-color: rgb(180, 215, 255); }
+  .n-hover-bg-blue10:hover  { background-color: rgb(200, 230, 255); }
+  .n-hover-dark-blue:hover   { color: rgb(5, 43, 100); }
+  .n-hover-dark-blue1:hover  { color: rgb(5, 39, 90);  }
+  .n-hover-dark-blue2:hover  { color: rgb(5, 40, 85);  }
+  .n-hover-dark-blue3:hover  { color: rgb(5, 40, 80);  }
+  .n-hover-dark-blue4:hover  { color: rgb(5, 33, 70);  }
+  .n-hover-dark-blue5:hover  { color: rgb(5, 29, 65);  }
+  .n-hover-dark-blue6:hover  { color: rgb(5, 29, 60);  }
+  .n-hover-dark-blue7:hover  { color: rgb(5, 24, 50);  }
+  .n-hover-dark-blue8:hover  { color: rgb(5, 26, 45);  }
+  .n-hover-dark-blue9:hover  { color: rgb(5, 21, 40);  }
+  .n-hover-dark-blue10:hover { color: rgb(5, 18, 30);  }
+  .n-hover-bg-dark-blue:hover   { background-color: rgb(5, 43, 100); }
+  .n-hover-bg-dark-blue1:hover  { background-color: rgb(5, 39, 90);  }
+  .n-hover-bg-dark-blue2:hover  { background-color: rgb(5, 40, 85);  }
+  .n-hover-bg-dark-blue3:hover  { background-color: rgb(5, 40, 80);  }
+  .n-hover-bg-dark-blue4:hover  { background-color: rgb(5, 33, 70);  }
+  .n-hover-bg-dark-blue5:hover  { background-color: rgb(5, 29, 65);  }
+  .n-hover-bg-dark-blue6:hover  { background-color: rgb(5, 29, 60);  }
+  .n-hover-bg-dark-blue7:hover  { background-color: rgb(5, 24, 50);  }
+  .n-hover-bg-dark-blue8:hover  { background-color: rgb(5, 26, 45);  }
+  .n-hover-bg-dark-blue9:hover  { background-color: rgb(5, 21, 40);  }
+  .n-hover-bg-dark-blue10:hover { background-color: rgb(5, 18, 30);  }
+  .n-emerald { color: var(--emerald);  }
+  .n-leaf    { color: var(--leaf);     }
+  .n-tree    { color: var(--tree);     }
+  .n-lemon   { color: var(--lemon);    }
+  .n-kiwi    { color: var(--kiwi);     }
+  .n-grass   { color: var(--grass);    }
+  .n-lime    { color: var(--lime);     }
+  .n-avocado { color: var(--avocado);  }
+  .n-forest  { color: var(--forest);   }
+  .n-swamp   { color: var(--swamp);    }
+  .n-bg-emerald { background-color: var(--emerald); }
+  .n-bg-leaf    { background-color: var(--leaf);    }
+  .n-bg-tree    { background-color: var(--tree);    }
+  .n-bg-lemon   { background-color: var(--lemon);   }
+  .n-bg-kiwi    { background-color: var(--kiwi);    }
+  .n-bg-grass   { background-color: var(--grass);   }
+  .n-bg-lime    { background-color: var(--lime);    }
+  .n-bg-avocado { background-color: var(--avocado); }
+  .n-bg-forest  { background-color: var(--forest);  }
+  .n-bg-swamp   { background-color: var(--swamp);   }
+  .n-green    { color: rgb(0, 255, 0);     }
+  .n-green1   { color: rgb(28, 255, 20);   }
+  .n-green2   { color: rgb(40, 255, 76);   }
+  .n-green3   { color: rgb(60, 255, 60);   }
+  .n-green4   { color: rgb(80, 255, 95);   }
+  .n-green5   { color: rgb(100, 255, 126); }
+  .n-green6   { color: rgb(120, 255, 120)  }
+  .n-green7   { color: rgb(140, 255, 150); }
+  .n-green8   { color: rgb(160, 255, 173); }
+  .n-green9   { color: rgb(180, 255, 193); }
+  .n-green10  { color: rgb(200, 255, 205); }
+  .n-dark-green   { color: rgb(5, 100, 18); }
+  .n-dark-green1  { color: rgb(5, 90, 19);  }
+  .n-dark-green2  { color: rgb(5, 85, 5);   }
+  .n-dark-green3  { color: rgb(5, 80, 11);  }
+  .n-dark-green4  { color: rgb(5, 70, 8);   }
+  .n-dark-green5  { color: rgb(5, 65, 5);   }
+  .n-dark-green6  { color: rgb(5, 60, 12);  }
+  .n-dark-green7  { color: rgb(5, 50, 9);   }
+  .n-dark-green8  { color: rgb(5, 45, 12);  }
+  .n-dark-green9  { color: rgb(5, 40, 13);  }
+  .n-dark-green10 { color: rgb(5, 30, 13);  }
+  .n-bg-green    { background-color: rgb(0, 255, 0);     }
+  .n-bg-green1   { background-color: rgb(28, 255, 20);   }
+  .n-bg-green2   { background-color: rgb(40, 255, 76);   }
+  .n-bg-green3   { background-color: rgb(60, 255, 60);   }
+  .n-bg-green4   { background-color: rgb(80, 255, 95);   }
+  .n-bg-green5   { background-color: rgb(100, 255, 126); }
+  .n-bg-green6   { background-color: rgb(120, 255, 120)  }
+  .n-bg-green7   { background-color: rgb(140, 255, 150); }
+  .n-bg-green8   { background-color: rgb(160, 255, 173); }
+  .n-bg-green9   { background-color: rgb(180, 255, 193); }
+  .n-bg-green10  { background-color: rgb(200, 255, 205); }
+  .n-bg-dark-green   { background-color: rgb(5, 100, 18); }
+  .n-bg-dark-green1  { background-color: rgb(5, 90, 19);  }
+  .n-bg-dark-green2  { background-color: rgb(5, 85, 5);   }
+  .n-bg-dark-green3  { background-color: rgb(5, 80, 11);  }
+  .n-bg-dark-green4  { background-color: rgb(5, 70, 8);   }
+  .n-bg-dark-green5  { background-color: rgb(5, 65, 5);   }
+  .n-bg-dark-green6  { background-color: rgb(5, 60, 12);  }
+  .n-bg-dark-green7  { background-color: rgb(5, 50, 9);   }
+  .n-bg-dark-green8  { background-color: rgb(5, 45, 12);  }
+  .n-bg-dark-green9  { background-color: rgb(5, 40, 13);  }
+  .n-bg-dark-green10 { background-color: rgb(5, 30, 13);  }
+  .n-hover-emerald:hover { color: var(--emerald);  }
+  .n-hover-leaf:hover    { color: var(--leaf);     }
+  .n-hover-tree:hover    { color: var(--tree);     }
+  .n-hover-lemon:hover   { color: var(--lemon);    }
+  .n-hover-kiwi:hover    { color: var(--kiwi);     }
+  .n-hover-grass:hover   { color: var(--grass);    }
+  .n-hover-lime:hover    { color: var(--lime);     }
+  .n-hover-avocado:hover { color: var(--avocado);  }
+  .n-hover-forest:hover  { color: var(--forest);   }
+  .n-hover-swamp:hover   { color: var(--swamp);    }
+  .n-hover-bg-emerald:hover { background-color: var(--emerald); }
+  .n-hover-bg-leaf:hover    { background-color: var(--leaf);    }
+  .n-hover-bg-tree:hover    { background-color: var(--tree);    }
+  .n-hover-bg-lemon:hover   { background-color: var(--lemon);   }
+  .n-hover-bg-kiwi:hover    { background-color: var(--kiwi);    }
+  .n-hover-bg-grass:hover   { background-color: var(--grass);   }
+  .n-hover-bg-lime:hover    { background-color: var(--lime);    }
+  .n-hover-bg-avocado:hover { background-color: var(--avocado); }
+  .n-hover-bg-forest:hover  { background-color: var(--forest);  }
+  .n-hover-bg-swamp:hover   { background-color: var(--swamp);   }
+  .n-hover-green:hover    { color: rgb(0, 255, 0);     }
+  .n-hover-green1:hover   { color: rgb(28, 255, 20);   }
+  .n-hover-green2:hover   { color: rgb(40, 255, 76);   }
+  .n-hover-green3:hover   { color: rgb(60, 255, 60);   }
+  .n-hover-green4:hover   { color: rgb(80, 255, 95);   }
+  .n-hover-green5:hover   { color: rgb(100, 255, 126); }
+  .n-hover-green6:hover   { color: rgb(120, 255, 120)  }
+  .n-hover-green7:hover   { color: rgb(140, 255, 150); }
+  .n-hover-green8:hover   { color: rgb(160, 255, 173); }
+  .n-hover-green9:hover   { color: rgb(180, 255, 193); }
+  .n-hover-green10:hover  { color: rgb(200, 255, 205); }
+  .n-hover-dark-green:hover   { color: rgb(5, 100, 18); }
+  .n-hover-dark-green1:hover  { color: rgb(5, 90, 19);  }
+  .n-hover-dark-green2:hover  { color: rgb(5, 85, 5);   }
+  .n-hover-dark-green3:hover  { color: rgb(5, 80, 11);  }
+  .n-hover-dark-green4:hover  { color: rgb(5, 70, 8);   }
+  .n-hover-dark-green5:hover  { color: rgb(5, 65, 5);   }
+  .n-hover-dark-green6:hover  { color: rgb(5, 60, 12);  }
+  .n-hover-dark-green7:hover  { color: rgb(5, 50, 9);   }
+  .n-hover-dark-green8:hover  { color: rgb(5, 45, 12);  }
+  .n-hover-dark-green9:hover  { color: rgb(5, 40, 13);  }
+  .n-hover-dark-green10:hover { color: rgb(5, 30, 13);  }
+  .n-hover-bg-green:hover    { background-color: rgb(0, 255, 0);     }
+  .n-hover-bg-green1:hover   { background-color: rgb(28, 255, 20);   }
+  .n-hover-bg-green2:hover   { background-color: rgb(40, 255, 76);   }
+  .n-hover-bg-green3:hover   { background-color: rgb(60, 255, 60);   }
+  .n-hover-bg-green4:hover   { background-color: rgb(80, 255, 95);   }
+  .n-hover-bg-green5:hover   { background-color: rgb(100, 255, 126); }
+  .n-hover-bg-green6:hover   { background-color: rgb(120, 255, 120)  }
+  .n-hover-bg-green7:hover   { background-color: rgb(140, 255, 150); }
+  .n-hover-bg-green8:hover   { background-color: rgb(160, 255, 173); }
+  .n-hover-bg-green9:hover   { background-color: rgb(180, 255, 193); }
+  .n-hover-bg-green10:hover  { background-color: rgb(200, 255, 205); }
+  .n-hover-bg-dark-green:hover   { background-color: rgb(5, 100, 18); }
+  .n-hover-bg-dark-green1:hover  { background-color: rgb(5, 90, 19);  }
+  .n-hover-bg-dark-green2:hover  { background-color: rgb(5, 85, 5);   }
+  .n-hover-bg-dark-green3:hover  { background-color: rgb(5, 80, 11);  }
+  .n-hover-bg-dark-green4:hover  { background-color: rgb(5, 70, 8);   }
+  .n-hover-bg-dark-green5:hover  { background-color: rgb(5, 65, 5);   }
+  .n-hover-bg-dark-green6:hover  { background-color: rgb(5, 60, 12);  }
+  .n-hover-bg-dark-green7:hover  { background-color: rgb(5, 50, 9);   }
+  .n-hover-bg-dark-green8:hover  { background-color: rgb(5, 45, 12);  }
+  .n-hover-bg-dark-green9:hover  { background-color: rgb(5, 40, 13);  }
+  .n-hover-bg-dark-green10:hover { background-color: rgb(5, 30, 13);  }
+  .n-grape     { color: var(--grape);     }
+  .n-plum      { color: var(--plum);      }
+  .n-açai      { color: var(--açai);      }
+  .n-berry     { color: var(--berry);     }
+  .n-dragon    { color: var(--dragon);    }
+  .n-eggplant  { color: var(--eggplant);  }
+  .n-violet    { color: var(--violet);    }
+  .n-lilac     { color: var(--lilac);     }
+  .n-jellyfish { color: var(--jellyfish); }
+  .n-octopus   { color: var(--octopus);   }
+  .n-bg-grape     { background-color: var(--grape);     }
+  .n-bg-plum      { background-color: var(--plum);      }
+  .n-bg-açai      { background-color: var(--açai);      }
+  .n-bg-berry     { background-color: var(--berry);     }
+  .n-bg-dragon    { background-color: var(--dragon);    }
+  .n-bg-eggplant  { background-color: var(--eggplant);  }
+  .n-bg-violet    { background-color: var(--violet);    }
+  .n-bg-lilac     { background-color: var(--lilac);     }
+  .n-bg-jellyfish { background-color: var(--jellyfish); }
+  .n-bg-octopus   { background-color: var(--octopus);   }
+  .n-purple    { color: rgb(111, 0, 255);   }
+  .n-purple1   { color: rgb(130, 20, 255);  }
+  .n-purple2   { color: rgb(122, 40, 255);  }
+  .n-purple3   { color: rgb(102, 60, 255);  }
+  .n-purple4   { color: rgb(127, 80, 255);  }
+  .n-purple5   { color: rgb(172, 100, 255); }
+  .n-purple6   { color: rgb(167, 120, 255)  }
+  .n-purple7   { color: rgb(184, 140, 255); }
+  .n-purple8   { color: rgb(196, 160, 255); }
+  .n-purple9   { color: rgb(196, 180, 255); }
+  .n-purple10  { color: rgb(219, 200, 255); }
+  .n-dark-purple   { color: rgb(30, 5, 100); }
+  .n-dark-purple1  { color: rgb(35, 5, 90);  }
+  .n-dark-purple2  { color: rgb(22, 5, 85);  }
+  .n-dark-purple3  { color: rgb(31, 5, 80);  }
+  .n-dark-purple4  { color: rgb(19, 5, 70);  }
+  .n-dark-purple5  { color: rgb(16, 5, 65);  }
+  .n-dark-purple6  { color: rgb(13, 5, 60);  }
+  .n-dark-purple7  { color: rgb(17, 5, 50);  }
+  .n-dark-purple8  { color: rgb(16, 5, 45);  }
+  .n-dark-purple9  { color: rgb(13, 5, 40);  }
+  .n-dark-purple10 { color: rgb(10, 5, 30);  }
+  .n-bg-purple    { background-color: rgb(111, 0, 255);   }
+  .n-bg-purple1   { background-color: rgb(130, 20, 255);  }
+  .n-bg-purple2   { background-color: rgb(122, 40, 255);  }
+  .n-bg-purple3   { background-color: rgb(102, 60, 255);  }
+  .n-bg-purple4   { background-color: rgb(127, 80, 255);  }
+  .n-bg-purple5   { background-color: rgb(172, 100, 255); }
+  .n-bg-purple6   { background-color: rgb(167, 120, 255)  }
+  .n-bg-purple7   { background-color: rgb(184, 140, 255); }
+  .n-bg-purple8   { background-color: rgb(196, 160, 255); }
+  .n-bg-purple9   { background-color: rgb(196, 180, 255); }
+  .n-bg-purple10  { background-color: rgb(219, 200, 255); }
+  .n-bg-dark-purple   { background-color: rgb(30, 5, 100); }
+  .n-bg-dark-purple1  { background-color: rgb(35, 5, 90);  }
+  .n-bg-dark-purple2  { background-color: rgb(22, 5, 85);  }
+  .n-bg-dark-purple3  { background-color: rgb(31, 5, 80);  }
+  .n-bg-dark-purple4  { background-color: rgb(19, 5, 70);  }
+  .n-bg-dark-purple5  { background-color: rgb(16, 5, 65);  }
+  .n-bg-dark-purple6  { background-color: rgb(13, 5, 60);  }
+  .n-bg-dark-purple7  { background-color: rgb(17, 5, 50);  }
+  .n-bg-dark-purple8  { background-color: rgb(16, 5, 45);  }
+  .n-bg-dark-purple9  { background-color: rgb(13, 5, 40);  }
+  .n-bg-dark-purple10 { background-color: rgb(10, 5, 30);  }
+  .n-hover-grape:hover     { color: var(--grape);     }
+  .n-hover-plum:hover      { color: var(--plum);      }
+  .n-hover-açai:hover      { color: var(--açai);      }
+  .n-hover-berry:hover     { color: var(--berry);     }
+  .n-hover-dragon:hover    { color: var(--dragon);    }
+  .n-hover-eggplant:hover  { color: var(--eggplant);  }
+  .n-hover-violet:hover    { color: var(--violet);    }
+  .n-hover-lilac:hover     { color: var(--lilac);     }
+  .n-hover-jellyfish:hover { color: var(--jellyfish); }
+  .n-hover-octopus:hover   { color: var(--octopus);   }
+  .n-hover-bg-grape:hover     { background-color: var(--grape);     }
+  .n-hover-bg-plum:hover      { background-color: var(--plum);      }
+  .n-hover-bg-açai:hover      { background-color: var(--açai);      }
+  .n-hover-bg-berry:hover     { background-color: var(--berry);     }
+  .n-hover-bg-dragon:hover    { background-color: var(--dragon);    }
+  .n-hover-bg-eggplant:hover  { background-color: var(--eggplant);  }
+  .n-hover-bg-violet:hover    { background-color: var(--violet);    }
+  .n-hover-bg-lilac:hover     { background-color: var(--lilac);     }
+  .n-hover-bg-jellyfish:hover { background-color: var(--jellyfish); }
+  .n-hover-bg-octopus:hover   { background-color: var(--octopus);   }
+  .n-hover-purple:hover    { color: rgb(111, 0, 255);   }
+  .n-hover-purple1:hover   { color: rgb(130, 20, 255);  }
+  .n-hover-purple2:hover   { color: rgb(122, 40, 255);  }
+  .n-hover-purple3:hover   { color: rgb(102, 60, 255);  }
+  .n-hover-purple4:hover   { color: rgb(127, 80, 255);  }
+  .n-hover-purple5:hover   { color: rgb(172, 100, 255); }
+  .n-hover-purple6:hover   { color: rgb(167, 120, 255)  }
+  .n-hover-purple7:hover   { color: rgb(184, 140, 255); }
+  .n-hover-purple8:hover   { color: rgb(196, 160, 255); }
+  .n-hover-purple9:hover   { color: rgb(196, 180, 255); }
+  .n-hover-purple10:hover  { color: rgb(219, 200, 255); }
+  .n-hover-dark-purple:hover   { color: rgb(30, 5, 100); }
+  .n-hover-dark-purple1:hover  { color: rgb(35, 5, 90);  }
+  .n-hover-dark-purple2:hover  { color: rgb(22, 5, 85);  }
+  .n-hover-dark-purple3:hover  { color: rgb(31, 5, 80);  }
+  .n-hover-dark-purple4:hover  { color: rgb(19, 5, 70);  }
+  .n-hover-dark-purple5:hover  { color: rgb(16, 5, 65);  }
+  .n-hover-dark-purple6:hover  { color: rgb(13, 5, 60);  }
+  .n-hover-dark-purple7:hover  { color: rgb(17, 5, 50);  }
+  .n-hover-dark-purple8:hover  { color: rgb(16, 5, 45);  }
+  .n-hover-dark-purple9:hover  { color: rgb(13, 5, 40);  }
+  .n-hover-dark-purple10:hover { color: rgb(10, 5, 30);  }
+  .n-hover-bg-purple:hover    { background-color: rgb(111, 0, 255);   }
+  .n-hover-bg-purple1:hover   { background-color: rgb(130, 20, 255);  }
+  .n-hover-bg-purple2:hover   { background-color: rgb(122, 40, 255);  }
+  .n-hover-bg-purple3:hover   { background-color: rgb(102, 60, 255);  }
+  .n-hover-bg-purple4:hover   { background-color: rgb(127, 80, 255);  }
+  .n-hover-bg-purple5:hover   { background-color: rgb(172, 100, 255); }
+  .n-hover-bg-purple6:hover   { background-color: rgb(167, 120, 255)  }
+  .n-hover-bg-purple7:hover   { background-color: rgb(184, 140, 255); }
+  .n-hover-bg-purple8:hover   { background-color: rgb(196, 160, 255); }
+  .n-hover-bg-purple9:hover   { background-color: rgb(196, 180, 255); }
+  .n-hover-bg-purple10:hover  { background-color: rgb(219, 200, 255); }
+  .n-hover-bg-dark-purple:hover   { background-color: rgb(30, 5, 100); }
+  .n-hover-bg-dark-purple1:hover  { background-color: rgb(35, 5, 90);  }
+  .n-hover-bg-dark-purple2:hover  { background-color: rgb(22, 5, 85);  }
+  .n-hover-bg-dark-purple3:hover  { background-color: rgb(31, 5, 80);  }
+  .n-hover-bg-dark-purple4:hover  { background-color: rgb(19, 5, 70);  }
+  .n-hover-bg-dark-purple5:hover  { background-color: rgb(16, 5, 65);  }
+  .n-hover-bg-dark-purple6:hover  { background-color: rgb(13, 5, 60);  }
+  .n-hover-bg-dark-purple7:hover  { background-color: rgb(17, 5, 50);  }
+  .n-hover-bg-dark-purple8:hover  { background-color: rgb(16, 5, 45);  }
+  .n-hover-bg-dark-purple9:hover  { background-color: rgb(13, 5, 40);  }
+  .n-hover-bg-dark-purple10:hover { background-color: rgb(10, 5, 30);  }
+  .n-banana    { color: var(--banana);    }
+  .n-melon     { color: var(--melon);     }
+  .n-sun       { color: var(--sun);       }
+  .n-gold      { color: var(--gold);      }
+  .n-pineapple { color: var(--pineapple); }
+  .n-egg       { color: var(--egg);       }
+  .n-sunset    { color: var(--sunset);    }
+  .n-golden    { color: var(--golden);    }
+  .n-mango     { color: var(--mango);     }
+  .n-honey     { color: var(--honey);     }
+  .n-hover-banana:hover    { color: var(--banana);    }
+  .n-hover-melon:hover     { color: var(--melon);     }
+  .n-hover-sun:hover       { color: var(--sun);       }
+  .n-hover-gold:hover      { color: var(--gold);      }
+  .n-hover-pineapple:hover { color: var(--pineapple); }
+  .n-hover-egg:hover       { color: var(--egg);       }
+  .n-hover-sunset:hover    { color: var(--sunset);    }
+  .n-hover-golden:hover    { color: var(--golden);    }
+  .n-hover-mango:hover     { color: var(--mango);     }
+  .n-hover-honey:hover     { color: var(--honey);     }
+  .n-bg-banana    { background-color: var(--banana);    }
+  .n-bg-melon     { background-color: var(--melon);     }
+  .n-bg-sun       { background-color: var(--sun);       }
+  .n-bg-gold      { background-color: var(--gold);      }
+  .n-bg-pineapple { background-color: var(--pineapple); }
+  .n-bg-egg       { background-color: var(--egg);       }
+  .n-bg-sunset    { background-color: var(--sunset);    }
+  .n-bg-golden    { background-color: var(--golden);    }
+  .n-bg-mango     { background-color: var(--mango);     }
+  .n-bg-honey     { background-color: var(--honey);     }
+  .n-hover-bg-banana:hover    { background-color: var(--banana);    }
+  .n-hover-bg-melon:hover     { background-color: var(--melon);     }
+  .n-hover-bg-sun:hover       { background-color: var(--sun);       }
+  .n-hover-bg-gold:hover      { background-color: var(--gold);      }
+  .n-hover-bg-pineapple:hover { background-color: var(--pineapple); }
+  .n-hover-bg-egg:hover       { background-color: var(--egg);       }
+  .n-hover-bg-sunset:hover    { background-color: var(--sunset);    }
+  .n-hover-bg-golden:hover    { background-color: var(--golden);    }
+  .n-hover-bg-mango:hover     { background-color: var(--mango);     }
+  .n-hover-bg-honey:hover     { background-color: var(--honey);     }
+  .n-yellow    { color: rgb(255, 217, 0);   }
+  .n-yellow1   { color: rgb(255, 231, 20);  }
+  .n-yellow2   { color: rgb(255, 241, 40);  }
+  .n-yellow3   { color: rgb(255, 242, 60);  }
+  .n-yellow4   { color: rgb(255, 243, 80);  }
+  .n-yellow5   { color: rgb(255, 232, 100); }
+  .n-yellow6   { color: rgb(255, 235, 120)  }
+  .n-yellow7   { color: rgb(255, 253, 140); }
+  .n-yellow8   { color: rgb(255, 253, 160); }
+  .n-yellow9   { color: rgb(255, 254, 180); }
+  .n-yellow10  { color: rgb(255, 249, 200); }
+  .n-hover-yellow:hover    { color: rgb(255, 217, 0);   }
+  .n-hover-yellow1:hover   { color: rgb(255, 231, 20);  }
+  .n-hover-yellow2:hover   { color: rgb(255, 241, 40);  }
+  .n-hover-yellow3:hover   { color: rgb(255, 242, 60);  }
+  .n-hover-yellow4:hover   { color: rgb(255, 243, 80);  }
+  .n-hover-yellow5:hover   { color: rgb(255, 232, 100); }
+  .n-hover-yellow6:hover   { color: rgb(255, 235, 120)  }
+  .n-hover-yellow7:hover   { color: rgb(255, 253, 140); }
+  .n-hover-yellow8:hover   { color: rgb(255, 253, 160); }
+  .n-hover-yellow9:hover   { color: rgb(255, 254, 180); }
+  .n-hover-yellow10:hover  { color: rgb(255, 249, 200); }
+  .n-dark-yellow   { color: rgb(100, 90, 5); }
+  .n-dark-yellow1  { color: rgb(90, 82, 5);  }
+  .n-dark-yellow2  { color: rgb(85, 73, 5);  }
+  .n-dark-yellow3  { color: rgb(80, 75, 5);  }
+  .n-dark-yellow4  { color: rgb(70, 60, 5);  }
+  .n-dark-yellow5  { color: rgb(65, 61, 5);  }
+  .n-dark-yellow6  { color: rgb(60, 47, 5);  }
+  .n-dark-yellow7  { color: rgb(50, 45, 5);  }
+  .n-dark-yellow8  { color: rgb(45, 42, 5);  }
+  .n-dark-yellow9  { color: rgb(40, 35, 5);  }
+  .n-dark-yellow10 { color: rgb(30, 26, 5);  }
+  .n-hover-dark-yellow:hover   { color: rgb(100, 90, 5); }
+  .n-hover-dark-yellow1:hover  { color: rgb(90, 82, 5);  }
+  .n-hover-dark-yellow2:hover  { color: rgb(85, 73, 5);  }
+  .n-hover-dark-yellow3:hover  { color: rgb(80, 75, 5);  }
+  .n-hover-dark-yellow4:hover  { color: rgb(70, 60, 5);  }
+  .n-hover-dark-yellow5:hover  { color: rgb(65, 61, 5);  }
+  .n-hover-dark-yellow6:hover  { color: rgb(60, 47, 5);  }
+  .n-hover-dark-yellow7:hover  { color: rgb(50, 45, 5);  }
+  .n-hover-dark-yellow8:hover  { color: rgb(45, 42, 5);  }
+  .n-hover-dark-yellow9:hover  { color: rgb(40, 35, 5);  }
+  .n-hover-dark-yellow10:hover { color: rgb(30, 26, 5);  }
+  .n-bg-yellow    { background-color: rgb(255, 217, 0);   }
+  .n-bg-yellow1   { background-color: rgb(255, 231, 20);  }
+  .n-bg-yellow2   { background-color: rgb(255, 241, 40);  }
+  .n-bg-yellow3   { background-color: rgb(255, 242, 60);  }
+  .n-bg-yellow4   { background-color: rgb(255, 243, 80);  }
+  .n-bg-yellow5   { background-color: rgb(255, 232, 100); }
+  .n-bg-yellow6   { background-color: rgb(255, 235, 120)  }
+  .n-bg-yellow7   { background-color: rgb(255, 253, 140); }
+  .n-bg-yellow8   { background-color: rgb(255, 253, 160); }
+  .n-bg-yellow9   { background-color: rgb(255, 254, 180); }
+  .n-bg-yellow10  { background-color: rgb(255, 249, 200); }
+  .n-hover-bg-yellow:hover    { background-color: rgb(255, 217, 0);   }
+  .n-hover-bg-yellow1:hover   { background-color: rgb(255, 231, 20);  }
+  .n-hover-bg-yellow2:hover   { background-color: rgb(255, 241, 40);  }
+  .n-hover-bg-yellow3:hover   { background-color: rgb(255, 242, 60);  }
+  .n-hover-bg-yellow4:hover   { background-color: rgb(255, 243, 80);  }
+  .n-hover-bg-yellow5:hover   { background-color: rgb(255, 232, 100); }
+  .n-hover-bg-yellow6:hover   { background-color: rgb(255, 235, 120)  }
+  .n-hover-bg-yellow7:hover   { background-color: rgb(255, 253, 140); }
+  .n-hover-bg-yellow8:hover   { background-color: rgb(255, 253, 160); }
+  .n-hover-bg-yellow9:hover   { background-color: rgb(255, 254, 180); }
+  .n-hover-bg-yellow10:hover  { background-color: rgb(255, 249, 200); }
+  .n-bg-dark-yellow   { background-color: rgb(100, 90, 5); }
+  .n-bg-dark-yellow1  { background-color: rgb(90, 82, 5);  }
+  .n-bg-dark-yellow2  { background-color: rgb(85, 73, 5);  }
+  .n-bg-dark-yellow3  { background-color: rgb(80, 75, 5);  }
+  .n-bg-dark-yellow4  { background-color: rgb(70, 60, 5);  }
+  .n-bg-dark-yellow5  { background-color: rgb(65, 61, 5);  }
+  .n-bg-dark-yellow6  { background-color: rgb(60, 47, 5);  }
+  .n-bg-dark-yellow7  { background-color: rgb(50, 45, 5);  }
+  .n-bg-dark-yellow8  { background-color: rgb(45, 42, 5);  }
+  .n-bg-dark-yellow9  { background-color: rgb(40, 35, 5);  }
+  .n-bg-dark-yellow10 { background-color: rgb(30, 26, 5);  }
+  .n-hover-bg-dark-yellow:hover   { background-color: rgb(100, 90, 5); }
+  .n-hover-bg-dark-yellow1:hover  { background-color: rgb(90, 82, 5);  }
+  .n-hover-bg-dark-yellow2:hover  { background-color: rgb(85, 73, 5);  }
+  .n-hover-bg-dark-yellow3:hover  { background-color: rgb(80, 75, 5);  }
+  .n-hover-bg-dark-yellow4:hover  { background-color: rgb(70, 60, 5);  }
+  .n-hover-bg-dark-yellow5:hover  { background-color: rgb(65, 61, 5);  }
+  .n-hover-bg-dark-yellow6:hover  { background-color: rgb(60, 47, 5);  }
+  .n-hover-bg-dark-yellow7:hover  { background-color: rgb(50, 45, 5);  }
+  .n-hover-bg-dark-yellow8:hover  { background-color: rgb(45, 42, 5);  }
+  .n-hover-bg-dark-yellow9:hover  { background-color: rgb(40, 35, 5);  }
+  .n-hover-bg-dark-yellow10:hover { background-color: rgb(30, 26, 5);  }
+  .n-tangerine    { color: var(--tangerine);    }
+  .n-tiger        { color: var(--tiger);        }
+  .n-orange-juice { color: var(--orange-juice); }
+  .n-fox          { color: var(--fox);          }
+  .n-salmon       { color: var(--salmon);       }
+  .n-carrot       { color: var(--carrot);       }
+  .n-pumpkin      { color: var(--pumpkin);      }
+  .n-afternoon    { color: var(--afternoon);    }
+  .n-bg-tangerine    { background-color: var(--tangerine);    }
+  .n-bg-tiger        { background-color: var(--tiger);        }
+  .n-bg-orange-juice { background-color: var(--orange-juice); }
+  .n-bg-fox          { background-color: var(--fox);          }
+  .n-bg-salmon       { background-color: var(--salmon);       }
+  .n-bg-carrot       { background-color: var(--carrot);       }
+  .n-bg-pumpkin      { background-color: var(--pumpkin);      }
+  .n-bg-afternoon    { background-color: var(--afternoon);    }
+  .n-orange    { color: rgb(255, 115, 0);   }
+  .n-orange1   { color: rgb(255, 134, 20);  }
+  .n-orange2   { color: rgb(255, 144, 40);  }
+  .n-orange3   { color: rgb(255, 148, 60);  }
+  .n-orange4   { color: rgb(255, 173, 80);  }
+  .n-orange5   { color: rgb(255, 188, 100); }
+  .n-orange6   { color: rgb(255, 201, 120)  }
+  .n-orange7   { color: rgb(255, 201, 140); }
+  .n-orange8   { color: rgb(255, 203, 160); }
+  .n-orange9   { color: rgb(255, 223, 180); }
+  .n-orange10  { color: rgb(255, 231, 200); }
+  .n-dark-orange   { color: rgb(100, 51, 5); }
+  .n-dark-orange1  { color: rgb(90, 46, 5);  }
+  .n-dark-orange2  { color: rgb(85, 44, 5);  }
+  .n-dark-orange3  { color: rgb(80, 41, 5);  }
+  .n-dark-orange4  { color: rgb(70, 36, 5);  }
+  .n-dark-orange5  { color: rgb(65, 34, 5);  }
+  .n-dark-orange6  { color: rgb(60, 22, 5);  }
+  .n-dark-orange7  { color: rgb(50, 23, 5);  }
+  .n-dark-orange8  { color: rgb(45, 20, 5);  }
+  .n-dark-orange9  { color: rgb(40, 15, 5);  }
+  .n-dark-orange10 { color: rgb(30, 15, 5);  }
+  .n-hover-tangerine:hover    { color: var(--tangerine);    }
+  .n-hover-tiger:hover        { color: var(--tiger);        }
+  .n-hover-orange-juice:hover { color: var(--orange-juice); }
+  .n-hover-fox:hover          { color: var(--fox);          }
+  .n-hover-salmon:hover       { color: var(--salmon);       }
+  .n-hover-carrot:hover       { color: var(--carrot);       }
+  .n-hover-pumpkin:hover      { color: var(--pumpkin);      }
+  .n-hover-afternoon:hover    { color: var(--afternoon);    }
+  .n-hover-bg-tangerine:hover    { background-color: var(--tangerine);    }
+  .n-hover-bg-tiger:hover        { background-color: var(--tiger);        }
+  .n-hover-bg-orange-juice:hover { background-color: var(--orange-juice); }
+  .n-hover-bg-fox:hover          { background-color: var(--fox);          }
+  .n-hover-bg-salmon:hover       { background-color: var(--salmon);       }
+  .n-hover-bg-carrot:hover       { background-color: var(--carrot);       }
+  .n-hover-bg-pumpkin:hover      { background-color: var(--pumpkin);      }
+  .n-hover-bg-afternoon:hover    { background-color: var(--afternoon);    }
+  .n-hover-orange:hover    { color: rgb(255, 115, 0);   }
+  .n-hover-orange1:hover   { color: rgb(255, 134, 20);  }
+  .n-hover-orange2:hover   { color: rgb(255, 144, 40);  }
+  .n-hover-orange3:hover   { color: rgb(255, 148, 60);  }
+  .n-hover-orange4:hover   { color: rgb(255, 173, 80);  }
+  .n-hover-orange5:hover   { color: rgb(255, 188, 100); }
+  .n-hover-orange6:hover   { color: rgb(255, 201, 120)  }
+  .n-hover-orange7:hover   { color: rgb(255, 201, 140); }
+  .n-hover-orange8:hover   { color: rgb(255, 203, 160); }
+  .n-hover-orange9:hover   { color: rgb(255, 223, 180); }
+  .n-hover-orange10:hover  { color: rgb(255, 231, 200); }
+  .n-hover-dark-orange:hover   { color: rgb(100, 51, 5); }
+  .n-hover-dark-orange1:hover  { color: rgb(90, 46, 5);  }
+  .n-hover-dark-orange2:hover  { color: rgb(85, 44, 5);  }
+  .n-hover-dark-orange3:hover  { color: rgb(80, 41, 5);  }
+  .n-hover-dark-orange4:hover  { color: rgb(70, 36, 5);  }
+  .n-hover-dark-orange5:hover  { color: rgb(65, 34, 5);  }
+  .n-hover-dark-orange6:hover  { color: rgb(60, 22, 5);  }
+  .n-hover-dark-orange7:hover  { color: rgb(50, 23, 5);  }
+  .n-hover-dark-orange8:hover  { color: rgb(45, 20, 5);  }
+  .n-hover-dark-orange9:hover  { color: rgb(40, 15, 5);  }
+  .n-hover-dark-orange10:hover { color: rgb(30, 15, 5);  }
+  .n-pink    { color: rgb(255, 0, 255);   }
+  .n-pink1   { color: rgb(255, 20, 255);  }
+  .n-pink2   { color: rgb(255, 40, 237);  }
+  .n-pink3   { color: rgb(255, 60, 213);  }
+  .n-pink4   { color: rgb(255, 80, 255);  }
+  .n-pink5   { color: rgb(255, 100, 247); }
+  .n-pink6   { color: rgb(251, 120, 255)  }
+  .n-pink7   { color: rgb(255, 140, 249); }
+  .n-pink8   { color: rgb(255, 160, 255); }
+  .n-pink9   { color: rgb(255, 180, 245); }
+  .n-pink10  { color: rgb(255, 200, 246); }
+  .n-dark-pink   { color: rgb(100, 5, 100); }
+  .n-dark-pink1  { color: rgb(90, 5, 79);   }
+  .n-dark-pink2  { color: rgb(82, 5, 85);   }
+  .n-dark-pink3  { color: rgb(80, 5, 68);   }
+  .n-dark-pink4  { color: rgb(70, 5, 67);   }
+  .n-dark-pink5  { color: rgb(65, 5, 57);   }
+  .n-dark-pink6  { color: rgb(60, 5, 55);   }
+  .n-dark-pink7  { color: rgb(50, 5, 46);   }
+  .n-dark-pink8  { color: rgb(45, 5, 40);   }
+  .n-dark-pink9  { color: rgb(40, 5, 40);   }
+  .n-dark-pink10 { color: rgb(30, 5, 28);   }
+  .n-bg-pink          { background-color: rgb(255, 0, 255);             }
+  .n-bg-pink1         { background-color: rgb(255, 20, 255);              }
+  .n-bg-pink2         { background-color: rgb(255, 40, 237);              }
+  .n-bg-pink3         { background-color: rgb(255, 60, 213);              }
+  .n-bg-pink4         { background-color: rgb(255, 80, 255);              }
+  .n-bg-pink5         { background-color: rgb(255, 100, 247);             }
+  .n-bg-pink6         { background-color: rgb(251, 120, 255)              }
+  .n-bg-pink7         { background-color: rgb(255, 140, 249);             }
+  .n-bg-pink8         { background-color: rgb(255, 160, 255);             }
+  .n-bg-pink9         { background-color: rgb(255, 180, 245);             }
+  .n-bg-pink10        { background-color: rgb(255, 200, 246);             }
+  .n-bg-dark-pink     { background-color: rgb(100, 5, 100);               }
+  .n-bg-dark-pink1    { background-color: rgb(90, 5, 79);                 }
+  .n-bg-dark-pink2    { background-color: rgb(82, 5, 85);                 }
+  .n-bg-dark-pink3    { background-color: rgb(80, 5, 68);                 }
+  .n-bg-dark-pink4    { background-color: rgb(70, 5, 67);                 }
+  .n-bg-dark-pink5    { background-color: rgb(65, 5, 57);                 }
+  .n-bg-dark-pink6    { background-color: rgb(60, 5, 55);                 }
+  .n-bg-dark-pink7    { background-color: rgb(50, 5, 46);                 }
+  .n-bg-dark-pink8    { background-color: rgb(45, 5, 40);                 }
+  .n-bg-dark-pink9    { background-color: rgb(40, 5, 40);                 }
+  .n-bg-dark-pink10   { background-color: rgb(30, 5, 28);                 }
+  .n-hover-pink:hover    { color: rgb(255, 0, 255);   }
+  .n-hover-pink1:hover   { color: rgb(255, 20, 255);  }
+  .n-hover-pink2:hover   { color: rgb(255, 40, 237);  }
+  .n-hover-pink3:hover   { color: rgb(255, 60, 213);  }
+  .n-hover-pink4:hover   { color: rgb(255, 80, 255);  }
+  .n-hover-pink5:hover   { color: rgb(255, 100, 247); }
+  .n-hover-pink6:hover   { color: rgb(251, 120, 255)  }
+  .n-hover-pink7:hover   { color: rgb(255, 140, 249); }
+  .n-hover-pink8:hover   { color: rgb(255, 160, 255); }
+  .n-hover-pink9:hover   { color: rgb(255, 180, 245); }
+  .n-hover-pink10:hover  { color: rgb(255, 200, 246); }
+  .n-hover-dark-pink:hover   { color: rgb(100, 5, 100); }
+  .n-hover-dark-pink1:hover  { color: rgb(90, 5, 79);   }
+  .n-hover-dark-pink2:hover  { color: rgb(82, 5, 85);   }
+  .n-hover-dark-pink3:hover  { color: rgb(80, 5, 68);   }
+  .n-hover-dark-pink4:hover  { color: rgb(70, 5, 67);   }
+  .n-hover-dark-pink5:hover  { color: rgb(65, 5, 57);   }
+  .n-hover-dark-pink6:hover  { color: rgb(60, 5, 55);   }
+  .n-hover-dark-pink7:hover  { color: rgb(50, 5, 46);   }
+  .n-hover-dark-pink8:hover  { color: rgb(45, 5, 40);   }
+  .n-hover-dark-pink9:hover  { color: rgb(40, 5, 40);   }
+  .n-hover-dark-pink10:hover { color: rgb(30, 5, 28);   }
+  .n-hover-bg-pink:hover          { background-color: rgb(255, 0, 255);             }
+  .n-hover-bg-pink1:hover         { background-color: rgb(255, 20, 255);              }
+  .n-hover-bg-pink2:hover         { background-color: rgb(255, 40, 237);              }
+  .n-hover-bg-pink3:hover         { background-color: rgb(255, 60, 213);              }
+  .n-hover-bg-pink4:hover         { background-color: rgb(255, 80, 255);              }
+  .n-hover-bg-pink5:hover         { background-color: rgb(255, 100, 247);             }
+  .n-hover-bg-pink6:hover         { background-color: rgb(251, 120, 255)              }
+  .n-hover-bg-pink7:hover         { background-color: rgb(255, 140, 249);             }
+  .n-hover-bg-pink8:hover         { background-color: rgb(255, 160, 255);             }
+  .n-hover-bg-pink9:hover         { background-color: rgb(255, 180, 245);             }
+  .n-hover-bg-pink10:hover        { background-color: rgb(255, 200, 246);             }
+  .n-hover-bg-dark-pink:hover     { background-color: rgb(100, 5, 100);               }
+  .n-hover-bg-dark-pink1:hover    { background-color: rgb(90, 5, 79);                 }
+  .n-hover-bg-dark-pink2:hover    { background-color: rgb(82, 5, 85);                 }
+  .n-hover-bg-dark-pink3:hover    { background-color: rgb(80, 5, 68);                 }
+  .n-hover-bg-dark-pink4:hover    { background-color: rgb(70, 5, 67);                 }
+  .n-hover-bg-dark-pink5:hover    { background-color: rgb(65, 5, 57);                 }
+  .n-hover-bg-dark-pink6:hover    { background-color: rgb(60, 5, 55);                 }
+  .n-hover-bg-dark-pink7:hover    { background-color: rgb(50, 5, 46);                 }
+  .n-hover-bg-dark-pink8:hover    { background-color: rgb(45, 5, 40);                 }
+  .n-hover-bg-dark-pink9:hover    { background-color: rgb(40, 5, 40);                 }
+  .n-hover-bg-dark-pink10:hover   { background-color: rgb(30, 5, 28);                 }
+  .n-gray    { color: rgb(40, 40, 40);    }
+  .n-gray1   { color: rgb(60, 60, 60);    }
+  .n-gray2   { color: rgb(80, 80, 80);    }
+  .n-gray3   { color: rgb(100, 100, 100); }
+  .n-gray4   { color: rgb(120, 120, 120); }
+  .n-gray5   { color: rgb(140, 140, 140); }
+  .n-gray6   { color: rgb(160, 160, 160); }
+  .n-gray7   { color: rgb(180, 180, 180); }
+  .n-gray8   { color: rgb(200, 200, 200); }
+  .n-gray9   { color: rgb(220, 220, 220); }
+  .n-gray10  { color: rgb(240, 240, 240); }
+  .n-console      { color: #101015;            }
+  .n-dark-gray    { color: rgb(40, 40, 40);    }
+  .n-dark-gray1   { color: rgb(60, 60, 60);    }
+  .n-dark-gray2   { color: rgb(80, 80, 80);    }
+  .n-dark-gray3   { color: rgb(100, 100, 100); }
+  .n-dark-gray4   { color: rgb(120, 120, 120); }
+  .n-dark-gray5   { color: rgb(140, 140, 140); }
+  .n-dark-gray6   { color: rgb(160, 160, 160); }
+  .n-dark-gray7   { color: rgb(180, 180, 180); }
+  .n-dark-gray8   { color: rgb(200, 200, 200); }
+  .n-dark-gray9   { color: rgb(220, 220, 220); }
+  .n-dark-gray10  { color: rgb(240, 240, 240); }
+  .n-bg-gray          { background-color: rgb(40, 40, 40);                }
+  .n-bg-gray1         { background-color: rgb(60, 60, 60);                }
+  .n-bg-gray2         { background-color: rgb(80, 80, 80);                }
+  .n-bg-gray3         { background-color: rgb(100, 100, 100);             }
+  .n-bg-gray4         { background-color: rgb(120, 120, 120);             }
+  .n-bg-gray5         { background-color: rgb(140, 140, 140);             }
+  .n-bg-gray6         { background-color: rgb(160, 160, 160);             }
+  .n-bg-gray7         { background-color: rgb(180, 180, 180);             }
+  .n-bg-gray8         { background-color: rgb(200, 200, 200);             }
+  .n-bg-gray9         { background-color: rgb(220, 220, 220);             }
+  .n-bg-gray10        { background-color: rgb(240, 240, 240);             }
+  .n-bg-console       { background-color: #101015;                        }
+  .n-bg-dark-gray     { background-color: rgb(40, 40, 40);                }
+  .n-bg-dark-gray1    { background-color: rgb(60, 60, 60);                }
+  .n-bg-dark-gray2    { background-color: rgb(80, 80, 80);                }
+  .n-bg-dark-gray3    { background-color: rgb(100, 100, 100);             }
+  .n-bg-dark-gray4    { background-color: rgb(120, 120, 120);             }
+  .n-bg-dark-gray5    { background-color: rgb(140, 140, 140);             }
+  .n-bg-dark-gray6    { background-color: rgb(160, 160, 160);             }
+  .n-bg-dark-gray7    { background-color: rgb(180, 180, 180);             }
+  .n-bg-dark-gray8    { background-color: rgb(200, 200, 200);             }
+  .n-bg-dark-gray9    { background-color: rgb(220, 220, 220);             }
+  .n-bg-dark-gray10   { background-color: rgb(240, 240, 240);             }
+  .n-hover-gray:hover    { color: rgb(40, 40, 40);    }
+  .n-hover-gray1:hover   { color: rgb(60, 60, 60);    }
+  .n-hover-gray2:hover   { color: rgb(80, 80, 80);    }
+  .n-hover-gray3:hover   { color: rgb(100, 100, 100); }
+  .n-hover-gray4:hover   { color: rgb(120, 120, 120); }
+  .n-hover-gray5:hover   { color: rgb(140, 140, 140); }
+  .n-hover-gray6:hover   { color: rgb(160, 160, 160); }
+  .n-hover-gray7:hover   { color: rgb(180, 180, 180); }
+  .n-hover-gray8:hover   { color: rgb(200, 200, 200); }
+  .n-hover-gray9:hover   { color: rgb(220, 220, 220); }
+  .n-hover-gray10:hover  { color: rgb(240, 240, 240); }
+  .n-hover-console:hover      { color: #101015;            }
+  .n-hover-dark-gray:hover    { color: rgb(40, 40, 40);    }
+  .n-hover-dark-gray1:hover   { color: rgb(60, 60, 60);    }
+  .n-hover-dark-gray2:hover   { color: rgb(80, 80, 80);    }
+  .n-hover-dark-gray3:hover   { color: rgb(100, 100, 100); }
+  .n-hover-dark-gray4:hover   { color: rgb(120, 120, 120); }
+  .n-hover-dark-gray5:hover   { color: rgb(140, 140, 140); }
+  .n-hover-dark-gray6:hover   { color: rgb(160, 160, 160); }
+  .n-hover-dark-gray7:hover   { color: rgb(180, 180, 180); }
+  .n-hover-dark-gray8:hover   { color: rgb(200, 200, 200); }
+  .n-hover-dark-gray9:hover   { color: rgb(220, 220, 220); }
+  .n-hover-dark-gray10:hover  { color: rgb(240, 240, 240); }
+  .n-hover-bg-gray:hover          { background-color: rgb(40, 40, 40);                }
+  .n-hover-bg-gray1:hover         { background-color: rgb(60, 60, 60);                }
+  .n-hover-bg-gray2:hover         { background-color: rgb(80, 80, 80);                }
+  .n-hover-bg-gray3:hover         { background-color: rgb(100, 100, 100);             }
+  .n-hover-bg-gray4:hover         { background-color: rgb(120, 120, 120);             }
+  .n-hover-bg-gray5:hover         { background-color: rgb(140, 140, 140);             }
+  .n-hover-bg-gray6:hover         { background-color: rgb(160, 160, 160);             }
+  .n-hover-bg-gray7:hover         { background-color: rgb(180, 180, 180);             }
+  .n-hover-bg-gray8:hover         { background-color: rgb(200, 200, 200);             }
+  .n-hover-bg-gray9:hover         { background-color: rgb(220, 220, 220);             }
+  .n-hover-bg-gray10:hover        { background-color: rgb(240, 240, 240);             }
+  .n-hover-bg-console:hover       { background-color: #101015;                        }
+  .n-hover-bg-dark-gray:hover     { background-color: rgb(40, 40, 40);                }
+  .n-hover-bg-dark-gray1:hover    { background-color: rgb(60, 60, 60);                }
+  .n-hover-bg-dark-gray2:hover    { background-color: rgb(80, 80, 80);                }
+  .n-hover-bg-dark-gray3:hover    { background-color: rgb(100, 100, 100);             }
+  .n-hover-bg-dark-gray4:hover    { background-color: rgb(120, 120, 120);             }
+  .n-hover-bg-dark-gray5:hover    { background-color: rgb(140, 140, 140);             }
+  .n-hover-bg-dark-gray6:hover    { background-color: rgb(160, 160, 160);             }
+  .n-hover-bg-dark-gray7:hover    { background-color: rgb(180, 180, 180);             }
+  .n-hover-bg-dark-gray8:hover    { background-color: rgb(200, 200, 200);             }
+  .n-hover-bg-dark-gray9:hover    { background-color: rgb(220, 220, 220);             }
+  .n-hover-bg-dark-gray10:hover   { background-color: rgb(240, 240, 240);             }
+  .n-divider{box-shadow: inset 0 0 1.5vw rgba(78, 78, 78, 0.5);background-color: #dbdbdb;}
+  .n-white       { color: #fff;      }
+  .n-transparent { color: #ffffff00; }
+  .n-black       { color: #000;      }
+  .n-hover-black:hover       { color: #000; }
+  .n-hover-white:hover       { color: #fff; }
+  .n-hover-transparent:hover { color: #ffffff00; }
+  .n-bg-white       { background-color: #fff;      }
+  .n-bg-transparent { background-color: #ffffff00; }
+  .n-bg-black       { background-color: #000;      }
+  .n-hover-bg-black:hover       { background-color: #000;      }
+  .n-hover-bg-white:hover       { background-color: #fff;      }
+  .n-hover-bg-transparent:hover { background-color: #ffffff00; }
+}
