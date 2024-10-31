@@ -8,3 +8,5 @@ CSS: &lt;link rel="stylesheet" href="https://chiaperini-ti.github.io/PLANIT/plan
 JS: &lt;script src="https://chiaperini-ti.github.io/PLANIT/js/script.js"&gt;&lt;/script&gt;<br>
 ou
 &lt;script src="https://chiaperini-ti.github.io/PLANIT/js/syder.js"&gt;&lt;/script&gt;
+
+A
